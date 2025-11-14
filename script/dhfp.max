@@ -3239,7 +3239,7 @@ according to scope of practice, organizational policy, and/or jurisdictional law
       <tag name="Reference.ChangeIndicator" value="NC" />
       <tag name="Priority" value="EN" />
     </object>
-    <object>
+    <!-- <object>
       <id>8a390d10-3a6a-4b17-a322-c700bcfbfa54</id>
       <name>CP.2.1#02</name>
       <alias />
@@ -3252,7 +3252,7 @@ according to scope of practice, organizational policy, and/or jurisdictional law
       <tag name="Reference.CriterionID" value="2" />
       <tag name="Reference.ChangeIndicator" value="NC" />
       <tag name="Priority" value="EN" />
-    </object>
+    </object> -->
     <object>
       <id>49a461ae-8283-4c47-86d3-274447f46d43</id>
       <name>CP.2.2 Render externally-sourced Data</name>

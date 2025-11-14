@@ -24,16 +24,16 @@ Convert current computable version of the FM (MAX file) to FHIR IG artifacts.
 ```
 Copy grouping & resource json from output.txt into ehrs-ig.json
 
-### Validate
-
-```
-(optional) @> curl -L https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar -o input-cache/validator_cli.jar
-@> java -jar validator_cli.jar -version current input/resources -ig input/resources
-```
-
 ### To build IG
 
 ```
 (optional) @> curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o input-cache/publisher.jar
 @> java -jar input-cache/publisher.jar -ig ig.ini
+```
+
+### Validate
+
+```
+(optional) @> curl -L https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar -o input-cache/validator_cli.jar
+@> java -jar validator_cli.jar -version current input/resources -ig input/resources
 ```

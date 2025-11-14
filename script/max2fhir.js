@@ -48,6 +48,10 @@ maxroot.model.objects.forEach(_temp => {
 
         var fhir_req;
         switch (object.stereotype[0]) {
+            // TODO: profiles not yet handled differently
+            // should accomodate for (statement.)derivedFrom relationship with base
+            // and somehow make really visible what was changed in this profile!
+            case "HL7-FM-Profile":
             case "HL7-FM":
                 fhir_req = handleFM(object, parentObject);
                 break;
@@ -250,15 +254,15 @@ function handleHeaderOrFunction(headerOrFunction, parentObject) {
 }
 
 function handleCriteria(criteria, fhir_parent_req) {
-    var id = criteria.name[0];
-    var name = criteria.name[0];
+    const id = criteria.name[0];
+    const name = criteria.name[0];
     var notes = criteria.notes[0];
-    var optionality = criteria.tag.find(tag => tag['$'].name === 'Optionality');
-    var conditional = criteria.tag.find(tag => tag['$'].name === 'Conditional');
-    var dependent = criteria.tag.find(tag => tag['$'].name === 'Dependent');
-    var refAlias = criteria.tag.find(tag => tag['$'].name === 'Reference.Alias');
-    var refFunctionID = criteria.tag.find(tag => tag['$'].name === 'Reference.FunctionID');
-    var refCriteriaID = criteria.tag.find(tag => tag['$'].name === 'Reference.CriteriaID');
+    const optionality = criteria.tag.find(tag => tag['$'].name === 'Optionality');
+    const conditional = criteria.tag.find(tag => tag['$'].name === 'Conditional');
+    const dependent = criteria.tag.find(tag => tag['$'].name === 'Dependent');
+    const refAlias = criteria.tag.find(tag => tag['$'].name === 'Reference.Alias');
+    const refFunctionID = criteria.tag.find(tag => tag['$'].name === 'Reference.FunctionID');
+    const refCriteriaID = criteria.tag.find(tag => tag['$'].name === 'Reference.CriteriaID');
 
     // replace special link notation '[[{id}]]' with markdown link
     notes = notes.replace(/\[\[([^\]]+)\]\]/g, `[\$1](Requirements-${FMID_PREFIX}-\$1.html)`);
