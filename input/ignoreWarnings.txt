@@ -1,0 +1,31 @@
+== Suppressed Messages ==
+# There is no reason for OIDs in this IG
+% could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+
+# Experimental in fhir core
+% which is experimental, but this structure is not labeled as experimental
+
+# Inserted by the publisher
+This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|5.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+
+# Used in extension inserted by the publisher
+Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+# No Examples is right; will go away when ehrs-base-ig is ready
+The Implementation Guide contains no examples for this extension
+
+# Maybe someday
+Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+# Acceptable "...must end in a period."
+%FMFLC10%
+%FMFLC12%
+%FMHC007%
+%FMHC005%
+
+# https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/IG.20publisher.20adds.20extensions.20that.20than.20cause.20QA.20errors
+The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version' definition allows for the types [code] but found type string
+
+# Will be fixed with final publication
+The extension http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info is not allowed to be used at this point (this element is [BackboneElement, Requirements.statement]; allowed for this version = e:Requirements or Requirements.statement)

@@ -1,0 +1,42 @@
+{
+  "resourceType": "Requirements",
+  "id": "DHFPR2-CPS.1.6.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
+  "name": "CPS_1_6_2_Related_by_Insurance",
+  "title": "CPS.1.6.2 Related by Insurance (Function)",
+  "status": "active",
+  "description": "Support interactions with other systems, applications, and modules to provide information on an insured person's relationships. Examples of relationships include domestic partner, spouse, and guarantor of payment. Dental examples include parent, children, caregiver, and legal guardian.",
+  "purpose": "Identifying relationship of persons insured under the same insurance plan is important for administrative transactions.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.1.6.2-01",
+      "label": "CPS.1.6.2#01",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render information regarding patients who are related by insurance plan.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.6.2#1"
+    }
+  ]
+}

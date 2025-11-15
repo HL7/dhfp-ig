@@ -1,0 +1,42 @@
+{
+  "resourceType": "Requirements",
+  "id": "DHFPR2-AS.1.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
+  "name": "AS_1_3_Provider_s_On_Call_Location",
+  "title": "AS.1.3 Provider's On Call Location (Function)",
+  "status": "active",
+  "description": "Provide provider location or contact information when on call.",
+  "purpose": "The provider immediate contact information. This may include on call practitioners on a facility's premises as well as on call contact information (e.g., phone number, pager, cell phone, etc.) after scheduled working hours.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-AS.1.3-01",
+      "label": "AS.1.3#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage information on a provider's location, and/or contact information when the provider's is \"on call\".",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.1.3#1"
+    }
+  ]
+}

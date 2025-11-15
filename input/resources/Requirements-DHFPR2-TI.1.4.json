@@ -1,0 +1,62 @@
+{
+  "resourceType": "Requirements",
+  "id": "DHFPR2-TI.1.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
+  "name": "TI_1_4_Patient_Access_Management",
+  "title": "TI.1.4 Patient Access Management (Function)",
+  "status": "active",
+  "description": "Manage a patient's access to personal health information.",
+  "purpose": "A healthcare delivery organization will be able to manage a patient's ability to view his or her EHR based on organization policy or jurisdictional law. Typically, a patient or their legal representative (e.g., guardian, surrogate) has the right to view his or her EHR.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-TI.1.4-01",
+      "label": "TI.1.4#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF organizational policy allows patient access to the EHR-S, THEN the system SHALL conform to function [TI.1.3](Requirements-DHFPR2-TI.1.3.html) (Entity Access Control).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.4#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-TI.1.4-02",
+      "label": "TI.1.4#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF organizational policy allows patient access to the EHR-S, THEN the system SHALL conform to function [TI.1.2](Requirements-DHFPR2-TI.1.2.html) (Entity Authorization).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.4#2"
+    }
+  ]
+}

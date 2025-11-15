@@ -1,0 +1,42 @@
+{
+  "resourceType": "Requirements",
+  "id": "DHFPR2-CP.2.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
+  "name": "CP_2_3_Render_Emergency_Medical_System_Originated_Data",
+  "title": "CP.2.3 Render Emergency Medical System Originated Data (Function)",
+  "status": "active",
+  "description": "Render emergency medical data that has been captured from multiple external sources.",
+  "purpose": "Emergency medical data relevant to the patient record can be captured from many external sources and should be rendered appropriately alongside other information in the patient record.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.2.3-01",
+      "label": "CP.2.3#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system conforms to function [CPS.2.3](Requirements-DHFPR2-CPS.2.3.html) (Support Emergency Medical System Originated Data), THEN the system SHALL provide the ability to render Emergency Medical System Originated Data.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.2.3#1"
+    }
+  ]
+}

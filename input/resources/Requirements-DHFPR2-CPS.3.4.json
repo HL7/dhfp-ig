@@ -1,0 +1,222 @@
+{
+  "resourceType": "Requirements",
+  "id": "DHFPR2-CPS.3.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
+  "name": "CPS_3_4_Support_for_Context_Sensitive_Care_Plans__Guidelines__Protocols",
+  "title": "CPS.3.4 Support for Context-Sensitive Care Plans, Guidelines, Protocols (Function)",
+  "status": "active",
+  "description": "Identify and present the appropriate care plans, guidelines, protocols, and/or clinical pathways for the management of patient-specific conditions that are identified in a patient clinical encounter.",
+  "purpose": "At the time of the clinical encounter (problem identification), recommendations for tests, treatments, medications, immunizations, referrals and evaluations are presented based on evaluation of patient-specific data such as age, gender, developmental stage, their health profile, and any site-specific considerations. These may be modified on the basis of new clinical data at subsequent encounters.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "C"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.4-01",
+      "label": "CPS.3.4#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to render care and treatment plans that are sensitive to the context of patient data and assessments. Dental treatment plan examples include pediatric vs. adult, ortho, and perio.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.4#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.4-02",
+      "label": "CPS.3.4#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture and maintain the choice of action in response to care plan suggestions.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.4#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.4-03",
+      "label": "CPS.3.4#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD determine and render alerts, notifications, and reports about variances from standard care plans, guidelines, protocols, and clinical pathways.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.4#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.4-04",
+      "label": "CPS.3.4#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [CPS.3.1](Requirements-DHFPR2-CPS.3.1.html) (Support for Standard Assessments).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.4#4"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.4-05",
+      "label": "CPS.3.4#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [CPS.3.2](Requirements-DHFPR2-CPS.3.2.html) (Support for Patient Context-Driven Assessments).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.4#5"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.4-06",
+      "label": "CPS.3.4#06",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [CPS.3.3](Requirements-DHFPR2-CPS.3.3.html) (Support for Standard Care Plans, Guidelines, Protocols).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.4#6"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.4-07",
+      "label": "CPS.3.4#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain, and render specialized medical treatment guidelines and protocols for unique physical, chemical, biological, and radiologic exposures.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.4#7"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.4-08",
+      "label": "CPS.3.4#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage biometric data, such as age-specific, weight-specific or height-specific normative data, to identify, track and provide alerts, notifications and reports about variances, care plans, guidelines and protocols.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.4#8"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.4-09",
+      "label": "CPS.3.4#09",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render care plan templates to be used as a basis for the creation of new plans of care and treatment.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.4#9"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.4-10",
+      "label": "CPS.3.4#10",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture care plan templates from previously developed care plans.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.4#10"
+    }
+  ]
+}

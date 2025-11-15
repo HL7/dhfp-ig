@@ -1,0 +1,102 @@
+{
+  "resourceType": "Requirements",
+  "id": "DHFPR2-RI.1.1.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
+  "name": "RI_1_1_2_Amend__Update__Record_Lifecycle_Event",
+  "title": "RI.1.1.2 Amend (Update) Record Lifecycle Event (Function)",
+  "status": "active",
+  "description": "Amend (Update) Record Entry (1 instance)",
+  "purpose": "Occurs when an agent makes any change to record entry content currently residing in storage considered permanent (persistent). \n\nReference: ISO 21089-2018, Section 15.2.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-RI.1.1.2-01",
+      "label": "RI.1.1.2#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to update (amend) Record Entry content.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.2#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-RI.1.1.2-02",
+      "label": "RI.1.1.2#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL maintain the original and all previously amended versions of the Record Entry, retaining each version instance without alteration.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.2#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-RI.1.1.2-03",
+      "label": "RI.1.1.2#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL capture a new uniquely identifiable version of the Record Entry, incorporating amended content.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.2#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-RI.1.1.2-04",
+      "label": "RI.1.1.2#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL capture the signature event (e.g., digital signature) of the amendment Author, binding signature to Record Entry content.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.2#4"
+    }
+  ]
+}

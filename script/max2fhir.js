@@ -49,8 +49,8 @@ maxroot.model.objects.forEach(_temp => {
         var fhir_req;
         switch (object.stereotype[0]) {
             // TODO: profiles not yet handled differently
-            // should accomodate for (statement.)derivedFrom relationship with base
-            // and somehow make really visible what was changed in this profile!
+            // - should accomodate for (statement.)derivedFrom relationship with base
+            // - and somehow make really visible what was changed in this profile!
             case "HL7-FM-Profile":
             case "HL7-FM":
                 fhir_req = handleFM(object, parentObject);
@@ -262,7 +262,8 @@ function handleCriteria(criteria, fhir_parent_req) {
     const dependent = criteria.tag.find(tag => tag['$'].name === 'Dependent');
     const refAlias = criteria.tag.find(tag => tag['$'].name === 'Reference.Alias');
     const refFunctionID = criteria.tag.find(tag => tag['$'].name === 'Reference.FunctionID');
-    const refCriteriaID = criteria.tag.find(tag => tag['$'].name === 'Reference.CriteriaID');
+    const refCriteriaID = criteria.tag.find(tag => tag['$'].name === 'Reference.CriterionID');
+    const refChangeInd = criteria.tag.find(tag => tag['$'].name === 'Reference.ChangeIndicator');
 
     // replace special link notation '[[{id}]]' with markdown link
     notes = notes.replace(/\[\[([^\]]+)\]\]/g, `[\$1](Requirements-${FMID_PREFIX}-\$1.html)`);
@@ -291,6 +292,11 @@ function handleCriteria(criteria, fhir_parent_req) {
         fhir_statement["derivedFrom"] = refAlias['$'].value + " " + refFunctionID['$'].value + (refCriteriaID?"#" + refCriteriaID['$'].value:"");
     }
     if (id in satisfiedBy) { fhir_statement["satisfiedBy"] = [ satisfiedBy[id]] }
+    if (refChangeInd) {
+        fhir_statement["extension"].push({
+            "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+            "valueCode": refChangeInd['$'].value });
+    }
     fhir_parent_req.statement.push(fhir_statement);
 }
 

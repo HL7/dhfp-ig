@@ -1,0 +1,122 @@
+{
+  "resourceType": "Requirements",
+  "id": "DHFPR2-CPS.3.6",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
+  "name": "CPS_3_6_Support_Self_Care",
+  "title": "CPS.3.6 Support Self-Care (Function)",
+  "status": "active",
+  "description": "Provide the patient with decision support for self-management of a condition between patient/provider encounters.",
+  "purpose": "Patients need to follow self-management plans related to their specific conditions. These plans may include schedules for home monitoring, laboratory tests, and clinical checkups; recommendations about nutrition, physical activity, tobacco use, etc.; and guidance or reminders about medications. Information to support self-care may be appropriately provided to: the patient, a surrogate (parent, spouse, guardian), or others involved directly in the patients self care.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.6-01",
+      "label": "CPS.3.6#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render patient guidelines, protocols and reminders related to specific clinical conditions.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.6#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.6-02",
+      "label": "CPS.3.6#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to determine patient eligibility for, and render appropriate patient guidelines, protocols, and reminders for, self-management of clinical conditions.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.6#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.6-03",
+      "label": "CPS.3.6#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to function [CPS.2.5](Requirements-DHFPR2-CPS.2.5.html) (Support patient-originated Data).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.6#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.6-04",
+      "label": "CPS.3.6#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to function [CP.1.8](Requirements-DHFPR2-CP.1.8.html) (Manage Patient and Family Preferences).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.6#4"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.6-05",
+      "label": "CPS.3.6#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [CP.1.4](Requirements-DHFPR2-CP.1.4.html) (Manage Problem list).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.6#5"
+    }
+  ]
+}

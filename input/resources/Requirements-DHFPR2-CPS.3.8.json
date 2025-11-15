@@ -1,0 +1,102 @@
+{
+  "resourceType": "Requirements",
+  "id": "DHFPR2-CPS.3.8",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
+  "name": "CPS_3_8_Manage_Documentation_of_Clinician_Response_to_Decision_Support_Prompts",
+  "title": "CPS.3.8 Manage Documentation of Clinician Response to Decision Support Prompts (Function)",
+  "status": "active",
+  "description": "Capture the decision support prompts and manage provider actions to accept or override decision support prompts.",
+  "purpose": "Provider actions in response to prompts offered from decision support are captured. Management of these actions be accomplished at the patient level or aggregated for patient population, research protocol, or organizational trending.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "C"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.8-01",
+      "label": "CPS.3.8#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture that clinical decision support prompts have been rendered and user response to accept or override those prompts. In dental electronic records, a Prompt is usually called an \"Alert.\" Dental examples include allergies, a pre-med requirement, or Rx opioid use.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.8#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "C"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.8-02",
+      "label": "CPS.3.8#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture the reason for variation from the decision support prompt. For Dental, the reason could be documented in a progress note.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.8#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.8-03",
+      "label": "CPS.3.8#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render recorded variances from decision support prompts.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.8#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.8-04",
+      "label": "CPS.3.8#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render a notification to users that a decision support alert has been disabled (e.g., notification to administrators or the user who disabled the alert).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.8#4"
+    }
+  ]
+}

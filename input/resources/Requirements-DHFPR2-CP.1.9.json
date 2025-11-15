@@ -1,0 +1,102 @@
+{
+  "resourceType": "Requirements",
+  "id": "DHFPR2-CP.1.9",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
+  "name": "CP_1_9_Manage_Adverse_Events",
+  "title": "CP.1.9 Manage Adverse Events (Function)",
+  "status": "active",
+  "description": "Capture and maintain adverse events.",
+  "purpose": "This function is focused on the capture and maintenance of adverse events that have occurred to the patient. The system should capture discrete information about the adverse event to enable the rendering Serious Adverse Event (SAE) reports according to organizational policy, and or jurisdictional law. Reporting may conform to the HL7 Individual Case Safety Reporting (ICSR). For Dental, the HL7 Individual Case Safety Report (ICSR) captures information needed to support reporting of adverse events, product problems and consumer complaints associated with the use of FDA regulated products. Examples include Biologics and Vaccines Adverse Events, Food Adverse Events, Human Drugs Adverse Events, Medical Device Adverse Events, and Tobacco Adverse Events.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.1.9-01",
+      "label": "CP.1.9#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage adverse events associated with a patient.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.9#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.1.9-02",
+      "label": "CP.1.9#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL capture and maintain as discrete data an adverse event. For example:a) Patient identificationb) Event date/timec) Event descriptiond) Event severitye) Event category (e.g., medication error, fall)f) Care providers associated with the eventaccording to scope of practice, organizational policy, and/or jurisdictional law.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.9#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.1.9-03",
+      "label": "CP.1.9#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture and render a Serious Adverse Event (SAE) report according to organizational policy, and/or jurisditional law.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.9#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.1.9-04",
+      "label": "CP.1.9#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render a set of Serious Adverse Event (SAE) data as modeled by the current release of HL7 ICSR (Individual Case Safety Reporting).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.9#4"
+    }
+  ]
+}

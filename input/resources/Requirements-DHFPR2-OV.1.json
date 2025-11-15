@@ -1,0 +1,602 @@
+{
+  "resourceType": "Requirements",
+  "id": "DHFPR2-OV.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
+  "name": "OV_1_Overarching_Criteria",
+  "title": "OV.1 Overarching Criteria (Function)",
+  "status": "active",
+  "description": "Overarching criteria are those that apply to all EHR Systems.",
+  "purpose": "The Overarching Section contains Conformance Criteria that apply to all EHR Systems and consequently must be included in all EHR-S FM compliant profiles. These criteria are grouped under a single Function.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-01",
+      "label": "OV.1#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [CP.9.1](Requirements-DHFPR2-CP.9.1.html) (Produce a Summary Record of Care).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-02",
+      "label": "OV.1#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [CPS.9.3](Requirements-DHFPR2-CPS.9.3.html) (Health Record Output).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-03",
+      "label": "OV.1#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [CPS.9.4](Requirements-DHFPR2-CPS.9.4.html) (Standard Report Generation).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-04",
+      "label": "OV.1#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [RI.1.1](Requirements-DHFPR2-RI.1.1.html) (Record Lifecycle) and all child functions.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#4"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-06",
+      "label": "OV.1#06",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [RI.2](Requirements-DHFPR2-RI.2.html) (Record Synchronization).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#6"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-07",
+      "label": "OV.1#07",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [RI.3](Requirements-DHFPR2-RI.3.html) (Record Archive and Restore).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#7"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-08",
+      "label": "OV.1#08",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [TI.1.1](Requirements-DHFPR2-TI.1.1.html) (Entity Authentication).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#8"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-09",
+      "label": "OV.1#09",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [TI.1.2](Requirements-DHFPR2-TI.1.2.html) (Entity Authorization) .",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#9"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-10",
+      "label": "OV.1#10",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [TI.1.3](Requirements-DHFPR2-TI.1.3.html) (Entity Access Control).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#10"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-11",
+      "label": "OV.1#11",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [TI.1.4](Requirements-DHFPR2-TI.1.4.html) (Patient Access Management).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#11"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-12",
+      "label": "OV.1#12",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [TI.1.5](Requirements-DHFPR2-TI.1.5.html) (Non-Repudiation).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#12"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-13",
+      "label": "OV.1#13",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system transmits data to or receives data from a system outside of a secure network, THEN the system SHALL conform to function [TI.1.6](Requirements-DHFPR2-TI.1.6.html) (Secure Data Exchange), to ensure that the data are protected.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#13"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-14",
+      "label": "OV.1#14",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system transmits data to or receives data from a system outside of a secure network, THEN the system SHALL conform to function [TI.1.7](Requirements-DHFPR2-TI.1.7.html) (Secure Data Routing), to ensure that the exchange occurs only among authorized senders and receivers.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#14"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-15",
+      "label": "OV.1#15",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [TI.1.8](Requirements-DHFPR2-TI.1.8.html) (Patient Privacy and Confidentiality).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#15"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-16",
+      "label": "OV.1#16",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [TI.2](Requirements-DHFPR2-TI.2.html) (Audit) and all child functions.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#16"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-17",
+      "label": "OV.1#17",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to function [TI.3](Requirements-DHFPR2-TI.3.html) (Registry and Directory Services).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#17"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-18",
+      "label": "OV.1#18",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [TI.4](Requirements-DHFPR2-TI.4.html) (Standard Terminology and Terminology Services).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#18"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-19",
+      "label": "OV.1#19",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system manages data for which standard terminologies have been established, THEN the system SHALL conform to function [TI.4.1](Requirements-DHFPR2-TI.4.1.html) (Standard Terminologies and Terminology Models) to support semantic interoperability.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#19"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-20",
+      "label": "OV.1#20",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system manages data for which standard terminologies have been established, THEN the system SHALL conform to function [TI.4.2](Requirements-DHFPR2-TI.4.2.html) (Maintenance and Versioning of Standard Terminologies) to preserve the semantics of coded data over time.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#20"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-21",
+      "label": "OV.1#21",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF terminology mapping is implemented within the system, THEN the system SHALL conform to function [TI.4.3](Requirements-DHFPR2-TI.4.3.html) (Terminology Mapping).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#21"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-22",
+      "label": "OV.1#22",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system receives or transmits data for which jurisdictionally established interchange standards exist, THEN the system SHALL conform to function [TI.5.1](Requirements-DHFPR2-TI.5.1.html) (Application and Structured-Document Interchange Standards) and all child functions to support interoperability.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#22"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-23",
+      "label": "OV.1#23",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system receives and transmits data for which generally accepted interchange standards have been established, THEN the system SHALL conform to function [TI.5.2](Requirements-DHFPR2-TI.5.2.html) (Interchange Standards Versioning and Maintenance), to accommodate the inevitable evolution of interchange standards.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#23"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-24",
+      "label": "OV.1#24",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to function [TI.5.3](Requirements-DHFPR2-TI.5.3.html) (Standards-based Application Integration).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#24"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-25",
+      "label": "OV.1#25",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system receives and transmits data with other systems outside itself, THEN the system SHALL conform to function [TI.5.4](Requirements-DHFPR2-TI.5.4.html) (Interchange Agreements), to define how the sender and receiver will exchange data.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#25"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-26",
+      "label": "OV.1#26",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to function [TI.6](Requirements-DHFPR2-TI.6.html) (Business Rules Management).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#26"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-27",
+      "label": "OV.1#27",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to function [TI.7](Requirements-DHFPR2-TI.7.html) (Workflow Management).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#27"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-28",
+      "label": "OV.1#28",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [TI.8](Requirements-DHFPR2-TI.8.html) (Database Backup and Recovery).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#28"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-29",
+      "label": "OV.1#29",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [CPS.10](Requirements-DHFPR2-CPS.10.html) (Manage User Help).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#29"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-OV.1-30",
+      "label": "OV.1#30",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [TI.9](Requirements-DHFPR2-TI.9.html) (System Management Operations and Performance).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 OV.1#30"
+    }
+  ]
+}

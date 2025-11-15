@@ -1,0 +1,20 @@
+{
+  "resourceType": "Requirements",
+  "id": "DHFPR2-AS.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
+  "name": "AS_3_Manage_Personal_Health_Record_Interaction",
+  "title": "AS.3 Manage Personal Health Record Interaction (Header)",
+  "status": "active",
+  "description": "Provide the system support in managing the interaction with a patient's PHR.",
+  "purpose": "The system can support interaction with the patient's PHR. It can also manage documentation related to the PHR-S consent and access directives."
+}

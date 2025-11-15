@@ -1,0 +1,222 @@
+{
+  "resourceType": "Requirements",
+  "id": "DHFPR2-CPS.3.5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
+  "name": "CPS_3_5_Support_for_Research_Protocols_Relative_to_Individual_Patient_Care",
+  "title": "CPS.3.5 Support for Research Protocols Relative to Individual Patient Care (Function)",
+  "status": "active",
+  "description": "Provide support for the management of patients enrolled in research protocols.",
+  "purpose": "The clinician is presented with appropriate protocols for patients participating in research studies, and is supported in the management and tracking of study participants.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.5-01",
+      "label": "CPS.3.5#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to present protocols for patients enrolled in research studies.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.5#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.5-02",
+      "label": "CPS.3.5#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain and render research study protocols.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.5#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.5-03",
+      "label": "CPS.3.5#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to function [AS.9.1](Requirements-DHFPR2-AS.9.1.html) (Support Financial Plan Enrollment), to enable participation in research studies.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.5#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.5-04",
+      "label": "CPS.3.5#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to analyze and maintain patients participating in research studies.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.5#4"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.5-05",
+      "label": "CPS.3.5#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture and maintain appropriate details of patient condition and response to treatment as required for patients enrolled in research studies.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.5#5"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.5-06",
+      "label": "CPS.3.5#06",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [CP.3.3](Requirements-DHFPR2-CP.3.3.html) (Manage Clinical Documents and Notes) to capture patient condition and response to treatment.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.5#6"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.5-07",
+      "label": "CPS.3.5#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD capture, maintain and render research subject disposition information including date/time and trial phase/cycle of study completion/discontinuation as discrete elements.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.5#7"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.5-08",
+      "label": "CPS.3.5#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD determine patients eligible for known active clinical research protocols as defined by inclusion and exclusion criteria.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.5#8"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.5-09",
+      "label": "CPS.3.5#09",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD present information notifying staff of patient's eligibility for known active clinical research protocols as defined by inclusion and exclusion criteria.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.5#9"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.3.5-10",
+      "label": "CPS.3.5#10",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD capture research protocol deviation information, including any verbatim text of protocol deviation.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.5#10"
+    }
+  ]
+}

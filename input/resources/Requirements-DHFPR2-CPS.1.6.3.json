@@ -1,0 +1,42 @@
+{
+  "resourceType": "Requirements",
+  "id": "DHFPR2-CPS.1.6.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
+  "name": "CPS_1_6_3_Related_by_Living_Situation",
+  "title": "CPS.1.6.3 Related by Living Situation (Function)",
+  "status": "active",
+  "description": "Provide information on relationships by living situation. Examples of living situations include college dormitory, military deployment, in same household. Dental examples includes homeless, prison, basic training barracks, large housing facilities, and  cruise ships",
+  "purpose": "Living situations may be important means for providers to uniquely identify patients or to identify illnesses that may occur within a given proximity. Patient relationships that may be affected by past situations may include the environment of the patient when the patient was a fetus, for example, a mother who worked in a chemical factory last week or while pregnant with the patient thirty years prior, or mother carried child during time of extreme famine.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CPS.1.6.3-01",
+      "label": "CPS.1.6.3#01",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render living situation related information.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.6.3#1"
+    }
+  ]
+}

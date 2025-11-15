@@ -1,0 +1,142 @@
+{
+  "resourceType": "Requirements",
+  "id": "DHFPR2-CP.2.5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
+  "name": "CP_2_5_Manage_Patient_Originated_Data",
+  "title": "CP.2.5 Manage Patient-Originated Data (Function)",
+  "status": "active",
+  "description": "Capture and explicitly label patient-originated data, link the data source with the data, and support provider authentication for inclusion in patient health record as well as subsequent rendering of the information as part of the health record.",
+  "purpose": "It is critically important to be able to distinguish clinically authored and authenticated data from patient-originated data that is either provided by the patient for inclusion in the EHR or entered directly into the EHR by the patient from clinically authenticated data. Patients may provide data for entry into the health record or be given a mechanism for entering this data directly. Patient-originated data intended for use by providers will be available for their use. Dental Note: Include date and time of acquisition and entry into record. Dental examples include consumer healthcare devices, CPAP for sleep apnea, products, including patient-provided info regarding medications the patient has taken, and saliva samples provided for commercial genetic analysis.\nData about the patient may be appropriately provided by:\n- the patient;\n- a surrogate (parent, spouse, guardian) or \n- an informant (teacher, lawyer, case worker) \n- devices (e.g., blood pressure/sugar monitors). \nAn electronic health record may provide the ability for direct data entry by any of these. Patient-originated data may also be captured by devices and transmitted for inclusion into the electronic health record.\nData entered by any of these must be stored with source information. A provider must authenticate patient-originated data included in the patient's legal health record. A provider must be able to indicate they have verified the accuracy of patient-originated data (when appropriate and when a verification source is available) for inclusion in the patient record. Such verification does not have to occur at each individual data field and can be at a higher level of the data.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "C"
+        }
+      ],
+      "key": "DHFPR2-CP.2.5-01",
+      "label": "CP.2.5#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture patient-originated data and tag that data as such. Dental Note: Include date and time of acquisition and entry into record.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.2.5#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.2.5-02",
+      "label": "CP.2.5#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system provides the ability for the patient to capture data directly, THEN the system SHALL tag the data as patient captured.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.2.5#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.2.5-03",
+      "label": "CP.2.5#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to render patient-originated data.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.2.5#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.2.5-04",
+      "label": "CP.2.5#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for an authorized user to annotate, but not alter, patient-originated data.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.2.5#4"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.2.5-05",
+      "label": "CP.2.5#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture patient-originated annotations on provider-sourced data, and tag the annotations as patient-sourced.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.2.5#5"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.2.5-06",
+      "label": "CP.2.5#06",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system conforms to function [CPS.2.1](Requirements-DHFPR2-CPS.2.1.html) (Support for externally-sourced Clinical documents), THEN the system SHALL provide the ability to render externally-sourced clinical documents.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.2.5#6"
+    }
+  ]
+}

@@ -1,0 +1,922 @@
+{
+  "resourceType": "Requirements",
+  "id": "DHFPR2-CP.4.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
+  "name": "CP_4_2_Manage_Medication_Orders",
+  "title": "CP.4.2 Manage Medication Orders (Function)",
+  "status": "active",
+  "description": "Create prescriptions or other medication orders with detail adequate for correct filling and administration. Provide information regarding compliance of medication orders with formularies. Provide drug utilization review functionality including alerts regarding drug interactions and allergies.",
+  "purpose": "Medications include prescribed and over the counter (OTC) drugs, allergy shots, oxygen, anesthetics, chemotherapy, and dietary supplements that were ordered, supplied, administered, or continued. Different medication orders, including new, discontinue, refill/continue, and renew require different levels and kinds of detail, as do medication orders placed in different situations. Administration or patient instructions are available for selection by the ordering clinician, or the ordering clinician is facilitated in creating such instructions. The system may allow for the creation of common content for prescription details. Appropriate time stamps for all medication related activity are generated. This includes series of orders that are part of a therapeutic regimen, e.g., Renal Dialysis, Oncology. When it comes to capturing the medication rationale, it is not mandatory that the provider always provide this information. \n\nIn addition, the system should present the clinician with clinical decision support functionality (such as the presentation of allergies, drug-drug interactions) during the medication ordering process. When a clinician places an order for a medication, that order may or may not comply with a formulary specific to the patient's location or insurance coverage, if applicable. Whether the order complies with the formulary should be communicated to the ordering clinician at an appropriate point to allow the ordering clinician to decide whether to continue with the order. Formulary-compliant alternatives to the medication being ordered may also be presented.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-01",
+      "label": "CP.4.2#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [CP.4.2.1](Requirements-DHFPR2-CP.4.2.1.html) (Medication Interaction and Allergy Checking).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#1"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-02",
+      "label": "CP.4.2#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [CP.4.2.2](Requirements-DHFPR2-CP.4.2.2.html) (Patient-Specific Medication Dosing &amp; Warnings).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#2"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-03",
+      "label": "CP.4.2#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [CP.4.2.3](Requirements-DHFPR2-CP.4.2.3.html) (Medication Order Efficiencies).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#3"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-04",
+      "label": "CP.4.2#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [CP.4.2.4](Requirements-DHFPR2-CP.4.2.4.html) (Medication Alert Overrides).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#4"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-05",
+      "label": "CP.4.2#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture medication order details as discrete data for correct filling, dispensing and administration of drug (e.g., dose, route, physical form, duration, SIG).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#5"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-06",
+      "label": "CP.4.2#06",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to maintain and render, as discrete data, medication orders including all the details adequate for correct filling, dispensing and administration (e.g., drug, dose, route, SIG).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#6"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-07",
+      "label": "CP.4.2#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture medication order details including dose, route, frequency and comments as free text.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#7"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-08",
+      "label": "CP.4.2#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage free text as part of a medication order or prescription (e.g., \"this patient is unable to swallow large pills\").",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#8"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-09",
+      "label": "CP.4.2#09",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD render fixed text (e.g., \"Bio-hazard Warning\") as part of a medication order according to organizational policy, and/or jurisdictional law.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#9"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-10",
+      "label": "CP.4.2#10",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL determine and render a notification to the provider that information required to compute a dose is missing or invalid.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#10"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-11",
+      "label": "CP.4.2#11",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture patient's preference for medication usage (e.g., oral vs. injectable, generic vs. brand name) and present it to a provider at the time of medication ordering.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#11"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-12",
+      "label": "CP.4.2#12",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage prescriptions using fractional units of medications (e.g., 1/2 tsp., 1/2 tablet).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#12"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-13",
+      "label": "CP.4.2#13",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture and maintain documentation regarding patient weight, including such terms as \"unknown\", before entering medication orders.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#13"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-14",
+      "label": "CP.4.2#14",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture the administrative or clinical reasons/indications/rationale for the medication(s) selected during order entry.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#14"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "C"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-15",
+      "label": "CP.4.2#15",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to determine and render the status of a medication order (e.g., for outpatient medication ordering: captured, verified, filled, or dispensed to patient; for inpatient: captured, verified, filled, or medication administered). For Dental, this could be in a Progress Note.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#15"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-16",
+      "label": "CP.4.2#16",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to determine and render the status of medication dispensing.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#16"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "C"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-17",
+      "label": "CP.4.2#17",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [CP.1.3](Requirements-DHFPR2-CP.1.3.html) (Manage Medication List) and update the appropriate medication list with the prescribed medications (in case of multiple medication lists). Dental Note: This could be a discreet medication list or could be a medication list elaborated in a Progress Note. Medication reconciliation is the goal and the method will vary.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#17"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "C"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-18",
+      "label": "CP.4.2#18",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to enter and maintain medication information supplied by the patient. Dental Note: This could be a discreet medication list or could be a medication list elaborated in a Progress Note. Medication reconciliation is the goal and the method will vary.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#18"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-19",
+      "label": "CP.4.2#19",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture medication information electronically that was brought in by the patient (e.g., scanned bar code from a prescription label).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#19"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-20",
+      "label": "CP.4.2#20",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to function [CPS.4.2.4](Requirements-DHFPR2-CPS.4.2.4.html) (Support for Medication Recommendations).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#20"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-21",
+      "label": "CP.4.2#21",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to enter and maintain prescription information from an external source (e.g., transcribed information from a non-network provider) to fill or renew a prescription.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#21"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-22",
+      "label": "CP.4.2#22",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to receive and maintain prescription information from an external source (e.g., electronically from a non-network provider) to fill or renew a prescription.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#22"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-23",
+      "label": "CP.4.2#23",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage medication orders for uncoded medications.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#23"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-24",
+      "label": "CP.4.2#24",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage medication orders for non-formulary medications (e.g., medications that are being studied, investigational products being used in research trials, and blind study protocols).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#24"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-25",
+      "label": "CP.4.2#25",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to receive the patient's current medication list from pharmacy (directly) or via an intermediary network.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#25"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "C"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-26",
+      "label": "CP.4.2#26",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain, and render an order for supplies that are associated with medication orders according to scope of practice, organizational policy, and/or jurisdictional law. Dental Note: Examples include needles for insulin, dental lab orders, restorative materials, bone graft materials, size of needles (length and gauge), and supplies only for professional use and purchase.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#26"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-27",
+      "label": "CP.4.2#27",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD render a list of frequently-used patient medication administration instructions.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#27"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-28",
+      "label": "CP.4.2#28",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system renders a list of frequently-used patient medication administration instructions, THEN the system SHOULD capture the ordering clinician's selection.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#28"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-29",
+      "label": "CP.4.2#29",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY render a list of medication administration instructions common to multiple orders for the patient.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#29"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-30",
+      "label": "CP.4.2#30",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system renders a list of medication administration instructions common to multiple orders for the patient, THEN the system SHOULD capture the ordering clinician's selection.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#30"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-31",
+      "label": "CP.4.2#31",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render patient instructions that are linked to an ordered medication.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#31"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-32",
+      "label": "CP.4.2#32",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to function [AS.9.2](Requirements-DHFPR2-AS.9.2.html) (Support Financial Eligibility Verification) to capture and render the results of electronic prescription eligibility and health plan/payer formulary verification of prescription coverage.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#32"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-33",
+      "label": "CP.4.2#33",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to function [AS.9.2](Requirements-DHFPR2-AS.9.2.html) (Support Financial Eligibility Verification) to capture and render patient-specific health plan/payer formulary and benefit coverage.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#33"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-34",
+      "label": "CP.4.2#34",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to transmit a request for a patient's prescription drug insurance eligibility verification.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#34"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-35",
+      "label": "CP.4.2#35",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage orders that contain discrete medication components to create combination drugs or compounds (e.g., Butalbital compound).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#35"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-36",
+      "label": "CP.4.2#36",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to maintain a constraint on the number of times that a prescription is transmitted for printing/reprinting and faxing/re-faxing, according to scope of practice, organizational policy, and/or jurisdictional law (e.g., limited print of narcotic prescription to 1 time).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#36"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "C"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-37",
+      "label": "CP.4.2#37",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL track the number of times that a prescription was transmitted (to maintain a constraint on the number of times that a prescription is permitted to be transmitted for printing/reprinting and faxing/re-faxing). Dental Note: System should have feedback loop for Rx transmitted to pharmacy. Written Rx tracking will be noted in Rx Package in EDR or in Progress Note.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#37"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-38",
+      "label": "CP.4.2#38",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render prescriptions for printing/reprinting, according to scope of practice, organizational policy, and/or jurisdictional law.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#38"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-39",
+      "label": "CP.4.2#39",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render prescriptions for faxing/re-faxing, according to scope of practice, organizational policy, and/or jurisdictional law.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#39"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-40",
+      "label": "CP.4.2#40",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render the associated problem, diagnosis or condition (indication) on the printed prescription according to scope of practice, organizational policy, and/or jurisdictional law.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#40"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-41",
+      "label": "CP.4.2#41",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render a list of transmission options for a prescription/medication order to a specified pharmacy (e.g., printing, faxing, e-prescribing).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#41"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-42",
+      "label": "CP.4.2#42",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain, and present the patient's consent to have restricted medications administered (e.g., Risk Evaluation and Mitigation Strategy (REMS) for research protocol and experimental drugs).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#42"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-43",
+      "label": "CP.4.2#43",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to present information received through health plan/payer formulary checking (e.g., formulary alternatives, formulary status, co-pay and coverage types, prior authorization requirements, step therapy requirements, age limits, gender limits, quantity limits, age, gender, summary resource links and drug-specific resource links).",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#43"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-44",
+      "label": "CP.4.2#44",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture and render an indicator of an explicit route for the administration of specific medications during the ordering process.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#44"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        },
+        {
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+          "valueCode": "NC"
+        }
+      ],
+      "key": "DHFPR2-CP.4.2-45",
+      "label": "CP.4.2#45",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD render available alternate medication administration routes during the medication ordering process when multiple routes exist and none was specified.",
+      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2#45"
+    }
+  ]
+}
