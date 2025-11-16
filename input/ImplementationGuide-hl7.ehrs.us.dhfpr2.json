@@ -22,7 +22,7 @@
   "url": "http://hl7.org/ehrs/us/dhfpr2/ImplementationGuide/hl7.ehrs.us.dhfpr2",
   "version": "2.0",
   "name": "DHFPR2",
-  "title": "HL7 EHR-S FM R2.1.1 - Dental Health Functional Profile, Release 2.0",
+  "title": "HL7 EHR-S FM R2.1.1 - Dental Health Functional Profile, Release 2",
   "status": "active",
   "experimental": false,
   "publisher": "HL7 International / Electronic Health Records",
@@ -2559,7 +2559,12 @@
       "generation": "markdown",
       "title": "Home Page",
       "page": [
-      {
+        {
+          "name": "whatis.html",
+          "generation": "markdown",
+          "title": "What is a Functional Profile?"
+        },
+        {
           "name": "hidden.html",
           "generation": "markdown",
           "title": "Only here because IG QA requires"
