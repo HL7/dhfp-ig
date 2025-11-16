@@ -21,7 +21,7 @@
 
 This project was sponsored by the Health Level Seven International, Incorporated (HL7), and the American Dental Association (ADA). A project team that focused on this Dental Health Functional Profile was formed under the HL7 Electronic Health Record Work Group (EHR WG) in cooperation with the ADA Standards program. Many thanks to all who participated in project team meetings and contributed to the analysis and development effort for the DHFP.
 
-### BACKGROUND 
+### Background 
 
 #### Project Scope Statement 
 
