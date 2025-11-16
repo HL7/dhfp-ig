@@ -51,7 +51,7 @@ The HL7 EHR Work Group intends that unique functional profiles be developed by s
 
 The American Dental Association (ADA, www.ada.org) is a non-profit professional association that is also accredited as a voluntary consensus standards development organization by the American National Standards Institute (ANSI). The Dental Health Functional profile was developed by subject matter expertise from ADA Standards program.
 
-### American Dental Association, EHR WG Co-Chairs and Publishing Facilitators
+### EHR WG Co-Chairs and Facilitators
 
 | Role  | Name | Organization | Contact |
 | --- | --- | --- | --- |
