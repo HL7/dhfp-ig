@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_1_7_2_Manage_Patient_Advance_Directives",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Capture and maintain patient advance directives.",
   "purpose": "Patient advance directives and provider Do Not Resuscitate (DNR ) orders are captured, as well as the date and circumstances under which the directives were received, and the location of any paper or electronic advance directive documentation.\n\nAdvanced Directives may include for example living will, durable power of attorney, preferred interventions for known conditions, or the existence of a \"Do Not Resuscitate\" order.\n\nCircumstances is used to indicate where, how and when an advanced directive was captured (e.g., provided by the patient's parent during initial consultation visit).",
+  "derivedFrom": [
+    "CPS.1.7.2"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage advance directive information including the type of directive, relevant dates (e.g., received, reviewed, rescinded, updated), circumstances under which the directives were received (e.g., during initial consultation), and the location of any paper or electronic advance directive documentation.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.7.2#1"
+      "derivedFrom": "CPS.1.7.2#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL render an indication that advance directive(s) have been captured.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.7.2#2"
+      "derivedFrom": "CPS.1.7.2#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render the type of advance directives captured for the patient (e.g., living will, durable power of attorney, preferred interventions for known conditions, or the existence of a \"Do Not Resuscitate\" order).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.7.2#3"
+      "derivedFrom": "CPS.1.7.2#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage \"Do Not Resuscitate\" orders.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.7.2#4"
+      "derivedFrom": "CPS.1.7.2#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD conform to function [CPS.2.4](Requirements-DHFPR2-CPS.2.4.html) (Support externally-sourced Clinical Images) in order to capture scanned patient advance directive documents, and/or \"Do Not Resuscitate\" orders.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.7.2#5"
+      "derivedFrom": "CPS.1.7.2#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage the date and circumstances of the most recent review of the advanced directives.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.7.2#6"
+      "derivedFrom": "CPS.1.7.2#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage the identity and role of the principal acting on behalf of the provider to capture and complete the advance directive for the patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.7.2#7"
+      "derivedFrom": "CPS.1.7.2#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage the date and time an advance directives paper document was signed/completed.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.7.2#8"
+      "derivedFrom": "CPS.1.7.2#8"
     }
   ]
 }

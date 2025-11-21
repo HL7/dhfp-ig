@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "TI_1_4_Patient_Access_Management",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Manage a patient's access to personal health information.",
   "purpose": "A healthcare delivery organization will be able to manage a patient's ability to view his or her EHR based on organization policy or jurisdictional law. Typically, a patient or their legal representative (e.g., guardian, surrogate) has the right to view his or her EHR.",
+  "derivedFrom": [
+    "TI.1.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": true,
       "requirement": "IF organizational policy allows patient access to the EHR-S, THEN the system SHALL conform to function [TI.1.3](Requirements-DHFPR2-TI.1.3.html) (Entity Access Control).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.4#1"
+      "derivedFrom": "TI.1.4#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": true,
       "requirement": "IF organizational policy allows patient access to the EHR-S, THEN the system SHALL conform to function [TI.1.2](Requirements-DHFPR2-TI.1.2.html) (Entity Authorization).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.4#2"
+      "derivedFrom": "TI.1.4#2"
     }
   ]
 }

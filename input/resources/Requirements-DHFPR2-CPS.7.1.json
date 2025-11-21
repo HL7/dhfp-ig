@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_7_1_Access_Healthcare_Guidance",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Provide pertinent information from available evidence-based knowledge, at the point of care, for use in healthcare decisions and care planning.",
   "purpose": "The information available regarding disease, disease processes, diagnostic testing, pharmaceuticals, treatment patterns and all aspects of healthcare is constantly changing. The practitioner should be able to access a wide variety of sources that provide relevant, accurate information about any given subject. Examples of resources include, but are not limited to evidence on treatment of specific medical conditions, maintenance of wellness, drug or device trials, context-specific information available through online journals, printed resources such as books and specialty organizations resources. For example, when a condition is diagnosed the provider might be directed to relevant resources that give updated clinical research, useful pharmaceutical combinations, surgical techniques, products or other information useful in the management of the specific condition under consideration.",
+  "derivedFrom": [
+    "CPS.7.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render external evidence-based healthcare recommendations, including documentation of sources. Dental examples include perio maintenance, recalls, caries management (fluoride varnish), etc.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.7.1#1"
+      "derivedFrom": "CPS.7.1#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render external evidenced-based documentation appropriate for the care provider to render a timely judgment.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.7.1#2"
+      "derivedFrom": "CPS.7.1#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render external evidence-based documentation.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.7.1#3"
+      "derivedFrom": "CPS.7.1#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CPS.3.3](Requirements-DHFPR2-CPS.3.3.html) (Support for Standard Care Plans, Guidelines, Protocols).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.7.1#4"
+      "derivedFrom": "CPS.7.1#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to maintain initiation criteria for Clinical Practice Guidelines (CPGs).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.7.1#5"
+      "derivedFrom": "CPS.7.1#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine candidate patients based upon configured CPG initiation criteria.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.7.1#6"
+      "derivedFrom": "CPS.7.1#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD render identified patients applicable CPGs to the care giver.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.7.1#7"
+      "derivedFrom": "CPS.7.1#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to maintain knowledge bases or guidelines deployed in an enterprise.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.7.1#8"
+      "derivedFrom": "CPS.7.1#8"
     }
   ]
 }

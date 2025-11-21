@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "POP_6_2_Quality__Performance_and_Accountability_Measures",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support the capture and subsequent export or retrieval of patient, and/or population data necessary to provide quality, performance, and accountability measurements for which providers, facilities, delivery systems, and communities are held accountable.",
   "purpose": "Many regions require regular reporting on the healthcare provided to individuals and populations. This reporting may include measures related to or addressing processes, outcomes, costs of care, quality of care, adherence to best practice guidelines, and credentialing and privileging monitoring. The system needs to provide the report-generating capability to easily create these reports or provide for the export of data to external report-generating software.",
+  "derivedFrom": [
+    "POP.6.2"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render patient, and/or population data required to assess health quality, performance and accountability measures to appropriate organizations.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.2#1"
+      "derivedFrom": "POP.6.2#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and maintain multiple data sets required for health care quality, performance and accountability measurements (e.g., the number of flu shots given, or the number of pregnant women counseled to take folic acid).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.2#2"
+      "derivedFrom": "POP.6.2#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD render patient, and/or population health care quality, performance and accountability measures data in a report format that can be displayed, transmitted electronically, or printed.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.2#3"
+      "derivedFrom": "POP.6.2#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD render patient, and/or population health care quality, performance and accountability measures data or query results through a secure data service.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.2#4"
+      "derivedFrom": "POP.6.2#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and render patient, and/or population health care quality, performance and accountability measures in real-time, near real-time or just-in-time according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.2#5"
+      "derivedFrom": "POP.6.2#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY determine and render to administrative and financial systems the formula used for measuring patient, and/or population health care quality, performance and accountability measures, according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.2#6"
+      "derivedFrom": "POP.6.2#6"
     }
   ]
 }

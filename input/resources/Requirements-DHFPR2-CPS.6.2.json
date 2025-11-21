@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_6_2_Support_for_Immunization_Administration",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Alert providers to potential administration errors (such as wrong patient, wrong drug, wrong dose, wrong route and wrong schedule) in support of safe and accurate immunization administration and support immunization administration workflow.",
   "purpose": "The system assists in reduction of medication errors at time of administration by positive patient identification and by checks on immunization identification. Workflow for immunization administration is supported through prompts and reminders regarding the “window” for timely administration of immunizations.",
+  "derivedFrom": [
+    "CPS.6.2"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL determine and render notifications regarding potential administration errors such as wrong patient, wrong drug, wrong dose, wrong route and wrong time as it relates to immunization administration at the point of immunization administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.2#1"
+      "derivedFrom": "CPS.6.2#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and render reminders regarding the date/time range for timely administration of immunizations.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.2#2"
+      "derivedFrom": "CPS.6.2#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture the date/time range for due/overdue immunization reminders according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.2#3"
+      "derivedFrom": "CPS.6.2#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY determine and render recommendations for alternative immunization administration techniques based on age, developmental stage, weight, physiological status, mental status, educational level and past physical history of the patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.2#4"
+      "derivedFrom": "CPS.6.2#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY conform to function [CPS.7.1](Requirements-DHFPR2-CPS.7.1.html) (Access Healthcare Guidance) to enable access to external immunization guidance (e.g., in the US, the Center for Disease Control immunization recommendations).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.2#5"
+      "derivedFrom": "CPS.6.2#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and render physiological parameters or task completion that must be checked and recorded prior to immunization administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.2#6"
+      "derivedFrom": "CPS.6.2#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render at the time of immunization administration that an alert was triggered during immunization ordering.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.2#7"
+      "derivedFrom": "CPS.6.2#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to determine and render immunization screening alerts from the electronic record of immunization administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.2#8"
+      "derivedFrom": "CPS.6.2#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to link to reference information/knowledge resources at the time of immunization administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.2#9"
+      "derivedFrom": "CPS.6.2#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL determine and render potential adverse or allergic reactions (based on the patient's allergen history and adverse reaction history) for all immunizations when rendering immunization administration information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.2#10"
+      "derivedFrom": "CPS.6.2#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and present recommendations for required immunizations based on patient risk factors.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.2#11"
+      "derivedFrom": "CPS.6.2#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to analyze immunization histories from multiple sources for reconciliation (e.g., align history imported from Immunization Information System and local history).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.2#12"
+      "derivedFrom": "CPS.6.2#12"
     }
   ]
 }

@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_1_8_Support_for_Provider_Credentialing",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Manage Provider Credentialing Information",
   "purpose": "Maintaining credentials, certifications, and other information is relevant for records management and evidentiary support because it establishes users and clinical personnel who are involved in patient care/encounter and supports the access control process.",
+  "derivedFrom": [
+    "AS.1.8"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture and render information on clinician credentialing and privileging requirements, as defined by the applicable professional and governing organizations, according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.1.8#1"
+      "derivedFrom": "AS.1.8#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture and render the credentialing and privileging status for all members of the care team, including those participating remotely (e.g., via tele-health activities such as tele-consultation, home health monitoring) as defined by the applicable professional and governing organizations, according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.1.8#2"
+      "derivedFrom": "AS.1.8#2"
     }
   ]
 }

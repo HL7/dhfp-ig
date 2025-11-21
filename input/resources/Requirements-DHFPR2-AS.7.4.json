@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_7_4_Support_Remote_Healthcare_Services",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support remote health care services such as tele-health and remote device monitoring by integrating records and data collected by these means into the patient's record for care management, billing and public health reporting purposes.",
   "purpose": "Enables remote treatment of patients using monitoring devices, and two way communications between provider and patient or provider and provider. Promotes patient empowerment, self-determination and ability to maintain health status in the community. Promotes personal health, wellness and preventative care. For example, a diabetic pregnant mother can self-monitor her condition from her home and use web TV to report to her provider. The same TV-internet connectivity allows her to get dietary and other health promoting information to assist her with managing her high-risk pregnancy.",
+  "derivedFrom": [
+    "AS.7.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture patient data from remote devices and integrate that data into the patient's record.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.7.4#1"
+      "derivedFrom": "AS.7.4#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render patient data to remote devices.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.7.4#2"
+      "derivedFrom": "AS.7.4#2"
     }
   ]
 }

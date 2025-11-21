@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_1_6_4_Related_by_Other_Means",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Provide information on patient relationships that are represented other than by genealogy, insurance or living situation.",
   "purpose": "Patients relationships are not limited to genealogy, insurance or living situations. Other examples of patient relationships that are relevant to the healthcare or administrative process may include surrogate mother, guardian, a person authorized to see health records, health care surrogate, and persons who may be related by epidemiologic exposure.",
+  "derivedFrom": [
+    "CPS.1.6.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render information regarding patients related by employer and work location for purposes of epidemiological exposure and public health analysis and reporting.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.6.4#1"
+      "derivedFrom": "CPS.1.6.4#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render information regarding persons with \"Power of Attorney for Health Care\" or other persons with the authority to make medical decisions on behalf of the patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.6.4#2"
+      "derivedFrom": "CPS.1.6.4#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render information regarding persons related to the patient other than by genealogy, insurance, and/or living situation according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.6.4#3"
+      "derivedFrom": "CPS.1.6.4#3"
     }
   ]
 }

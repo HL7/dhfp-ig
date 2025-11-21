@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "RI_1_1_27_Decrypt_Record_Entries",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Decrypt Records Entries (1 or more instances)",
   "purpose": "Decrypt Record Lifecycle Event - occurs when an agent causes the system to decode record entry content from a cipher. \n\nReference: ISO 21089-2018, Section 15.27.",
+  "derivedFrom": [
+    "RI.1.1.27"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render decrypted Record Entry content based on a cipher.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.27#1"
+      "derivedFrom": "RI.1.1.27#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD maintain the original and all previous versions of the Record Entry, retaining each version instance without alteration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.27#2"
+      "derivedFrom": "RI.1.1.27#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD capture a new uniquely identifiable version of the Record Entry, incorporating decrypted content.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.27#3"
+      "derivedFrom": "RI.1.1.27#3"
     }
   ]
 }

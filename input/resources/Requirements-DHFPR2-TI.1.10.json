@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "TI_1_10_Service_Availability",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Manage the ability to access, render and determine information related to Service Level Agreement.",
   "purpose": "A provider may need to be aware of certain Service Level Agreement information in order to mitigate patient safety-related risks that depend on system availability or system performance.",
+  "derivedFrom": [
+    "TI.1.10"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage Service Level Agreement information according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.10#1"
+      "derivedFrom": "TI.1.10#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render system availability statistics and system performance statistics as specified in the Service Level Agreement according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.10#2"
+      "derivedFrom": "TI.1.10#2"
     }
   ]
 }

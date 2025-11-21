@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_2_5_Manage_Patients_in_Healthcare_Programs",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Capture and manage patient participation in healthcare programs.",
   "purpose": "The system can provide the ability to identify patients participating in health care programs and to also manage information about those programs. The system can also support managing an organization's defined healthcare programs. These directories may include population based programs like an accountable care organization or patient-centered medical homes or patient panels. (NOTE: These program may include a roster-based funding component tied to patients in the programs.)",
+  "derivedFrom": [
+    "AS.2.5"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture information about patient subscribed or registered into health care programs (e.g., clinical trials or wellness programs).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.5#1"
+      "derivedFrom": "AS.2.5#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage information about health care programs (e.g., clinical trials or wellness programs) into which the patient has been subscribed or registered.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.5#2"
+      "derivedFrom": "AS.2.5#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage separate status options for multiple healthcare program.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.5#3"
+      "derivedFrom": "AS.2.5#3"
     }
   ]
 }

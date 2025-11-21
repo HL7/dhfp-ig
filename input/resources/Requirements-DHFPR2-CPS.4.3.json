@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_4_3_Support_for_Non_Medication_Ordering",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Facilitate provider review and validation of order information to make it pertinent, effective and resource-conservative at the point of order entry.",
   "purpose": "The system assists provider during order entry for therapies, treatments, care, diagnostics and medical supplies and equipment. Support includes, for example: alerts to duplicate orders, missing results or other information required to initiate order, suggested corollary orders, order sets, best practice guidelines, institution-specific order guidelines and patient diagnosis specific recommendations. Also alerts for orders that may be inappropriate or contraindicated for specific patients, for example, X-rays on pregnant women.",
+  "derivedFrom": [
+    "CPS.4.3"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL determine and render, at the time of order entry, required order entry components for non-medication orders.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.3#1"
+      "derivedFrom": "CPS.4.3#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL render an alert at the time of order entry if a non-medication order is missing required information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.3#2"
+      "derivedFrom": "CPS.4.3#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD render an alert for orders that may be inappropriate or contraindicated for specific patients at the time of order entry.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.3#3"
+      "derivedFrom": "CPS.4.3#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture, maintain and render elapsed time parameters for purposes of duplicate order checking.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.3#4"
+      "derivedFrom": "CPS.4.3#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to link a non-medication order with related clinical problem(s), and/or diagnosis code(s).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.3#5"
+      "derivedFrom": "CPS.4.3#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD capture and maintain information required for pediatric ordering (e.g., age and weight of the child for radiology or laboratory orders) according to scope of practice.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.3#6"
+      "derivedFrom": "CPS.4.3#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD auto-populate the answers to questions required for diagnostic test ordering from data within the medical record or captured during the encounter.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.3#7"
+      "derivedFrom": "CPS.4.3#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to tag certain diagnostic studies that may/should not be repeated within a prescribed period of time and present an indicator at time of ordering.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.3#8"
+      "derivedFrom": "CPS.4.3#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture and render reminders to patients regarding necessary follow up tests based on the prescribed medication (e.g., reminders may be sent manually or automatically via a pre-determined rule).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.3#9"
+      "derivedFrom": "CPS.4.3#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and render reminders to the clinicians regarding necessary patient follow up tests based on the prescribed medication.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.3#10"
+      "derivedFrom": "CPS.4.3#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage the process of order reconciliation according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.3#11"
+      "derivedFrom": "CPS.4.3#11"
     }
   ]
 }

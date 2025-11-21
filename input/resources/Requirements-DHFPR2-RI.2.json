@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "RI_2_Record_Synchronization",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Manage Record Synchronization",
   "purpose": "An EHR-S may consist of a set of components or applications; each application manages a subset of the health information. Therefore it is important that, through various interoperability mechanisms, an EHR-S maintains all the relevant information regarding the health record in synchrony. For example, if a physician orders an MRI, a set of diagnostic images and a radiology report will be created. As a result, the patient demographic information, the order for MRI, the diagnostic images associated with the order, and the report associated with the study must all be synchronized in order for the clinicians to receive a synchronized view the complete record (with respect to time and geographic location).Date and time need to be consistent across the applications that are part of the EHR system.\n\nSynchronization demonstrates a sequence and chain of events for reconstruction and is relevant during a legal proceeding. Maintenance of synchronization activities could be relevant during a legal proceeding.\n\nNote: Standards exist for Consistent Date and Time.",
+  "derivedFrom": [
+    "RI.2"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [TI.5.1](Requirements-DHFPR2-TI.5.1.html) (Application and Structured-Document Interchange Standards).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.2#1"
+      "derivedFrom": "RI.2#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD conform to function [TI.3](Requirements-DHFPR2-TI.3.html) (Registry and Directory Services).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.2#2"
+      "derivedFrom": "RI.2#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to link Record Entries to external information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.2#3"
+      "derivedFrom": "RI.2#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD store the location of each known Record Entry in order to enable authorized access to a complete logical health record if the EHR is distributed among several applications, services, or devices within the EHR-S.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.2#4"
+      "derivedFrom": "RI.2#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage date and time-related information between applications, components, services, systems, and devices.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.2#5"
+      "derivedFrom": "RI.2#5"
     }
   ]
 }

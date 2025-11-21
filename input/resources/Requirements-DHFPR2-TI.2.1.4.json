@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "TI_2_1_4_Clinical_Audit_Triggers",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Manage Clinical Audit Triggers",
   "purpose": "Clinical Audit Triggers are designed to capture certain clinical events, both routine and exceptional, including key metadata (who, what, when, where, why).",
+  "derivedFrom": [
+    "TI.2.1.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to track all clinical alerts.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1.4#1"
+      "derivedFrom": "TI.2.1.4#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to track all acknowledgements of clinically-significant report changes.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1.4#2"
+      "derivedFrom": "TI.2.1.4#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to track when decision support alerts have been disabled.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1.4#3"
+      "derivedFrom": "TI.2.1.4#3"
     }
   ]
 }

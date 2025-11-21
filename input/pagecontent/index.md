@@ -6,7 +6,7 @@
 
     * Dental Health Functional Profile (DHFP) – a profile of on ISO/HL7 10781 – Electronic Health Record System Functional Model (EHR-S FM), Release 2.1 as the informative document. Functions and criteria are ordered according to EHR-S FM sections and subsections.
 
-2. The DHFP Project Team spent 16 months in analysis of the EHR-S FM Release 2.01 to determine which functions and criteria in the EHR-S FM pertain to dental health. After publication of the DHFP R1 in 2020, the Project Team worked until now to publish this R1.01 Errata Version. After the release for EHR-S FM Release 2.1, the project lead reviewed the document for DHFP to create this version to be in-line with the EHR-S FM R 2.1
+2. The DHFP Project Team spent 16 months in analysis of the EHR-S FM Release 2.0.1 to determine which functions and criteria in the EHR-S FM pertain to dental health. After publication of the DHFP R1 in 2020, the Project Team worked until now to publish this R1.01 Errata Version. After the release for EHR-S FM Release 2.1, the project lead reviewed the document for DHFP to create this version to be in-line with the [EHR-S FM R2.1](https://build.fhir.org/ig/HL7/ehrsfm-ig/)
 
 3. The HL7 DHFP is organized as per the Sections, Sub-Sections and Functions in the EHR-S FM, i.e.: 
     * Overview (OV) 

@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CP_6_2_Manage_Immunization_Administration",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Capture and maintain discrete data concerning immunizations given to a patient including date administered, type, manufacturer, lot number, and any allergic or adverse reactions. Facilitate the interaction with an immunization registry to allow maintenance of a patient's immunization history.",
   "purpose": "During an encounter, recommendations based on accepted immunization schedules are presented to the provider. Allergen and adverse reaction histories are checked prior to giving the immunization. If an immunization is administered, discrete data elements associated with the immunization including date, type, immunization expiration date, manufacturer and lot number are recorded. Any new adverse or allergic reactions are noted. If required, a report is made to the public health immunization registry or other organization (e.g., military unit commander, refugee program leadership). This function should include the ability to use GTIN barcode scanners to capture vaccine information (NDC, lot number, expiration date).",
+  "derivedFrom": [
+    "CP.6.2"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture immunization administration details as discrete data, including: (1) the immunization name/type, series, strength and dose; (2) date and time of administration; (3) manufacturer, lot number, expiration date; (4) route and site of administration; (5) administering provider; (6) observations, reactions and complications; (7) reason immunization not given, and/or immunization related activity not performed; according to scope of practice, organizational policy, and/or jurisdictional law. For Dental, SHALL be able to capture, send, and receive this info in the dental record according to scope of practice, organizational policy, and/or jurisdictional law, including public health situations.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#1"
+      "derivedFrom": "CP.6.2#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY auto-populate the immunization administration record as a by-product of verification of administering provider, patient, medication, dose, route and time according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#2"
+      "derivedFrom": "CP.6.2#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to determine and render required immunizations, and when they are due, based on widely accepted immunization schedules, when rendering encounter information. For Dental, this SHALL apply for states allowing this in the dental office and SHALL provide bi-directional exchange according to scope of practice, organizational policy, and/or jurisdictional law, including public health situations.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#3"
+      "derivedFrom": "CP.6.2#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, in a discrete field, an allergy/adverse reaction to a specific immunization.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#4"
+      "derivedFrom": "CP.6.2#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CP.3.2](Requirements-DHFPR2-CP.3.2.html) (Manage Patient Clinical Measurements) to capture other clinical data pertinent to the immunization administration (e.g., vital signs).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#5"
+      "derivedFrom": "CP.6.2#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to link standard codes (e.g., LOINC, SNOMED or other jurisdictionally-specific codes) with discrete data elements associated with an immunization.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#6"
+      "derivedFrom": "CP.6.2#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to maintain a patient-specific immunization schedule. For Dental, this SHALL be bi-directional according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#7"
+      "derivedFrom": "CP.6.2#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render a patient's immunization history upon request for appropriate authorities such as schools or day-care centers.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#8"
+      "derivedFrom": "CP.6.2#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CP.1.2](Requirements-DHFPR2-CP.1.2.html) (Manage Allergy, Intolerance and Adverse Reaction List).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#9"
+      "derivedFrom": "CP.6.2#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD transmit required immunization administration information to a public health immunization registry according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#10"
+      "derivedFrom": "CP.6.2#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD exchange immunization histories with public health immunization registries or Immunization Information Systems according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#11"
+      "derivedFrom": "CP.6.2#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD harmonize Immunization histories with a public health immunization registry or Immunization information Systems according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#12"
+      "derivedFrom": "CP.6.2#12"
     },
     {
       "extension": [
@@ -276,7 +283,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD capture and render immunization histories from a public health immunization registry or Immunization Information Systems including immunization administration recommendations.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#13"
+      "derivedFrom": "CP.6.2#13"
     },
     {
       "extension": [
@@ -296,7 +303,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CP.1.6](Requirements-DHFPR2-CP.1.6.html) (Manage Immunization List).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#14"
+      "derivedFrom": "CP.6.2#14"
     },
     {
       "extension": [
@@ -316,7 +323,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to update immunization histories at the time of capturing an immunization administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#15"
+      "derivedFrom": "CP.6.2#15"
     },
     {
       "extension": [
@@ -336,7 +343,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render an immunization order as written (e.g., exact clinician order language or as mandated - such as by a public health requirement), when rendering administration information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#16"
+      "derivedFrom": "CP.6.2#16"
     },
     {
       "extension": [
@@ -356,7 +363,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to determine due and overdue ordered immunizations including earliest through latest date ranges and render a notification according to organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#17"
+      "derivedFrom": "CP.6.2#17"
     },
     {
       "extension": [
@@ -376,7 +383,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render a patient educational information regarding the administration (e.g., Vaccine Information Statement (VIS).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#18"
+      "derivedFrom": "CP.6.2#18"
     },
     {
       "extension": [
@@ -396,7 +403,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture that patient educational information (e.g., VIS) was provided at the time of immunization administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#19"
+      "derivedFrom": "CP.6.2#19"
     },
     {
       "extension": [
@@ -416,7 +423,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture that patient educational information (e.g., VIS) was provided at the time of the immunization including to whom the information was provided and the date/time that it was provided.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#20"
+      "derivedFrom": "CP.6.2#20"
     },
     {
       "extension": [
@@ -436,7 +443,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and maintain immunization refusal reasons as discrete data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#21"
+      "derivedFrom": "CP.6.2#21"
     },
     {
       "extension": [
@@ -456,7 +463,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture patient preferences regarding receipt of immunization (e.g., refusal of certain vaccines) at time of immunization administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.2#22"
+      "derivedFrom": "CP.6.2#22"
     }
   ]
 }

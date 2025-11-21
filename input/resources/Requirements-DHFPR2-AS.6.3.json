@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_6_3_Manage_Healthcare_Resource_Scheduling",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support interactions with other systems, applications, and modules to provide the necessary data to a scheduling system for optimal efficiency in the scheduling of patient care, for either the patient or a resource/device.",
   "purpose": "The system may support user access to scheduling systems as required. Relevant clinical or demographic information required in the scheduling process could be linked to the task.",
+  "derivedFrom": [
+    "AS.6.3"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and render patient care resource scheduling information, either internal or external to the system.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.6.3#1"
+      "derivedFrom": "AS.6.3#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage the schedule of internal or external healthcare resources or devices (e.g., ambulance, wheel chair, dialysis machine).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.6.3#2"
+      "derivedFrom": "AS.6.3#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY exchange relevant clinical or demographic information to support the resource scheduling process.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.6.3#3"
+      "derivedFrom": "AS.6.3#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY transmit relevant clinical or demographic information to support resource scheduling in coordination with other systems.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.6.3#4"
+      "derivedFrom": "AS.6.3#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY render clinical or demographic information for children or other dependents with the same guarantor to support efficient scheduling with other systems (e.g., a mother with multiple children receiving immunizations).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.6.3#5"
+      "derivedFrom": "AS.6.3#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage patient appointment requests with health care providers (e.g., evaluate availability, present choices and make the selection for in-person or remote encounter).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.6.3#6"
+      "derivedFrom": "AS.6.3#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render a patient's, and/or provider's appointment schedule.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.6.3#7"
+      "derivedFrom": "AS.6.3#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture appointment scheduling requests from patients.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.6.3#8"
+      "derivedFrom": "AS.6.3#8"
     }
   ]
 }

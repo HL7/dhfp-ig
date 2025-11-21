@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "TI_1_6_Secure_Data_Exchange",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Secure all modes of EHR data exchange.",
   "purpose": "Whenever an exchange of EHR information occurs, it requires appropriate security and privacy considerations, including data obfuscation as well as both destination and source authentication when necessary. For example, it may be necessary to encrypt data sent to remote or external destinations.",
+  "derivedFrom": [
+    "TI.1.6"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL secure all modes of EHR data exchange.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.6#1"
+      "derivedFrom": "TI.1.6#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [TI.1.7](Requirements-DHFPR2-TI.1.7.html) (Secure Data Routing).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.6#2"
+      "derivedFrom": "TI.1.6#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to de-identify data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.6#3"
+      "derivedFrom": "TI.1.6#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL encrypt and decrypt EHR data that is exchanged over a non-secure link.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.6#4"
+      "derivedFrom": "TI.1.6#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": true,
       "requirement": "IF encryption is used, THEN the system SHALL exchange data using recognized standards-based encryption mechanisms according to organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.6#5"
+      "derivedFrom": "TI.1.6#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": true,
       "requirement": "IF the EHR-S is the recipient of a secure data exchange, THEN the system SHOULD provide the ability to transmit an acknowledgment of the receipt of the data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.6#6"
+      "derivedFrom": "TI.1.6#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to determine static or dynamic addresses for known and authorized sources and destinations.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.6#7"
+      "derivedFrom": "TI.1.6#7"
     }
   ]
 }

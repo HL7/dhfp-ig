@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_4_6_2_Support_for_Referral_Recommendations",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Evaluate patient data and recommend patient referral based on specific criteria.",
   "purpose": "The system assists evaluation of certain patient conditions which may lead to a recommendation for referral, for example, for smoking cessation counseling if the patient is prescribed a medication to support cessation screening or assessment for behavioral health conditions. Additionally the system may present recommendations based on other orders – for example, an order for Adriamycin, where additional testing such as a MUGA (heart) scan or an Echocardiogram should be completed prior to administration, could result in a recommended referral to radiology, and/or cardiology.",
+  "derivedFrom": [
+    "CPS.4.6.2"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL determine and present recommendations for potential referrals based on patient factors or guidelines including: clinical guidelines, jurisdictionally-based guidelines, patient diagnosis(es), and/or patient condition (e.g., for smoking cessation counseling if the patient smokes cigarettes or other tobacco products or was prescribed a medication to support smoking cessation).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.6.2#1"
+      "derivedFrom": "CPS.4.6.2#1"
     }
   ]
 }

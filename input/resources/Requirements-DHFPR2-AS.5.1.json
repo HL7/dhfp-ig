@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_5_1_Clinical_Task_Creation__Assignment_and_Routing",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Creation, assignment, delegation, and/or transmission of tasks to the appropriate parties.",
   "purpose": "A \"Task\" is a specific piece of work or duty that is assigned to a person or entity. A task often needs to be accomplished within a defined period of time or by a deadline. Tasks are often managed by an activity (or project) tracking mechanism (e.g., as part of an automated business rule process). Tasks are determined by the specific needs of patients and practitioners in a care setting. Task creation may be automated, where appropriate. An example of a system-triggered task is when laboratory results are received electronically; a task to review the result is automatically generated and assigned to a responsible party. Tasks are at all times assigned to at least one user or role for disposition. Whether the task is assignable and to whom the task can be assigned will be determined by the specific needs of practitioners in a care setting. \n\nTask-assignment lists help users prioritize and complete assigned tasks. For example, after receiving communication (e.g., a phone call or e-mail) from a patient, the triage nurse routes or assigns a task to return the patient's call to the physician who is on call physician. Another example is for a urinalysis, the nurse routes or assigns a task to clinical staff to collect a urine specimen, and for the results to be routed to the responsible physician and person ordering the test. Task creation and assignment may be automated, where appropriate. An example is when (International Normalized Ratio) INR results are received they should be automatically routed and assigned to the staff person in the clinic responsible for managing all of the patients that are having INR tests done. Task assignment ensures that all tasks are disposed of by the appropriate person or role and allows efficient interaction of entities in the care process. When a task is assigned to more than one individual or role, an indication is required to show whether the task must be completed by all individuals/roles or if only one completion suffice.",
+  "derivedFrom": [
+    "AS.5.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture new tasks.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#1"
+      "derivedFrom": "AS.5.1#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to auto-populate task information based on rules, patient information, triggering events, and/or resource factors.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#2"
+      "derivedFrom": "AS.5.1#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability for the user to enter and update an assignment for a task to one or more individuals or roles.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#3"
+      "derivedFrom": "AS.5.1#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture oral (e.g., telephone, voice-over-IP or in-person) communication between providers and patients or their representatives (including the identification of the providers).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#4"
+      "derivedFrom": "AS.5.1#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to determine and update an assignment for a task to one or more individuals or clinical roles, based on workflow rules.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#5"
+      "derivedFrom": "AS.5.1#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to determine workflow task routing to individuals or roles in succession or in parallel.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#6"
+      "derivedFrom": "AS.5.1#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to determine workflow task routing to multiple individuals or roles in succession or in parallel based on status and workflow rules.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#7"
+      "derivedFrom": "AS.5.1#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and update priorities for tasks.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#8"
+      "derivedFrom": "AS.5.1#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to determine and update priorities for tasks (e.g., based on urgency assigned to the task, clinical rules and business rules).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#9"
+      "derivedFrom": "AS.5.1#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture restrictions for task assignment based on an appropriate role according to organizational policy.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#10"
+      "derivedFrom": "AS.5.1#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine restrictions for task assignment based on appropriate role according to organizational policy.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#11"
+      "derivedFrom": "AS.5.1#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to update the priorities of clinical tasks (e.g., to ensure timely completion).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#12"
+      "derivedFrom": "AS.5.1#12"
     },
     {
       "extension": [
@@ -276,7 +283,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and update the priorities of clinical tasks according to organizational policy (e.g., to ensure timely completion).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#13"
+      "derivedFrom": "AS.5.1#13"
     },
     {
       "extension": [
@@ -296,7 +303,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to transmit task assignment with request for confirmation to external systems that participate in completion of the task (e.g., task requesting patient transportation OR request for meeting between providers).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#14"
+      "derivedFrom": "AS.5.1#14"
     },
     {
       "extension": [
@@ -316,7 +323,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render a list of tasks by user or user role according to user specified criteria.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#15"
+      "derivedFrom": "AS.5.1#15"
     },
     {
       "extension": [
@@ -336,7 +343,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to determine time periods and recipients for notification of overdue medication administrations.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#16"
+      "derivedFrom": "AS.5.1#16"
     },
     {
       "extension": [
@@ -356,7 +363,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render a notification to the clinician of overdue medication administrations.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#17"
+      "derivedFrom": "AS.5.1#17"
     },
     {
       "extension": [
@@ -376,7 +383,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to determine time periods for order expiration for types of orders.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#18"
+      "derivedFrom": "AS.5.1#18"
     },
     {
       "extension": [
@@ -396,7 +403,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render a notification to the ordering clinician concerning orders due to expire.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#19"
+      "derivedFrom": "AS.5.1#19"
     },
     {
       "extension": [
@@ -416,7 +423,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render a notification to the ordering clinician concerning orders requiring signature (e.g., verbal and telephone orders, co-signature).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#20"
+      "derivedFrom": "AS.5.1#20"
     },
     {
       "extension": [
@@ -436,7 +443,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to enter and maintain the clinical task assignments and pre-conditions expected for performance of identified/selected health care procedures according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#21"
+      "derivedFrom": "AS.5.1#21"
     },
     {
       "extension": [
@@ -456,7 +463,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, maintain, and render information regarding the reassignment of a single task or group of tasks to available roles when the primary role that was selected is not available.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#22"
+      "derivedFrom": "AS.5.1#22"
     },
     {
       "extension": [
@@ -476,7 +483,7 @@
       ],
       "conditionality": true,
       "requirement": "IF the system determines that applicable tasks and pre-conditions expected have not been performed, THEN the system SHOULD transmit a notification to a patient's provider or to the patient's care team according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.5.1#23"
+      "derivedFrom": "AS.5.1#23"
     }
   ]
 }

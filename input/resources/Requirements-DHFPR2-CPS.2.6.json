@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_2_6_Support_Patient_Health_Data_Derived_from_Administrative_and_Financial_Data_and_Documentation",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Capture and explicitly label patient health data derived from administrative or financial data; and link the data source with that data.",
   "purpose": "It is critically important to be able to distinguish patient health data derived from administrative or financial data from clinically authenticated data.",
+  "derivedFrom": [
+    "CPS.2.6"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture, store and render patient health data derived from administrative or financial data and tag it as such.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.6#1"
+      "derivedFrom": "CPS.2.6#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, store, and render, the source of patient health data derived from administrative and financial data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.6#2"
+      "derivedFrom": "CPS.2.6#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to annotate patient health information derived from administrative or financial data (e.g., by providing text-based comments, attaching a picture of an injury, or attaching an image of a supporting document).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.6#3"
+      "derivedFrom": "CPS.2.6#3"
     }
   ]
 }

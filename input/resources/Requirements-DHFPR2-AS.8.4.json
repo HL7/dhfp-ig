@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_8_4_Manage_Healthcare_Facility_Performance_Information",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support the import or retrieval of data necessary to review available quality, performance, and cost measurements regarding healthcare facilities.",
   "purpose": "The ability to access information to help facilities with the gathering, managing and using data to assist in the assessment of quality, performance and cost measurements.",
+  "derivedFrom": [
+    "AS.8.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage healthcare facility data required to assess health care quality, performance and cost.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.4#1"
+      "derivedFrom": "AS.8.4#1"
     }
   ]
 }

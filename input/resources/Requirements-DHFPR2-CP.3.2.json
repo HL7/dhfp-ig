@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CP_3_2_Manage_Patient_Clinical_Measurements",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Capture and manage patient clinical measures, such as vital signs, as discrete patient data.",
   "purpose": "Within the context of an episode of care, patient measures such as vital signs are captured and managed as discrete data to facilitate reporting and provision of care. Other clinical measures (such as expiratory flow rate, size of lesion, etc.) are captured and managed, and may be discrete data.",
+  "derivedFrom": [
+    "CP.3.2"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture patient vital signs (e.g., blood pressure, temperature, heart rate, respiratory rate, and pain scale) as discrete elements of structured or unstructured data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.3.2#1"
+      "derivedFrom": "CP.3.2#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture other clinical measures (e.g., peak expiratory flow rate, size of lesions, oxygen saturation, height, weight, length, body mass index and severity of pain) as discrete elements of either structured or unstructured data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.3.2#2"
+      "derivedFrom": "CP.3.2#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to determine additional values within an assessment based on discrete or atomic elements (e.g., Body Mass Index based on height and weight).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.3.2#3"
+      "derivedFrom": "CP.3.2#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to import or receive clinical measurements (e.g., bone density, bone age, cardiac rhythm) from an ancillary system or external device (e.g., Holter monitor) as discrete elements of either structured or unstructured data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.3.2#4"
+      "derivedFrom": "CP.3.2#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture mood, behavior and daily functioning as structured or unstructured data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.3.2#5"
+      "derivedFrom": "CP.3.2#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to determine and render percentile values when data with normative distributions are entered.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.3.2#6"
+      "derivedFrom": "CP.3.2#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to determine based on information provided, normal ranges for numeric, as well as normal values for non-numeric, data (e.g., presence or absence of physical findings based on developmental stage) based on age and other parameters such as height, weight, ethnicity or gestational age.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.3.2#7"
+      "derivedFrom": "CP.3.2#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render target clinical measurement values according to scope of practice, organizational policy, and/or jurisdictional law (e.g., mean target total blood cholesterol of 199 mg/dL as recommended by Public Health authorities).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.3.2#8"
+      "derivedFrom": "CP.3.2#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture both the time the clinical measurement was taken as well as the time it was entered into the system, including measurements from an ancillary system or external device.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.3.2#9"
+      "derivedFrom": "CP.3.2#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, as discrete data, clinical measurement (including vital signs) contextual information (e.g., methods used for the vital signs measurements, position of patient).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.3.2#10"
+      "derivedFrom": "CP.3.2#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render trends of clinical measurements.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.3.2#11"
+      "derivedFrom": "CP.3.2#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render growth charts that include growth data (weight, length or height and head circumference) on a graph that includes normative data plotted against population-based normative curves by age ranges, gender and ethnicity of the respective normative data (e.g., females 0-36 months).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.3.2#12"
+      "derivedFrom": "CP.3.2#12"
     },
     {
       "extension": [
@@ -276,7 +283,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and render the number of standard deviations from the mean when data with normal distributions are captured.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.3.2#13"
+      "derivedFrom": "CP.3.2#13"
     },
     {
       "extension": [
@@ -296,7 +303,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, store and render data using different units of measurement (e.g., grams, kilograms and pounds).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.3.2#14"
+      "derivedFrom": "CP.3.2#14"
     },
     {
       "extension": [
@@ -316,7 +323,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture and render clinical context for each data point on the growth chart (e.g., ventilated, receiving growth hormone, \"Tanner Stage\").",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.3.2#15"
+      "derivedFrom": "CP.3.2#15"
     },
     {
       "extension": [
@@ -336,7 +343,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture, maintain, and render patient maturity level measurements (e.g., using the \"Tanner Stage\" method).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.3.2#16"
+      "derivedFrom": "CP.3.2#16"
     },
     {
       "extension": [
@@ -356,7 +363,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to determine post conceptional age (corrected age) for the purposes of decision support.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.3.2#17"
+      "derivedFrom": "CP.3.2#17"
     }
   ]
 }

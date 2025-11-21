@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_3_9_Clinical_Decision_Support_System_Guidelines_Updates",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Capture and maintain updates of clinical decision support system guidelines and associated reference material.",
   "purpose": "System content such as discharge instructions, clinical guidelines, formularies, and other knowledge bases should be capable of being maintained and updated, independent of a particular encounter. Clinical decision support rules may be applied to the system using a manual process. As standards are developed to represent these rules, an automated update will be recommended. Any process to update decision support rules should include the verification of the appropriateness of the rules to the system. This may include but not be limited to authenticity of the source, the currency of the version, and any necessary approvals before updates can take place.",
+  "derivedFrom": [
+    "CPS.3.9"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to maintain the clinical content or rules utilized to generate clinical decision support reminders and alerts.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.9#1"
+      "derivedFrom": "CPS.3.9#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render information that will allow validation that the most applicable version (of the decision support rules) is utilized for the update.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.9#2"
+      "derivedFrom": "CPS.3.9#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD capture the date of update of the decision support rules.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.9#3"
+      "derivedFrom": "CPS.3.9#3"
     }
   ]
 }

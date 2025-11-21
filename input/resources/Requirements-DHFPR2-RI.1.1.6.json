@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "RI_1_1_6_Report__Output__Record_Lifecycle_Event",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Report (Output) Record Entries (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to produce and deliver record entry content in a particular form and manner. \n\nReference: ISO 21089-2018, Section 15.6.",
+  "derivedFrom": [
+    "RI.1.1.6"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render Record Entry content (e.g., as a report) retaining original, unaltered content and signature bindings, Action and Record Entry provenance and metadata.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.6#1"
+      "derivedFrom": "RI.1.1.6#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render Record Entry extracts, including content, context, provenance and metadata.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.6#2"
+      "derivedFrom": "RI.1.1.6#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture the identity of the patient or the individual subject who is the target of Record Entry content that is presented/reported.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.6#3"
+      "derivedFrom": "RI.1.1.6#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": true,
       "requirement": "IF the identity of a specific recipient has been stored, THEN the system SHOULD render protected Record Entry content based on established permissions and according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.6#4"
+      "derivedFrom": "RI.1.1.6#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": true,
       "requirement": "IF known and explicit as to Record Entry content being output/reported, THEN the system SHOULD transmit corresponding authorizations and patient consent permissions.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.6#5"
+      "derivedFrom": "RI.1.1.6#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [TI.1.6](Requirements-DHFPR2-TI.1.6.html) (Secure Data Exchange).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.6#6"
+      "derivedFrom": "RI.1.1.6#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to extract Record Entry content prior to output/report, conforming to function [RI.1.1.13](Requirements-DHFPR2-RI.1.1.13.html) (Extract Record Entry Content).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.6#7"
+      "derivedFrom": "RI.1.1.6#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to de-identify Record Entry content prior to output/report, conforming to function [RI.1.1.10](Requirements-DHFPR2-RI.1.1.10.html) (De-Identify Record Entries).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.6#8"
+      "derivedFrom": "RI.1.1.6#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render updates (new versions) of Record Entry Content to known recipients of prior versions of that Record Entry Content according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.6#9"
+      "derivedFrom": "RI.1.1.6#9"
     }
   ]
 }

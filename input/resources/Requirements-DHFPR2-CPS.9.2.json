@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_9_2_Support_for_Inter_Provider_Communication",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support exchange of information between providers as part of the patient care process, and the appropriate documentation of such exchanges. Support secure communication to protect the privacy of information as required by jurisdictional law.",
   "purpose": "Communication among providers involved in the care process can range from real time communication (for example, communication between a therapist and nurse), to asynchronous communication (e.g., consult reports between physicians). Some forms of inter-practitioner communication will be paper based and the EHR-S must be able to produce appropriate documents.\n\nThe system should provide for both verbal and written communication. These exchanges would include but not be limited to consults, and referrals as well as possible exchanges within the office as part of the provision and administration of patient care (e.g., the communication of new information obtained within the office environment during the process of administration of a tetanus shot while the patient is in the exam room).The system should support the creation and acceptance of paper artifacts where appropriate.",
+  "derivedFrom": [
+    "CPS.9.2"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture and store in the patient record verbal/telephone communication (including verbal orders) between providers including the identification of these providers.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.2#1"
+      "derivedFrom": "CPS.9.2#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to integrate scanned documents from providers into the patient record.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.2#2"
+      "derivedFrom": "CPS.9.2#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to receive and transmit messages or information in real time.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.2#3"
+      "derivedFrom": "CPS.9.2#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to receive and transmit clinical information (e.g., referrals) via secure e-mail or other secure standard electronic means.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.2#4"
+      "derivedFrom": "CPS.9.2#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to transmit (e.g., via e-mail) specific patient data (e.g.reports, results, documents) to alternate providers/facilities in an emergency care context.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.2#5"
+      "derivedFrom": "CPS.9.2#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to transmit specific patient diagnostic quality images (e.g., sound, EKG waveform, EKG graph, video, diagnostic imaging) to alternate providers/facilities in an emergency care context.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.2#6"
+      "derivedFrom": "CPS.9.2#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to receive and transmit in a secure manner electronic multi-media data types representing pictures, sound clips, or video as part of the patient record.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.2#7"
+      "derivedFrom": "CPS.9.2#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability for the user to render a patient status (e.g., arrival, admission, discharge, death) notification to providers and care managers (e.g., the Emergency Department physician sends a notification to members of the care team that the patient has been admitted).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.2#8"
+      "derivedFrom": "CPS.9.2#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render patient status (e.g., arrival, admission, discharge, death) notification to providers and care manager, based on clinical rules (e.g., a rules-engine automatically sends an notification to all members of the care team that the patient has arrived at the hospital).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.2#9"
+      "derivedFrom": "CPS.9.2#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability for the user to render patient care plans/instructions to providers and care managers when a patient's status has changed.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.2#10"
+      "derivedFrom": "CPS.9.2#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render patient care plans/instructions to providers and care managers based on clinical rules when a patient's status has changed.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.2#11"
+      "derivedFrom": "CPS.9.2#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render an alert to an originating external provider who has submitted information or a request, about the target internal provider's unavailability (e.g., vacations) and recommend rerouting of the information or request.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.2#12"
+      "derivedFrom": "CPS.9.2#12"
     },
     {
       "extension": [
@@ -276,7 +283,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render an alert the originating internal provider who has submitted information or a request, about the target internal provider's unavailability (e.g., vacations) and recommend rerouting of the information or request.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.2#13"
+      "derivedFrom": "CPS.9.2#13"
     }
   ]
 }

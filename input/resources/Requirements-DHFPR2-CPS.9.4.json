@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_9_4_Standard_Report_Generation",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Provide report generation features using tools internal or external to the system, for the generation of standard reports.",
   "purpose": "Providers and administrators need access to data in the EHR-S for clinical, administrative, financial decision-making, audit trail and metadata reporting, as well as to create reports for patients. Many systems may use internal or external reporting tools to accomplish this. Reports may be based on structured data, and/or unstructured text from the patient's health record.\n\nUsers need to be able to sort, and/or filter reports. For example:\n-the user may wish to view only the diabetic patients on a report listing patients and diagnoses-the user may wish to view only male patients over 35 with a complaint of chest pain.",
+  "derivedFrom": [
+    "CPS.9.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render reports of structured clinical and administrative data using either internal or external reporting tools.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.4#1"
+      "derivedFrom": "CPS.9.4#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to extract unstructured clinical and administrative data for inclusion in the report generation process, using internal or external tools.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.4#2"
+      "derivedFrom": "CPS.9.4#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to extract and transmit reports generated.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.4#3"
+      "derivedFrom": "CPS.9.4#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and maintain report parameters, based on patient demographic, and/or clinical data, which would allow sorting, and/or filtering of the data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.4#4"
+      "derivedFrom": "CPS.9.4#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to save report parameters for generating subsequent reports either as integrated component of the system, or an external application, using data from the system.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.4#5"
+      "derivedFrom": "CPS.9.4#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to edit one or more parameters of a saved report specification when generating a report using that specification either as an integrated component of the system, or an external application, using data from the system.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.4#6"
+      "derivedFrom": "CPS.9.4#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render automated reports as required by industry and regulatory bodies.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.4#7"
+      "derivedFrom": "CPS.9.4#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to extract facility level data at an organizational level in support of organizational initiatives.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.4#8"
+      "derivedFrom": "CPS.9.4#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render a cumulative directory of all personnel who use or access the data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.4#9"
+      "derivedFrom": "CPS.9.4#9"
     }
   ]
 }

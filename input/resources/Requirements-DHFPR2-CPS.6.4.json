@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_6_4_Support_for_Accurate_Specimen_Collection",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Facilitate real-time checks to ensure accurate specimen collection.",
   "purpose": "To ensure specimen collection accuracy, the patient and specimen are positively identified. The provider is notified in real-time of potential collection errors such as wrong patient, wrong specimen type, wrong means of collection, wrong site, and wrong date and time.",
+  "derivedFrom": [
+    "CPS.6.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render information necessary to correctly identify the patient and accurately identify the specimen to be collected including, but not limited to, patient name, specimen type, specimen source, means of collection, date and time. For Dental, bar coding could be supported.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.4#1"
+      "derivedFrom": "CPS.6.4#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to determine and render variations between the type of specimen order placed and actual specimen collected.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.4#2"
+      "derivedFrom": "CPS.6.4#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture the details of specimen collection.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.4#3"
+      "derivedFrom": "CPS.6.4#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD render, at the time of specimen collection, information notifying the provider of a variation between the type of specimen order placed and the actual specimen collected.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.4#4"
+      "derivedFrom": "CPS.6.4#4"
     }
   ]
 }

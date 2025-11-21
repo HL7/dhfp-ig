@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CP_1_2_Manage_Allergy__Intolerance_and_Adverse_Reaction_List",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Manage patient-specific allergy, intolerance and adverse reaction lists.",
   "purpose": "Allergens to substances, (including immunizations), are identified and the list of allergies is captured and maintained over time. Information regarding allergies may be coded or free text; coded information is preferred (where possible). In this function the term \"allergy\" is used to refer to allergies, intolerances, adverse reactions and sensitivities. All pertinent dates, including patient-reported events, are stored and the description of the patient allergy and adverse reaction is modifiable over time. The entire allergy history, including reaction, for any allergen is viewable. The list(s) includes all reactions including those that are classifiable as a true allergy, intolerance, side effect or other adverse reaction to drug, food or environmental triggers. Notations indicating whether item is patient reported, and/or provider verified are maintained. The term 'true allergy' is defined by the US National Library of Medicine as: an allergy that is caused by a series of chemical steps in the body that produce the allergic reaction. The allergy information that should be captured may vary according to scope of practice, organizational policy, and/or jurisdictional law. For example, the documentation requirements regarding an allergic reaction to a substance that is reportable may require a higher level of data capture.",
+  "derivedFrom": [
+    "CP.1.2"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage allergy, intolerance, and adverse reaction to drug, food, medical products (e.g., vaccines, biologics, devices, chemicals) or environmental triggers as unique, discrete entries.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#1"
+      "derivedFrom": "CP.1.2#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage the reason for the capture, update or removal of the allergy, no-longer-allergic, intolerance, sensitivity, and adverse reaction.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#2"
+      "derivedFrom": "CP.1.2#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage the reaction type as discrete data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#3"
+      "derivedFrom": "CP.1.2#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage the reaction type as coded data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#4"
+      "derivedFrom": "CP.1.2#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage the severity of an allergic or adverse reaction as discrete data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#5"
+      "derivedFrom": "CP.1.2#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage a report of No Known Allergies (NKA) for the patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#6"
+      "derivedFrom": "CP.1.2#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage a report of No Known Food Allergies (NKFA) for the patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#7"
+      "derivedFrom": "CP.1.2#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage the source of allergy, intolerance, and adverse reaction information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#8"
+      "derivedFrom": "CP.1.2#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to tag as deactivated an allergy, intolerance or adverse reaction.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#9"
+      "derivedFrom": "CP.1.2#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture as discrete data the reason for deactivation of an allergy, intolerance or adverse reaction.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#10"
+      "derivedFrom": "CP.1.2#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render an allergy, intolerance, and adverse reaction that has been deactivated.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#11"
+      "derivedFrom": "CP.1.2#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render the list of allergies, intolerances and adverse reactions in a user-defined sort order.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#12"
+      "derivedFrom": "CP.1.2#12"
     },
     {
       "extension": [
@@ -276,7 +283,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability for authorized users to manage configuration parameters that limit user-defined overrides of sort-orders for the rendering of lists of allergies, intolerances, and/or adverse reactions according to scope of practice, organizational policy, and/or jurisdictional law (e.g., to reduce the confusion when the same list is sorted by severity one day and then by date-of-onset the next day).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#13"
+      "derivedFrom": "CP.1.2#13"
     },
     {
       "extension": [
@@ -296,7 +303,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to tag that the list of allergies, intolerances and adverse reactions has been reviewed.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#14"
+      "derivedFrom": "CP.1.2#14"
     },
     {
       "extension": [
@@ -316,7 +323,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture and render the date on which allergy information was entered.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#15"
+      "derivedFrom": "CP.1.2#15"
     },
     {
       "extension": [
@@ -336,7 +343,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and render the approximate date of the allergy occurrence.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#16"
+      "derivedFrom": "CP.1.2#16"
     },
     {
       "extension": [
@@ -356,7 +363,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage allergy-information as standards-based coded data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#17"
+      "derivedFrom": "CP.1.2#17"
     },
     {
       "extension": [
@@ -376,7 +383,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and maintain allergy information prior to completion of the medication order.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#18"
+      "derivedFrom": "CP.1.2#18"
     },
     {
       "extension": [
@@ -396,7 +403,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and render an indication that the allergies are \"Unknown\" or \"Unable to Assess Allergies\".",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#19"
+      "derivedFrom": "CP.1.2#19"
     },
     {
       "extension": [
@@ -416,7 +423,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture the reason for \"Unknown\" or \"Unable to Assess Allergies\" documentation.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#20"
+      "derivedFrom": "CP.1.2#20"
     },
     {
       "extension": [
@@ -436,7 +443,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to tag records and render an indication that the allergies are \"Unknown\" or \"Unable to Assess Allergies\" and need to be updated.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#21"
+      "derivedFrom": "CP.1.2#21"
     },
     {
       "extension": [
@@ -456,7 +463,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture free text allergies and render them in a manner that distinguishes them from coded allergy entries.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#22"
+      "derivedFrom": "CP.1.2#22"
     },
     {
       "extension": [
@@ -476,7 +483,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD tag and render an indicator that interaction checking (e.g., drug-allergy checking) will not occur against free text allergies.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#23"
+      "derivedFrom": "CP.1.2#23"
     },
     {
       "extension": [
@@ -496,7 +503,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render historical allergy information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#24"
+      "derivedFrom": "CP.1.2#24"
     },
     {
       "extension": [
@@ -516,7 +523,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to link an allergy, intolerance, or adverse reaction with diagnostic results (e.g., laboratory or allergy test result).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#25"
+      "derivedFrom": "CP.1.2#25"
     },
     {
       "extension": [
@@ -536,7 +543,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD conform to function [CPS.4.2.1](Requirements-DHFPR2-CPS.4.2.1.html) (Support for Medication Interaction and Allergy Checking) to render any potential interactions when capturing or maintaining allergies, intolerances or adverse reactions.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#26"
+      "derivedFrom": "CP.1.2#26"
     },
     {
       "extension": [
@@ -556,7 +563,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD capture an indicator that a provider was presented with, and acknowledged, a drug interaction notification.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.2#27"
+      "derivedFrom": "CP.1.2#27"
     }
   ]
 }

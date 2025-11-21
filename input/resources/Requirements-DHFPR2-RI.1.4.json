@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "RI_1_4_Record_Completeness",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Manage Record Completeness",
   "purpose": "The EHR-S must provide the ability for an organization to define minimum elements and timeframes for completion at the report level and at the record level. Provide a report that identifies completion and timeliness status by patient/ health record number or other specified parameters.\n\nPrior to disclosure for legal proceedings or other official purposes, an organization analyzes the health record for completeness. EHR systems must provide the ability to define a minimum set of content to be analyzed for timeliness and completeness and provide a report of the status.",
+  "derivedFrom": [
+    "RI.1.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage timeframes for completion of specified Record Entry content according to organizational business rules.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.4#1"
+      "derivedFrom": "RI.1.4#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to tag by patient/health record number the completeness status of specified Record Entry content noting identified deficiencies.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.4#2"
+      "derivedFrom": "RI.1.4#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render a report by patient/health record number indicating the completeness status of specified Record Entry content noting identified deficiencies.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.4#3"
+      "derivedFrom": "RI.1.4#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render a visual indicator denoting that the content of a specified Record Entry content is incomplete according to organizational business rules.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.4#4"
+      "derivedFrom": "RI.1.4#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render a reminder to clinicians for the completion of specified Record Entry content (at the data or report level) according to organizational business rules (e.g., complete attestation, complete a section).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.4#5"
+      "derivedFrom": "RI.1.4#5"
     }
   ]
 }

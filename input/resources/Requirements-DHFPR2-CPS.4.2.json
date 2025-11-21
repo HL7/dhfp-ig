@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_4_2_Support_for_Medication_and_Immunization_Ordering",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Provide functionality to alert providers to potential medication and immunization ordering errors (such as wrong patient, wrong drug, wrong dose, wrong route and wrong time).",
   "purpose": "During medication or immunization ordering it is critical to minimize potential errors that can cause adverse events. This is accomplished by the EHR system through the use of clinical decision support and prompting to validate the order at time of ordering. Whist many of these functions are more commonly associated with medication ordering; they also apply to ordering of immunizations when such ordering occurs. The support includes the checking for drug/drug interactions, checking against documented allergies or previous adverse events, as well as validating patient-specific dosing and providing appropriate warnings. Support for medical ordering efficiencies also ensures that orders are appropriate and contain all required supporting information.",
+  "derivedFrom": [
+    "CPS.4.2"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to maintain a discrete list of orderable medications and immunizations (i.e., formulary).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2#1"
+      "derivedFrom": "CPS.4.2#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render a paper copy of medication and immunization prescriptions for the patient to take to a pharmacy for fulfillment.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2#2"
+      "derivedFrom": "CPS.4.2#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render electronic medication and immunization prescriptions to a pharmacy.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2#3"
+      "derivedFrom": "CPS.4.2#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render an alert or notification that a non-formulary medication or immunization was ordered according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2#4"
+      "derivedFrom": "CPS.4.2#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to exchange medication and immunization orders with an external medication management system.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2#5"
+      "derivedFrom": "CPS.4.2#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD update a patient's medication list to show that the medication is discontinued when a prescribed medication or standing medication order is discontinued.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2#6"
+      "derivedFrom": "CPS.4.2#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage specific formularies according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2#7"
+      "derivedFrom": "CPS.4.2#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to maintain directly or by reference a list (i.e. formulary) of medications and immunizations which includes a unique identifier for each medication / immunization.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2#8"
+      "derivedFrom": "CPS.4.2#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture the duration of a drug interaction warning after the prescription has run-out.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2#9"
+      "derivedFrom": "CPS.4.2#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and maintain the severity level at which warnings are displayed.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2#10"
+      "derivedFrom": "CPS.4.2#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, maintain and render appropriate responses to severity levels at which warnings are displayed.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2#11"
+      "derivedFrom": "CPS.4.2#11"
     }
   ]
 }

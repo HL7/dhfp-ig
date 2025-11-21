@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CP_1_7_Manage_Medical_Equipment__Prosthetic_Orthotic__Device_List",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Create and maintain a patient-specific list of medical equipment, medical prosthetic, orthotic, and/or implantable devices.",
   "purpose": "Details of medical equipment, orthotic/prosthetic, and/or devices are captured as discrete data elements including information such as device type, date issued, date implanted or manufactured, device model number, device serial/lot number, manufacturer, supplier, involved extremity, anatomical location, date of battery change, and other data elements which many be required to correctly identify and track the equipment/device. The list may link to external sources, such as the US Food and Drug Administration (FDA), so that the provider may be alerted if the medical device is recalled. The entire equipment, prosthetic, orthotic, and/or implantable device list is able to be rendered.",
+  "derivedFrom": [
+    "CP.1.7"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage, as discrete data, a patient-specific list of specialized medical equipment, prosthetic, orthotic, and/or implantable devices.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.7#1"
+      "derivedFrom": "CP.1.7#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture, maintain and render, as discrete data, the description of each instance of use of specialized medical equipment, prosthetic, orthotic, and/or implantable device.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.7#2"
+      "derivedFrom": "CP.1.7#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, maintain and render the reason for each instance of use of specialized medical equipment, prosthetic, orthotic, and/or implantable device.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.7#3"
+      "derivedFrom": "CP.1.7#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture, maintain and render the specific type of specialized medical equipment, prosthetic, orthotic, and/or implantable device.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.7#4"
+      "derivedFrom": "CP.1.7#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture an indication of No Known specialized medical equipment, prosthetic, orthotic, and/or implantable device for the patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.7#5"
+      "derivedFrom": "CP.1.7#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, maintain and render, as discrete data, information necessary to identify and track the equipment/device including, at a minimum: type, manufacturer, manufacture date, date implanted (or placed into service), date removed/discontinued, model/serial number, anatomical location and any unique device identifier (e.g., UDI in US).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.7#6"
+      "derivedFrom": "CP.1.7#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to tag as deactivated and capture reason for deactivation, an entry in the list when the specialized medical equipment, prosthetic, orthotic, or implantable device is no longer in use by the patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.7#7"
+      "derivedFrom": "CP.1.7#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to update an entry in the list to re-activate a previously deactivated specialized medical equipment, medical prosthetic, orthotic, or implantable device.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.7#8"
+      "derivedFrom": "CP.1.7#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render a list of deactivated specialized medical equipment, prosthetic, orthotic, or implantable devices including the reason for deactivation.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.7#9"
+      "derivedFrom": "CP.1.7#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture the date of the next scheduled equipment or device maintenance.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.7#10"
+      "derivedFrom": "CP.1.7#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture equipment or device maintenance instructions.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.7#11"
+      "derivedFrom": "CP.1.7#11"
     }
   ]
 }

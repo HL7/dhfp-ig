@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "POP_6_4_Support_for_Care_System_Performance_Indicators__Dashboards_",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Capture, determine and render data necessary to support health care organizational performance monitoring and improvement.",
   "purpose": "Health care organizations and institutions may seek to display summary information to assist in care system performance, in the form of dashboards and graphic displays, to support delivery of care and improvement of processes. These dashboards should utilize all appropriate data available in the system to address the healthcare system's process improvement and care delivery issues and then display the results in appropriate role-based formats. These displays may be in the form of routine daily, weekly or monthly graphics or real-time displays of selected metrics to improve care delivery, and/or performance. Note: Even though the system may be capable of automatically managing certain data-driven feedback mechanisms, it is also necessary for the provider to have the ability of manually managing certain feedback mechanisms (e.g., by overriding the system's choices).",
+  "derivedFrom": [
+    "POP.6.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage at least one data-driven feedback mechanism (e.g., reports, dashboards, or watchboards) to assist in patient management and healthcare delivery. For Dental, this includes Quality information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.4#1"
+      "derivedFrom": "POP.6.4#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage multiple data-driven feedback mechanisms (e.g., reports, dashboards, or watchboards) to assist in patient management and healthcare delivery according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.4#2"
+      "derivedFrom": "POP.6.4#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD render real-time departmental load metrics (e.g., nurse-to-patient ratios, Emergency department capacity limits), automatically (i.e., without further human intervention).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.4#3"
+      "derivedFrom": "POP.6.4#3"
     }
   ]
 }

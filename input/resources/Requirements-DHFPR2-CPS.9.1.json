@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_9_1_Clinical_Communication_Management_and_Support",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support exchange of information between participants in patient-centered care as needed, and the appropriate documentation of such exchanges. Support secure communication to protect the privacy of information as required by jurisdictional law.",
   "purpose": "Healthcare requires secure communications among various participant in the patient's circle of care: patients, doctors, nurses, chronic disease care managers, public health authorities, pharmacies, laboratories, payers, consultants etc. An effective EHRS supports communication across all relevant participants, reduces the overhead and costs of healthcare-related communications, and provides automatic tracking and reporting. The list of communication participants is determined by the care setting and may change over time.\n\nBecause of concerns about scalability of the specification over time, communication participants for all care settings or across care settings are not enumerated here because it would limit the possibilities available to each care setting and implementation. However, communication between providers and between patients and providers will be supported in all appropriate care settings and across care settings. Implementation of the EHRS enables new and more effective channels of communication, significantly improving efficiency and patient care. The communication functions of the EHRS changes the way participants collaborate and distribute the work of patient care.",
+  "derivedFrom": [
+    "CPS.9.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to receive and transmit secure real-time messaging either automatically or manually.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.1#1"
+      "derivedFrom": "CPS.9.1#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render workflow tasks as part of communication to the provider.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.1#2"
+      "derivedFrom": "CPS.9.1#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to present an indication that a secure standards-based message has been transmitted or received, and present that message in human readable form.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.1#3"
+      "derivedFrom": "CPS.9.1#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to transmit a notification to the user when a message has been received from an external source.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.1#4"
+      "derivedFrom": "CPS.9.1#4"
     }
   ]
 }

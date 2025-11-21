@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CP_8_1_Generate__Record_and_Distribute_Patient_Specific_Instructions",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Generate and record patient-specific instructions related to pre- and post-procedural and post-treatment/discharge requirements.",
   "purpose": "When a patient is scheduled for a test, procedure, or discharge, specific instructions about diet, clothing, transportation assistance, convalescence, follow-up with physician, etc., may be generated and recorded, including the timing relative to the scheduled event. In an outpatient scenario, similar instructions for post-diagnosis, and/or post-treatment needs may also be generated and recorded (e.g., exercise instructions for low back pain, wound or burn care).",
+  "derivedFrom": [
+    "CP.8.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to determine and render standardized instruction sets pertinent to the patient condition, for procedures, or scheduled events.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.8.1#1"
+      "derivedFrom": "CP.8.1#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render instructions pertinent to the patient as selected by the provider.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.8.1#2"
+      "derivedFrom": "CP.8.1#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to transmit instruction information in electronic format to be provided to the patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.8.1#3"
+      "derivedFrom": "CP.8.1#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render as part of patient instructions details on further care such as follow up, return visits and appropriate timing of further care.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.8.1#4"
+      "derivedFrom": "CP.8.1#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture an indication that instructions were given to the patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.8.1#5"
+      "derivedFrom": "CP.8.1#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture the actual instructions given to the patient or a reference to the document(s) containing those instructions.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.8.1#6"
+      "derivedFrom": "CP.8.1#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to annotate patient-specific instructions.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.8.1#7"
+      "derivedFrom": "CP.8.1#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and maintain, as discrete data, the reason for variation from rule-based clinical messages and patient information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.8.1#8"
+      "derivedFrom": "CP.8.1#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage patient instructions in multiple languages.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.8.1#9"
+      "derivedFrom": "CP.8.1#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage a list of appropriate patient instructions based on age.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.8.1#10"
+      "derivedFrom": "CP.8.1#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage a list of appropriate patient instructions based on gender.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.8.1#11"
+      "derivedFrom": "CP.8.1#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage a list of appropriate patient instructions based on diagnosis.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.8.1#12"
+      "derivedFrom": "CP.8.1#12"
     },
     {
       "extension": [
@@ -276,7 +283,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage a list of appropriate patient instructions based on reading level.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.8.1#13"
+      "derivedFrom": "CP.8.1#13"
     },
     {
       "extension": [
@@ -296,7 +303,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render educational materials using alternative modes to accommodate patient sensory capabilities (e.g., vision impairment, hearing impairment).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.8.1#14"
+      "derivedFrom": "CP.8.1#14"
     }
   ]
 }

@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_8_3_Support_Integration_of_Cost_Financial_information_into_Patient_Care",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support interactions with other systems, applications, and modules to enable the use of cost management information required to guide users and workflows.",
   "purpose": "The provider is alerted or presented with the most cost-effective services, referrals, devices, etc., to recommend to the patient. This may be tailored to the patient's health insurance/plan coverage rules. Medications may be presented in order of cost, or the cost of specific interventions may be presented at the time of ordering.",
+  "derivedFrom": [
+    "AS.8.3"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to extract formularies, preferred providers, and other information, from internal or external sources, that are associated with a patient's health care plan and coverage so that the provider can offer cost effective alternatives to patients.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.3#1"
+      "derivedFrom": "AS.8.3#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to extract information about exemptions on coverage limitations and guidelines.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.3#2"
+      "derivedFrom": "AS.8.3#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture or transmit the request for information about exemptions on coverage limitations and guidelines.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.3#3"
+      "derivedFrom": "AS.8.3#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render expected patient out-of- pocket cost information for medications, diagnostic testing, and procedures, from internal or external sources, that are associated with a patients health care plan and coverage.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.3#4"
+      "derivedFrom": "AS.8.3#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render a notification of an alert to the provider of care where formularies, preferred provider and other information indicate the health plan requires an alternative.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.3#5"
+      "derivedFrom": "AS.8.3#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD conform to function [AS.9.3](Requirements-DHFPR2-AS.9.3.html) (Support Service Authorizations) to integrate support of prior authorization processes.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.3#6"
+      "derivedFrom": "AS.8.3#6"
     }
   ]
 }

@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "TI_2_2_1_Audit_Log_Indelibility",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Manage Audit Log Indelibility",
   "purpose": "Audit logs must be maintained in a persistent and indelible form according to scope of practice, organizational policy, and jurisdictional law.",
+  "derivedFrom": [
+    "TI.2.2.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL manage each Audit Log entry as a persistent, indelible (unalterable) data object including all metadata.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.2.1#1"
+      "derivedFrom": "TI.2.2.1#1"
     }
   ]
 }

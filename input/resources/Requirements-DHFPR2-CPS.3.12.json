@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_3_12_Manage_Health_Information_Record_Quality",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support grammatical and lexical integrity of the health record by providing medical spelling, thesaurus and grammar ready assistance during clinical documentation as well as enabling shortcuts for pre-defined text.",
   "purpose": "Users and patients will benefit from features that enable rapid checking of spelling and grammar, a medical thesaurus function as well as text shortcuts to expand pre-defined text during clinical documentation. A shortcut may also be defined to trigger a specific system function such as the opening of a pre-defined template. These functions may be defined at an enterprise level based on scope of practice, organizational policy, and/or jurisdictional law. However, pre-defined text may also be configured by provider or provider type.",
+  "derivedFrom": [
+    "CPS.3.12"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and present the correct medical spelling based on an integrated realm-based medical spelling function.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.12#1"
+      "derivedFrom": "CPS.3.12#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and present the correct medical thesaurus based on an integrated realm-based medical thesaurus function.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.12#2"
+      "derivedFrom": "CPS.3.12#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and present the correct medical grammar based on an integrated realm-based medical grammar function.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.12#3"
+      "derivedFrom": "CPS.3.12#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and present the appropriate pre-defined text when an associated shortcut is entered during clinical documentation.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.12#4"
+      "derivedFrom": "CPS.3.12#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and present personally pre-defined text when triggered by the associated macro based on an integrated personally pre-defined-text function.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.12#5"
+      "derivedFrom": "CPS.3.12#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage shortcut for the insertion of templates (e.g., insert new patient assessment template when Ctrl-A is entered).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.12#6"
+      "derivedFrom": "CPS.3.12#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and present the appropriate template when the associated shortcut is entered.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.12#7"
+      "derivedFrom": "CPS.3.12#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage an integrated enterprise pre-defined text function and associated macros.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.12#8"
+      "derivedFrom": "CPS.3.12#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage an integrated personally pre-defined text function and associated macros.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.12#9"
+      "derivedFrom": "CPS.3.12#9"
     }
   ]
 }

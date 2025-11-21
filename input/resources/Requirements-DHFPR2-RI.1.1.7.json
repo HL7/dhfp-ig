@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "RI_1_1_7_Disclose_Record_Lifecycle_Event",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Disclose Record Entry Content (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to release, transfer, provision access to, or otherwise divulge record entry content. \n\nReference: ISO 21089-2018, Section 15.7.",
+  "derivedFrom": [
+    "RI.1.1.7"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture the identity of the patient or individual subject to whom Record Entry content was transmitted/disclosed.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.7#1"
+      "derivedFrom": "RI.1.1.7#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture a log entry for disclosure of protected Record Entry content, according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.7#2"
+      "derivedFrom": "RI.1.1.7#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": true,
       "requirement": "IF the identity of a specific recipient has been stored, THEN the system SHOULD render protected Record Entry content based on established permissions and according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.7#3"
+      "derivedFrom": "RI.1.1.7#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": true,
       "requirement": "IF known and explicit as to Record Entry content being transmitted, THEN the system SHOULD transmit corresponding authorizations and patient consent permissions.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.7#4"
+      "derivedFrom": "RI.1.1.7#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [TI.1.6](Requirements-DHFPR2-TI.1.6.html) (Secure Data Exchange).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.7#5"
+      "derivedFrom": "RI.1.1.7#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to extract Record Entry content prior to disclosure, conforming to function [RI.1.1.13](Requirements-DHFPR2-RI.1.1.13.html) (Extract Record Entry Content).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.7#6"
+      "derivedFrom": "RI.1.1.7#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to de-identify Record Entry content prior to disclosure, conforming to function [RI.1.1.10](Requirements-DHFPR2-RI.1.1.10.html) (De-Identify Record Entries).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.7#7"
+      "derivedFrom": "RI.1.1.7#7"
     }
   ]
 }

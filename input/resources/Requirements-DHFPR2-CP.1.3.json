@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CP_1_3_Manage_Medication_List",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Create and maintain patient-specific medication lists.",
   "purpose": "Medication lists are managed over time, whether over the course of a visit or stay, or the lifetime of a patient. The entire medication history for any medication including, over-the-counter products, alternative supplements and herbal medications, is viewable. Medication lists are not limited to provider orders/prescriptions but may also include, for example, pharmacy dispensed medications without prescription, over the counter medications and patient-reported medications, etc. All pertinent dates, including medication start, modification, and end dates are stored. Medication Lists may also include additional information such as age-specific dosage.",
+  "derivedFrom": [
+    "CP.1.3"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage a patient-specific medication list based on current medication orders or prescriptions.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#1"
+      "derivedFrom": "CP.1.3#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage as discrete data the details of the medication information including name of the medication ordered, medication identifier (e.g., RxNORM), prescriber, ordering date, SIG (e.g., dose amount and quantity, timing, duration and route, and/or site of administration), quantity, formulation and ancillary instructions according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#2"
+      "derivedFrom": "CP.1.3#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage as discrete data the Study Treatment Name for any captured Investigational Product Exposures according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#3"
+      "derivedFrom": "CP.1.3#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture all dates associated with medications including start, end, and discontinuation dates according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#4"
+      "derivedFrom": "CP.1.3#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture and maintain current and historical patient-specific medications in the Medication List.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#5"
+      "derivedFrom": "CP.1.3#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture non-prescription medications including over the counter and complementary medications such as vitamins, herbs and supplements.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#6"
+      "derivedFrom": "CP.1.3#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render the medication history associated with a patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#7"
+      "derivedFrom": "CP.1.3#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to tag a medication as \"erroneously captured\".",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#8"
+      "derivedFrom": "CP.1.3#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render a Medication List excluding medications that have been tagged as \"erroneously captured\".",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#9"
+      "derivedFrom": "CP.1.3#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL render an indicator that a medication is tagged as \"erroneously captured\" when that medication is rendered in a Medication List.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#10"
+      "derivedFrom": "CP.1.3#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render a current medication list for patient use.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#11"
+      "derivedFrom": "CP.1.3#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and render information regarding the filling of prescriptions - prior to the prescription being dispensed.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#12"
+      "derivedFrom": "CP.1.3#12"
     },
     {
       "extension": [
@@ -276,7 +283,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and render a notification that a prescription cannot be filled.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#13"
+      "derivedFrom": "CP.1.3#13"
     },
     {
       "extension": [
@@ -296,7 +303,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and render a notification that a prescription cannot be dispensed.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#14"
+      "derivedFrom": "CP.1.3#14"
     },
     {
       "extension": [
@@ -316,7 +323,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to receive current medications and a medication history from an external source (e.g., a plan, payer or pharmacy).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#15"
+      "derivedFrom": "CP.1.3#15"
     },
     {
       "extension": [
@@ -336,7 +343,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to tag that a medication history is unavailable or incomplete.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#16"
+      "derivedFrom": "CP.1.3#16"
     },
     {
       "extension": [
@@ -356,7 +363,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture a description of the medication and a reason for the medication when the medication name is unknown (e.g., if patient has received medication from external source and does not have the name, and/or the name is not in the system formulary).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#17"
+      "derivedFrom": "CP.1.3#17"
     },
     {
       "extension": [
@@ -376,7 +383,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to tag and render, on the active medication list, active medications that the patient brings from home to take while hospitalized, which the Pharmacy may not dispense, according to scope of practice, and/or organizational policy.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#18"
+      "derivedFrom": "CP.1.3#18"
     },
     {
       "extension": [
@@ -396,7 +403,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to maintain the medication list with changes from pharmacist verification including pharmacist, date, and time.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#19"
+      "derivedFrom": "CP.1.3#19"
     },
     {
       "extension": [
@@ -416,7 +423,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage the reason or indication for the medication when recording historical medications or medications from external sources (e.g., from home or other provider).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#20"
+      "derivedFrom": "CP.1.3#20"
     },
     {
       "extension": [
@@ -436,7 +443,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to update a medication order directly from the medication list.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#21"
+      "derivedFrom": "CP.1.3#21"
     },
     {
       "extension": [
@@ -456,7 +463,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CPS.4.2.1](Requirements-DHFPR2-CPS.4.2.1.html) (Support for Medication Interaction and Allergy Checking) to render any potential interactions when capturing or maintaining medications.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#22"
+      "derivedFrom": "CP.1.3#22"
     },
     {
       "extension": [
@@ -476,7 +483,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture free text medications and render them in a manner that distinguishes them from coded medication entries.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#23"
+      "derivedFrom": "CP.1.3#23"
     },
     {
       "extension": [
@@ -496,7 +503,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL render an indicator that interaction checking will not occur against free text medications at the time of their capture.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#24"
+      "derivedFrom": "CP.1.3#24"
     },
     {
       "extension": [
@@ -516,7 +523,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render side effects of medications from the medication list that have been previously experienced by the patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#25"
+      "derivedFrom": "CP.1.3#25"
     },
     {
       "extension": [
@@ -536,7 +543,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render potential side effects of medications from the medication list.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#26"
+      "derivedFrom": "CP.1.3#26"
     },
     {
       "extension": [
@@ -556,7 +563,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture and render that the patient takes no medications.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#27"
+      "derivedFrom": "CP.1.3#27"
     },
     {
       "extension": [
@@ -576,7 +583,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render active medications and materials as defined by user requirements and according to scope of practice, organizational policy, and/or jurisdictional law (e.g., including medications that may still have a physiologic effect long after last administration).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#28"
+      "derivedFrom": "CP.1.3#28"
     },
     {
       "extension": [
@@ -596,7 +603,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render non-active medications or prescriptions for inclusion in current medication screening.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#29"
+      "derivedFrom": "CP.1.3#29"
     },
     {
       "extension": [
@@ -616,7 +623,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture medication self-administration details including timestamps, observations, complications, and reason if medication dose was not taken.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#30"
+      "derivedFrom": "CP.1.3#30"
     },
     {
       "extension": [
@@ -636,7 +643,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture, maintain and present pre-admission medications according to scope of practice, and/or organizational policy.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#31"
+      "derivedFrom": "CP.1.3#31"
     },
     {
       "extension": [
@@ -656,7 +663,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL present pre-admission medications at the time of discharge according to scope of practice, and/or organizational policy.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.3#32"
+      "derivedFrom": "CP.1.3#32"
     }
   ]
 }

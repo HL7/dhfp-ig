@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_10_Manage_User_Help",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support the ability to manage the configuration, and/or customization of appropriate user help that is context sensitive and may include the exchange of live online chat.",
   "purpose": "Throughout the system it is necessary to provide configurable, context sensitive, and/or searchable user help to assist in the use of the system. User help levels should be configurable based on user requirements, scope of practice, organizational policy, and/or jurisdictional law. User Help may include the live online chat support.",
+  "derivedFrom": [
+    "CPS.10"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage the configuration and customization of User Help in accordance with user requirements, and according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.10#1"
+      "derivedFrom": "CPS.10#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD receive queries and render responses for data entry and system navigation assistance (User Help).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.10#2"
+      "derivedFrom": "CPS.10#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY exchange User Help queries and responses via live online chat.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.10#3"
+      "derivedFrom": "CPS.10#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD render context-sensitive invokable help to guide users through activities in the system (e.g., charting steps, menu navigation).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.10#4"
+      "derivedFrom": "CPS.10#4"
     }
   ]
 }

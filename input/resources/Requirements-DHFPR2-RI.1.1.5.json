@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "RI_1_1_5_Access_View_Record_Lifecycle_Event",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Access/View Record Entries (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to obtain and open a record entry for inspection or review. \n\nReference: ISO 21089-2018, Section 15.5.",
+  "derivedFrom": [
+    "RI.1.1.5"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY mask Record Entry content to access by authorized entities.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.5#1"
+      "derivedFrom": "RI.1.1.5#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render Record Entry content, including original version and any subsequent amendments.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.5#2"
+      "derivedFrom": "RI.1.1.5#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render Record Entry content down to the discrete element or item, including encoded fields.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.5#3"
+      "derivedFrom": "RI.1.1.5#3"
     }
   ]
 }

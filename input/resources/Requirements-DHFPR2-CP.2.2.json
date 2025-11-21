@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CP_2_2_Render_externally_sourced_Data",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Render data that has been captured from multiple external sources.",
   "purpose": "Data relevant to the patient record can be captured from many external sources and should be rendered appropriately alongside other information in the patient record (e.g., product labeling information should be rendered alongside the patient's record).",
+  "derivedFrom": [
+    "CP.2.2"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": true,
       "requirement": "IF the system conforms to function [CPS.2.2](Requirements-DHFPR2-CPS.2.2.html) (Support for externally-sourced Clinical data), THEN the system SHALL provide the ability to render externally-sourced clinical data. Dental Examples include bar code scanning of products, implants, and medications, such as epi pen, including lot number and expiration date per FDA regulations.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.2.2#1"
+      "derivedFrom": "CP.2.2#1"
     }
   ]
 }

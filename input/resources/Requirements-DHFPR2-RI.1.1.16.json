@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "RI_1_1_16_Destroy_Delete_Record_Lifecycle_Event",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Destroy/Delete Record Entries (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to permanently erase record entry content from the system. \n\nReference: ISO 21089-2018, Section 15.16.",
+  "derivedFrom": [
+    "RI.1.1.16"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to delete (destroy) Record Entries (e.g., those exceeding their legal retention period) according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.16#1"
+      "derivedFrom": "RI.1.1.16#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to tag Record Entries as missing.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.16#2"
+      "derivedFrom": "RI.1.1.16#2"
     }
   ]
 }

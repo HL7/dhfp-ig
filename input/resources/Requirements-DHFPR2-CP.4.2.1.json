@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CP_4_2_1_Medication_Interaction_and_Allergy_Checking",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Provide alerts for potential medication interactions and medication allergy reactions.",
   "purpose": "Check and provide alerts at the time of medication order based upon coded, active and non-active medications for possible interactions, allergies, sensitivities, intolerances, and other adverse reactions.",
+  "derivedFrom": [
+    "CP.4.2.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CPS.4.2.1](Requirements-DHFPR2-CPS.4.2.1.html) (Support for Medication Interaction and Allergy Checking) to determine allergic reactions, drug-drug interactions, and other potential adverse reactions, and render alerts or notifications when new medications are ordered. Dental Note: According to scope of practice, organizational policy, and/or jurisdictional law, can be, but is not limited to, an API to Rx module. Could also be entered manually and then cross-checked manually.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.1#1"
+      "derivedFrom": "CP.4.2.1#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CP.1.2](Requirements-DHFPR2-CP.1.2.html) (Manage Allergy, Intolerance and Adverse Reaction List) to provide the ability to manage interaction and allergy checking and render alerts and notifications when new medications are ordered. Dental Note: According to scope of practice, organizational policy, and/or jurisdictional law, can be, but is not limited to, an API to Rx module. Could also be entered manually and then cross-checked manually.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.1#2"
+      "derivedFrom": "CP.4.2.1#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render an alert, at the time a new medication is prescribed/ordered, that drug interaction, allergy, and formulary checking will not be performed against uncoded or free text medication(s).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.1#3"
+      "derivedFrom": "CP.4.2.1#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render a notification, at the time a new uncoded medication is prescribed/ordered, that drug interaction, allergy, and formulary checking will not be performed, according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.1#4"
+      "derivedFrom": "CP.4.2.1#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render and tag as inactive recently inactivated medications for inclusion in current medication screening according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.1#5"
+      "derivedFrom": "CP.4.2.1#5"
     }
   ]
 }

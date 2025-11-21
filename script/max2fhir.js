@@ -221,6 +221,9 @@ function handleHeaderOrFunction(headerOrFunction, parentObject) {
     description = description + (example!=""?`\n\nExample(s):\n${example}`:"");
     // replace special link notation '[[{id}]]' with markdown link
     description = description.replace(/\[\[([^\]]+)\]\]/g, `[\$1](Requirements-${FMID_PREFIX}-\$1.html)`);
+    const refAlias = headerOrFunction.tag.find(tag => tag['$'].name === 'Reference.Alias');
+    const refFunctionID = headerOrFunction.tag.find(tag => tag['$'].name === 'Reference.FunctionID');
+    const refChangeInd = headerOrFunction.tag.find(tag => tag['$'].name === 'Reference.ChangeIndicator');
 
     var fhir_headerorfunction = {
         "resourceType": "Requirements",
@@ -242,6 +245,14 @@ function handleHeaderOrFunction(headerOrFunction, parentObject) {
         "status": "active",
         "description": statement,
         "purpose": description
+    }
+    if (refAlias && refAlias['$'].value != "" && refFunctionID && refFunctionID['$'].value != "") {
+        fhir_headerorfunction["derivedFrom"] = [ refFunctionID['$'].value ];
+    }
+    if (refChangeInd) {
+        fhir_headerorfunction["extension"].push({
+            "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+            "valueCode": refChangeInd['$'].value });
     }
     var resource = {
         "reference": { "reference": `Requirements/${FMID_PREFIX}-${alias}` },
@@ -289,14 +300,14 @@ function handleCriteria(criteria, fhir_parent_req) {
     };
     if (!fhir_parent_req.statement) { fhir_parent_req.statement = [] }
     if (refAlias && refAlias['$'].value != "" && refFunctionID && refFunctionID['$'].value != "") {
-        fhir_statement["derivedFrom"] = refAlias['$'].value + " " + refFunctionID['$'].value + (refCriteriaID?"#" + refCriteriaID['$'].value:"");
+        fhir_statement["derivedFrom"] = refFunctionID['$'].value + (refCriteriaID?"#" + refCriteriaID['$'].value:"");
     }
-    if (id in satisfiedBy) { fhir_statement["satisfiedBy"] = [ satisfiedBy[id]] }
     if (refChangeInd) {
         fhir_statement["extension"].push({
             "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
             "valueCode": refChangeInd['$'].value });
     }
+    if (id in satisfiedBy) { fhir_statement["satisfiedBy"] = [ satisfiedBy[id]] }
     fhir_parent_req.statement.push(fhir_statement);
 }
 

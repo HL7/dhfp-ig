@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "TI_2_1_2_Security_Audit_Triggers",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Manage Security Audit Triggers",
   "purpose": "Security Audit Triggers are designed to capture security related events, both routine and exceptional, including key metadata (who, what, when, where, why).",
+  "derivedFrom": [
+    "TI.2.1.2"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to enter the reason that access control functions are being overridden.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1.2#1"
+      "derivedFrom": "TI.2.1.2#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL audit key events according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1.2#2"
+      "derivedFrom": "TI.2.1.2#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture key Audit Metadata at each Audit Trigger according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1.2#3"
+      "derivedFrom": "TI.2.1.2#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture an Audit Log Entry at each Audit Trigger according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1.2#4"
+      "derivedFrom": "TI.2.1.2#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to log system maintenance events for entry to, and exit from, the EHR system.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1.2#5"
+      "derivedFrom": "TI.2.1.2#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY capture an Audit Log Entry at each Audit Trigger using a common audit engine, e.g., standards-based software.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1.2#6"
+      "derivedFrom": "TI.2.1.2#6"
     }
   ]
 }

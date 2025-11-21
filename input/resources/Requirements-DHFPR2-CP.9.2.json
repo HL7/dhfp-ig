@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CP_9_2_Capture_Health_Service_Report_Information",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support the creation of health service reports to authorized health entities that a provider may be required to generate (e.g., the creation of an oncologist's report that must be submitted to a national cancer registry).",
   "purpose": "Providers are prompted to collect sufficient information in the course of care to avoid duplicate, retrospective or other additional data entry as part of supporting health management programs and reporting, for example public health, such as notifiable condition reports, immunization, cancer registry and discharge data.",
+  "derivedFrom": [
+    "CP.9.2"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY render a notification that prompts providers on the data needed for end of encounter reporting during the continuum of care to streamline end of care data collection.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.9.2#1"
+      "derivedFrom": "CP.9.2#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render service reports at the completion of an episode of care (e.g., discharge summaries or public health reports) using data collected during the encounter.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.9.2#2"
+      "derivedFrom": "CP.9.2#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": true,
       "requirement": "IF the patient is tagged as deceased, THEN the system MAY provide the ability to capture (i.e., trigger) and render the collection of death certificate data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.9.2#3"
+      "derivedFrom": "CP.9.2#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and render the acknowledgement that health service reports have been received.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.9.2#4"
+      "derivedFrom": "CP.9.2#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CP.9.1](Requirements-DHFPR2-CP.9.1.html) (Produce a Summary Record of Care).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.9.2#5"
+      "derivedFrom": "CP.9.2#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD render a notification that prompts providers on the information needed for regulatory safety reporting.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.9.2#6"
+      "derivedFrom": "CP.9.2#6"
     }
   ]
 }

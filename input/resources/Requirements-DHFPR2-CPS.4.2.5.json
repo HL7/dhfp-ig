@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_4_2_5_Support_for_Medication_Reconciliation",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Review a patient's medication information (from more than one source) and reconcile conflicts.",
   "purpose": "Medication reconciliation is the process of comparing a patient's medication information (from all sources) to the medications that the patient is actually has been taking. Medication reconciliation is done to avoid medication errors such as omissions, duplications, dosing errors, or drug interactions. Medication Reconciliation should be done at every episode or transition of care in which new medications are ordered or administered, existing orders are rewritten or where medications may influence the care given.\n\nTransitions in care include changes in setting, service, practitioner, or level of care. The Medication Reconciliation process includes several steps: \n(1) develop a list of current medication list of medications that the patient is taking, \n(2) develop a list of medications to be prescribed or recommended \n(3) compare the medication information from all sources; \n(4) make shared and informed clinical decisions based on the comparison and provide the ability to document the interaction; and \n(5) communicate the updated medication information to the healthcare teams, the patient and appropriate caregivers.\nFor example: If a patient's pain, anticoagulation hyperglycemia or other high risk therapy is being managed by a specialist, the healthcare team must be aware to avoid prescribing an additional equivalent of this medication.\n(6) Verify the patient's/caregiver's understanding and agreement to the patient's medication treatment plan.\n(7) Standardization of shared medication information (name, dose, instructions, indications, prescriber, etc).",
+  "derivedFrom": [
+    "CPS.4.2.5"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage the process of medication reconciliation according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2.5#1"
+      "derivedFrom": "CPS.4.2.5#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to update a medication order directly from medication reconciliation.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2.5#2"
+      "derivedFrom": "CPS.4.2.5#2"
     }
   ]
 }

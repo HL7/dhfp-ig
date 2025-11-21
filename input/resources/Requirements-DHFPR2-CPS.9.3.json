@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_9_3_Health_Record_Output",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support the definition of the formal health record, a partial record for referral purposes, or sets of records for other necessary disclosure purposes.",
   "purpose": "Provide hardcopy and electronic output that fully chronicles the healthcare process, supports selection of specific sections of the health record, and allows healthcare organizations to define the report, and/or documents that will comprise the formal health record for disclosure purposes. A mechanism should be provided for both chronological and specified record element output. This may include defined reporting groups (i.e. print sets). For example Print Set A = Patient Demographics, History & Physical, Consultation Reports, and Discharge Summaries. Print Set B = all information created by one caregiver. Print Set C = all information from a specified encounter. An auditable record of these requests and associated exports may be maintained by the system. This record could be implemented in any way that would allow the who, what, why and when of a request and export to be recoverable for review. The system has the capability of providing a report or accounting of disclosures by patient that meets in accordance with scope of practice, organizational policy, and jurisdictional law.",
+  "derivedFrom": [
+    "CPS.9.3"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render reports consisting of all and part of an individual patient's record according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.3#1"
+      "derivedFrom": "CPS.9.3#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and maintain the records or reports that are considered the formal health record for disclosure purposes.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.3#2"
+      "derivedFrom": "CPS.9.3#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render reports in both chronological and specified record elements order.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.3#3"
+      "derivedFrom": "CPS.9.3#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to maintain and render hardcopy and electronic report summary information (e.g., demographics, procedures, medications, laboratory, immunizations, allergies, vital signs).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.3#4"
+      "derivedFrom": "CPS.9.3#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture and maintain reporting groups (i.e., print sets) for specific types of disclosure or information sharing.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.3#5"
+      "derivedFrom": "CPS.9.3#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render patient identifying information on each page of reports (i.e., hard copy and electronic) according to organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.3#6"
+      "derivedFrom": "CPS.9.3#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to update reports to match mandated formats.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.3#7"
+      "derivedFrom": "CPS.9.3#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render a report that includes metadata for disclosure purposes (e.g., point of record exchange).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.3#8"
+      "derivedFrom": "CPS.9.3#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage-data-visibility of data elements or portions of a report to prevent a given recipient from seeing certain data according to organizational policy and/or jurisdictional law (e.g., by hiding, redacting, removing from view, and/or removing from output).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.3#9"
+      "derivedFrom": "CPS.9.3#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and render [cite] the reasons for redaction.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.3#10"
+      "derivedFrom": "CPS.9.3#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render [reproduce] a copy of the redacted document/record (e.g., through rules, storing a copy).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.3#11"
+      "derivedFrom": "CPS.9.3#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render patient care events sorted or configured by date and time ranges and data/record type.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.3#12"
+      "derivedFrom": "CPS.9.3#12"
     },
     {
       "extension": [
@@ -276,7 +283,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to maintain a record of disclosure/release that includes the recipient and outbound content.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.3#13"
+      "derivedFrom": "CPS.9.3#13"
     },
     {
       "extension": [
@@ -296,7 +303,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render wrist bands that include appropriate demographic and clinical information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.3#14"
+      "derivedFrom": "CPS.9.3#14"
     },
     {
       "extension": [
@@ -316,7 +323,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render a record summary using the format specified by an organization to which a patient is transferred.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.3#15"
+      "derivedFrom": "CPS.9.3#15"
     }
   ]
 }

@@ -10,11 +10,18 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "TI_1_Security",
   "title": "TI.1 Security (Header)",
   "status": "active",
   "description": "Manage EHR-S security.",
-  "purpose": "EHR-S security consists of entity authentication, entity authorization, entity access control, patient access management, secure data exchange, attestation, patient privacy and confidentiality. EHR audit functions are described in [TI.2](Requirements-DHFPR2-TI.2.html)."
+  "purpose": "EHR-S security consists of entity authentication, entity authorization, entity access control, patient access management, secure data exchange, attestation, patient privacy and confidentiality. EHR audit functions are described in [TI.2](Requirements-DHFPR2-TI.2.html).",
+  "derivedFrom": [
+    "TI.1"
+  ]
 }

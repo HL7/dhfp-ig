@@ -10,11 +10,18 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_9_Support_Care_Coordination___Reporting",
   "title": "CPS.9 Support Care Coordination & Reporting (Header)",
   "status": "active",
   "description": "Support exchange and reporting of information between participants in patient-centered care.",
-  "purpose": "Provide the support necessary to ensure that appropriate communication between providers is possible to coordinate the patient's care including, clinical communication between providers, standard and ad-hoc reporting and information views of the patient record."
+  "purpose": "Provide the support necessary to ensure that appropriate communication between providers is possible to coordinate the patient's care including, clinical communication between providers, standard and ad-hoc reporting and information views of the patient record.",
+  "derivedFrom": [
+    "CPS.9"
+  ]
 }

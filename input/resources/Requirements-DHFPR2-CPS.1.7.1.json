@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_1_7_1_Support_for_Patient_and_Family_Preferences",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support the integration of patient and family preferences into clinical decision support.",
   "purpose": "Decision support functions should permit consideration of patient/family preferences and concerns, such as with language, religion, culture, medication choice, invasive testing, and advance directives. Such preferences should be captured in a manner that allows for their integration with the health record and easy retrieval from the health record. Preferences may be specified across all treatment plans or specifically to individual or set of treatment plans. Preferences may also be used to adjust patient information including labeling and medication instructions (e.g., for language and print size).",
+  "derivedFrom": [
+    "CPS.1.7.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture, maintain and render patient and family preferences as they pertain to current treatment plans. Dental examples include no amalgam, allergic to \"Novocain,\" and parents only speak Ukrainian.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.7.1#1"
+      "derivedFrom": "CPS.1.7.1#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to update care guidelines and options relating to documented patient and family preferences, including standards of practice (e.g., treatment options for individuals who refuse blood transfusions).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.7.1#2"
+      "derivedFrom": "CPS.1.7.1#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to analyze care guidelines and options relating to documented patient and family preferences, including standards of practice.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.7.1#3"
+      "derivedFrom": "CPS.1.7.1#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render prompts for testing and treatment options based on patient and family preferences.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.7.1#4"
+      "derivedFrom": "CPS.1.7.1#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render a comparison between standard practice and testing or treatment options based on patient and family preferences.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.7.1#5"
+      "derivedFrom": "CPS.1.7.1#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to receive external materials (e.g., teaching materials and product labels) based on patient and family preferences.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.7.1#6"
+      "derivedFrom": "CPS.1.7.1#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to integrate necessary documentation of patient and family preferences (e.g., living wills, advance directives, healthcare proxies, and specific consents or releases).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.7.1#7"
+      "derivedFrom": "CPS.1.7.1#7"
     }
   ]
 }

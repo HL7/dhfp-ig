@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_3_10_Support_for_Identification_of_Potential_Problems_and_Trends",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Identify conditions of clinical interest, identify trends that may lead to significant problems, and provide prompts for clinical decision support.",
   "purpose": "Providing the health care provider with a prompt, notification or alert for identified specific concerns of clinical interest is a cornerstone of Clinical Decision Support. When personal health information is collected directly during a patient visit, input by the patient, or acquired from an external source (laboratory results), it is important to be able to identify and tag potential problems and trends that may be condition- or patient-specific (given the individual's personal health profile), or changes warranting further assessment.\n\nExample(s):\nExamples include: Behavioral risk factors such as tobacco/alcohol use, social history, significant trends (laboratory results, weight); a decrease in creatinine clearance for a patient on Metformin; an abnormal increase in INR for a patient on warfarin; an increase in suicidal ideation; presence of methamphetamines; or absence of therapeutic levels of antidepressants.",
+  "derivedFrom": [
+    "CPS.3.10"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CP.3.1](Requirements-DHFPR2-CP.3.1.html) (Conduct Assessments) and provide the ability to access standard assessment data in the patient record. Dental example is exacerbation of a stable perio status.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#1"
+      "derivedFrom": "CPS.3.10#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to present health standards and practices according to scope of practice at the time of the encounter.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#2"
+      "derivedFrom": "CPS.3.10#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to analyze patient context-driven assessments and additional health information against best practices in order to identify patient-specific growth or development patterns, health trends and potential health problems.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#3"
+      "derivedFrom": "CPS.3.10#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage rules for defining trends.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#4"
+      "derivedFrom": "CPS.3.10#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD present the provider with trends based on patient contextual health information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#5"
+      "derivedFrom": "CPS.3.10#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to transmit trends and related rules to external systems (e.g., PHR systems).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#6"
+      "derivedFrom": "CPS.3.10#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render laboratory data in numerical (tabular or spreadsheet) form over time to enable trend analysis.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#7"
+      "derivedFrom": "CPS.3.10#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render laboratory data in graphical form over time to enable trend analysis.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#8"
+      "derivedFrom": "CPS.3.10#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to integrate the laboratory result trends with items from the Problem List and other items such as vital signs.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#9"
+      "derivedFrom": "CPS.3.10#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render prescription timelines (i.e., events related to a prescription from order to administration) in graphic form over time to enable trend analysis.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#10"
+      "derivedFrom": "CPS.3.10#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD present the provider with information that may prompt an order for additional assessments, testing or adjunctive treatment.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#11"
+      "derivedFrom": "CPS.3.10#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD conform to function [CPS.3.8](Requirements-DHFPR2-CPS.3.8.html) (Manage Documentation of Clinician Response to Decision Support Prompts).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#12"
+      "derivedFrom": "CPS.3.10#12"
     },
     {
       "extension": [
@@ -276,7 +283,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to integrate or link health information contained in the patient record with appropriate patient education materials.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#13"
+      "derivedFrom": "CPS.3.10#13"
     },
     {
       "extension": [
@@ -296,7 +303,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD conform to function [CPS.3.4](Requirements-DHFPR2-CPS.3.4.html) (Support for Context-Sensitive Care Plans, Guidelines, Protocols).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#14"
+      "derivedFrom": "CPS.3.10#14"
     },
     {
       "extension": [
@@ -316,7 +323,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to tag an individual patient's conditions of clinical interest.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#15"
+      "derivedFrom": "CPS.3.10#15"
     },
     {
       "extension": [
@@ -336,7 +343,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to maintain and render the list of individual patient's conditions of clinical interest that have been tagged.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#16"
+      "derivedFrom": "CPS.3.10#16"
     },
     {
       "extension": [
@@ -356,7 +363,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture a set of notifications for conditions of clinical interest that have been tagged, and capture configuration parameters regarding the rendering of that set of notifications.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#17"
+      "derivedFrom": "CPS.3.10#17"
     },
     {
       "extension": [
@@ -376,7 +383,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render details on the patient's conditions of clinical interest that have been tagged.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.3.10#18"
+      "derivedFrom": "CPS.3.10#18"
     }
   ]
 }

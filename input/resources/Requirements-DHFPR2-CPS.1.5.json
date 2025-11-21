@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_1_5_Manage_Patient_Encounter",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Manage patient encounter information, including tele-health encounters, and support follow-up encounters.",
   "purpose": "Each encounter of the patient with the healthcare setting needs to be recorded and the information relevant to the distinct encounter managed. This information includes date and time of the encounter, providers involved, location(s), and the reason for the encounter etc. Additionally, follow-up encounters may require prior administrative and clinical information to be determined or captured, maintained and rendered.\n\nTele-health encounters have unique requirements that may also be supported by the system.",
+  "derivedFrom": [
+    "CPS.1.5"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage information regarding a patient encounter, including a minimum of the following data: the date/time, providers, location, and reason for the encounter.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.5#1"
+      "derivedFrom": "CPS.1.5#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to determine and render a notification that the patient requires a follow-up encounter.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.5#2"
+      "derivedFrom": "CPS.1.5#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to determine or capture administrative information that is required for a follow-up encounter (e.g., co-payments, service location, prior authorization for a chest x-ray).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.5#3"
+      "derivedFrom": "CPS.1.5#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to maintain and render administrative information relevant to an encounter.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.5#4"
+      "derivedFrom": "CPS.1.5#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to determine or capture clinical information that is required for a follow-up encounter (e.g., fasting requirements, pre-medications).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.5#5"
+      "derivedFrom": "CPS.1.5#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage a patient tele-health encounter including a minimum of the following data: date/time, providers, location and reason for the encounter.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.5#6"
+      "derivedFrom": "CPS.1.5#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture one or more complaints, presenting problems, or other reasons for the visit or encounter (e.g., chest pain, gunshot wound, and drug overdose during a single encounter). Dental examples include dental pain, swelling, bleeding, trauma, infection, and malocclusion.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.5#7"
+      "derivedFrom": "CPS.1.5#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture the primary reason (e.g., the Chief Complaint or the most important reason) for visit/encounter from the patient's perspective. Dental examples include dental pain, swelling, bleeding, trauma, infection, and malocclusion.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.5#8"
+      "derivedFrom": "CPS.1.5#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render an indication that the patient was referred for the visit or encounter.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.1.5#9"
+      "derivedFrom": "CPS.1.5#9"
     }
   ]
 }

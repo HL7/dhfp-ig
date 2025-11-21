@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_4_2_3_Support_for_Medication_Ordering_Efficiencies",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Provide the tooling necessary to support efficient medication ordering.",
   "purpose": "Support efficient medication ordering workflows by allowing medications to be sorted and reviewed by key attributes, e.g., generic or trade names. Also support editing medication orders across multiple instances of an order and capturing medication orders in order sets.",
+  "derivedFrom": [
+    "CPS.4.2.3"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD present a medication compendia or formulary content (e.g., drug, dose, route and SIG) to facilitate the selection of the medication to be ordered.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2.3#1"
+      "derivedFrom": "CPS.4.2.3#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to link instructions to all medications within a given class of medications.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2.3#2"
+      "derivedFrom": "CPS.4.2.3#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY render a list of frequently-ordered medications by diagnosis by provider which could include the full details of the medication, including SIG, quantity, refills, dispense as written, etc. and capture the provider's selection.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2.3#3"
+      "derivedFrom": "CPS.4.2.3#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture medications by therapeutic class, and/or indication.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2.3#4"
+      "derivedFrom": "CPS.4.2.3#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture, maintain and render medication samples dispensed, including lot number and expiration date.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2.3#5"
+      "derivedFrom": "CPS.4.2.3#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to tag that the medication sample was dispensed in the office.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2.3#6"
+      "derivedFrom": "CPS.4.2.3#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture and render reminders to patients regarding necessary follow up tests based on the prescribed medication (e.g., reminders may be sent manually or automatically via a pre-determined rule).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2.3#7"
+      "derivedFrom": "CPS.4.2.3#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and render reminders to the clinicians regarding necessary patient follow up tests, based on the prescribed medication.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2.3#8"
+      "derivedFrom": "CPS.4.2.3#8"
     }
   ]
 }

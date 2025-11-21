@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "TI_7_Workflow_Management",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support workflow management functions including both the management and set up of work queues, personnel lists, and system interfaces as well as the implementation functions that use workflow-related business rules to direct the flow of work assignments.",
   "purpose": "Workflow management functions that an EHR-S supports include:\n-Distribution of information to and from internal and external parties;\n-Support for task-management as well as parallel and serial task distribution;\n-Support for notification and task routing based on system triggers; and-Support for task assignments, escalations and redirection in accordance with business rules.\n\nWorkflow definitions and management may be implemented by a designated application or distributed across an EHR-S.",
+  "derivedFrom": [
+    "TI.7"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage workflow business rules including work queues, personnel lists, and system interfaces.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.7#1"
+      "derivedFrom": "TI.7#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to determine workflow assignments based on workflow-related business rules.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.7#2"
+      "derivedFrom": "TI.7#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage human resources (i.e., personnel lists) for workflow queues.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.7#3"
+      "derivedFrom": "TI.7#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY exchange information with external systems (for example, Human Resources system or Staff Management system) to support the management of human resources.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.7#4"
+      "derivedFrom": "TI.7#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY exchange information with external systems (for example, Human Resources system or Staff Management system ) to support the management of workflow queues (task lists).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.7#5"
+      "derivedFrom": "TI.7#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to exchange workflow related information with an external system.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.7#6"
+      "derivedFrom": "TI.7#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render notifications and tasks based on system triggers.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.7#7"
+      "derivedFrom": "TI.7#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY determine and render an updated priority of tasks on the workflow (task list) queue in accordance with business rules, and according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.7#8"
+      "derivedFrom": "TI.7#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY determine and render an update to the tasks, and/or execution path on the workflow (task list) queue in accordance with business rules, and according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.7#9"
+      "derivedFrom": "TI.7#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY determine and render an update to the assignment of the resources to workflow (task list) queue in accordance with business rules, and according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.7#10"
+      "derivedFrom": "TI.7#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render a notification of a workflow update.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.7#11"
+      "derivedFrom": "TI.7#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render a notification of a workflow update including the details of the update.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.7#12"
+      "derivedFrom": "TI.7#12"
     },
     {
       "extension": [
@@ -276,7 +283,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to transmit a workflow (task list) queue update request to an external system.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.7#13"
+      "derivedFrom": "TI.7#13"
     },
     {
       "extension": [
@@ -296,7 +303,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to receive a workflow (task list) queue update response from an external system.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.7#14"
+      "derivedFrom": "TI.7#14"
     }
   ]
 }

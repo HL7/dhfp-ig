@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "C"
     }
   ],
   "name": "CPS_2_4_Support_externally_sourced_Clinical_Images",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Incorporate clinical images from external sources and support communication/presentation of images from medical and non-medical devices and entities. Dental could use APIs to accomplish this.",
   "purpose": "Mechanisms for incorporating external clinical images (including identification of source) are available and communication with non-medical devices and entities is supported as appropriate to the care setting such as an office or a patient's home. Externally-sourced images may be presented with locally-sourced documentation and notes wherever appropriate. This covers all types of images received by the provider that would typically be incorporated into a medical record. These image documents are indexed and can be retrieved, e.g., based on the document type, date of the original document, and the date of scanning. Images may also be stored within the system or accessed by reference to an external system (e.g., a hospital's picture archiving and communication system). Examples of image formats include OCR, PDF, JPG, or TIFF.\nExamples of externally-sourced images include: \n- Laboratory results report images;\n- Radiographic images;\n- Images of power of attorney forms, living wills or birth certificates;\n- Graphs and charts;\n- Photographs or drawings of a patient's wounds;\n- Wave files of EKG tracings.",
+  "derivedFrom": [
+    "CPS.2.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, store and render clinical images (e.g., radiographs, pictures, video/audio, waveforms) received from external sources.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.4#1"
+      "derivedFrom": "CPS.2.4#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to receive from an external source clinical result images (e.g., radiologic images).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.4#2"
+      "derivedFrom": "CPS.2.4#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to receive from an external source other forms of clinical results (e.g., wave files of EKG tracings or psychological assessment results).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.4#3"
+      "derivedFrom": "CPS.2.4#3"
     }
   ]
 }

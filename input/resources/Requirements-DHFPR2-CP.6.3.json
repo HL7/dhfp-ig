@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CP_6_3_Manage_Treatment_Administration",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Provide the functionality required to support the management of treatment administration and documentation. (Treatment defined as the administration or application of remedies to a patient for a disease or injury; medicinal or surgical management; therapy.)",
   "purpose": "Provide the functionality required to support the documentation of non-medication treatments (e.g., wound dressing change that includes use of a topical cream or sterile wash during that process) to a patient based on clinical needs and requirements and provider orders within the system. This includes presenting end users with the list of clinical treatments that are to be administered to a patient, necessary administration information, and capture all required and relevant documentation details.",
+  "derivedFrom": [
+    "CP.6.3"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render the list of treatments that are to be administered within a specified time frame and including all administration directions/instructions.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#1"
+      "derivedFrom": "CP.6.3#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CP.6.1](Requirements-DHFPR2-CP.6.1.html) (Medication Administration) to support the administration of medications as part of the treatment administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#2"
+      "derivedFrom": "CP.6.3#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render all medications associated with the treatment as given or administered (including dose and quantity of dispensed units of medication).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#3"
+      "derivedFrom": "CP.6.3#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to tag the treatments that are to be administered by the patient (i.e. self-administered).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#4"
+      "derivedFrom": "CP.6.3#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render the information necessary to adminster the treatment (e.g., body site, time and frequency).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#5"
+      "derivedFrom": "CP.6.3#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture, maintain, and render information regarding multiple body sites where treatments are scheduled to be administered.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#6"
+      "derivedFrom": "CP.6.3#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render a notification when treatments are due.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#7"
+      "derivedFrom": "CP.6.3#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture, maintain and render details associated with the treatment as discrete data, including: treatment; date and time of treatment; site; administering provider; observations, reactions and complications; and reason treatment not given, and/or related activity not performed;according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#8"
+      "derivedFrom": "CP.6.3#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, maintain and render details associated with continuous treatments (e.g., infusions, tube feedings, bladder irrigations, suction levels).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#9"
+      "derivedFrom": "CP.6.3#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture, maintain and render details associated with treatments (including routinely scheduled, \"one-time\", \"on-call\" and \"PRN\") in a manner that distinguishes them from other types of treatments according to scope of practice.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#10"
+      "derivedFrom": "CP.6.3#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture information regarding the effectiveness of treatments when such information can be determined either at the time of administration or during the episode of care. For example, the effectiveness of certain treatments can be determined immediately (i.e., during the administration of the treatment) such as the patient's immediate response to bronchodilator therapy, the application of a tourniquet to stop bleeding, or the administation of a nitroglycerine pill under the tongue to stop a heart attack.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#11"
+      "derivedFrom": "CP.6.3#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render any clinical interventions or assessments required prior to the treatment.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#12"
+      "derivedFrom": "CP.6.3#12"
     },
     {
       "extension": [
@@ -276,7 +283,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render any clinical interventions or assessments required subsequent to the treatment.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#13"
+      "derivedFrom": "CP.6.3#13"
     },
     {
       "extension": [
@@ -296,7 +303,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture verification of patient identity prior to administration of the treatment.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#14"
+      "derivedFrom": "CP.6.3#14"
     },
     {
       "extension": [
@@ -316,7 +323,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture verification of patient identity using integrated point of care devices (e.g., barcode) prior to administration of the treatment.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#15"
+      "derivedFrom": "CP.6.3#15"
     },
     {
       "extension": [
@@ -336,7 +343,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render treatment orders that have not been administered.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#16"
+      "derivedFrom": "CP.6.3#16"
     },
     {
       "extension": [
@@ -356,7 +363,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render treatments to be administered over a selectable date/time range.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#17"
+      "derivedFrom": "CP.6.3#17"
     },
     {
       "extension": [
@@ -376,7 +383,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render the treatment administration history including administering provider date and time.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#18"
+      "derivedFrom": "CP.6.3#18"
     },
     {
       "extension": [
@@ -396,7 +403,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render prior treatment history (including treatment assessment data and patient response) prior to the administration of the treatment.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#19"
+      "derivedFrom": "CP.6.3#19"
     },
     {
       "extension": [
@@ -416,7 +423,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to annotate an individual scheduled treatment and include the annotation as part of the legal medical record(e.g., describe the treatment to be administered based upon specific clinical indicators).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#20"
+      "derivedFrom": "CP.6.3#20"
     },
     {
       "extension": [
@@ -436,7 +443,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render the treatment order as written (i.e., exact clinician order language) when rendering treatment specific information including special instructions.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#21"
+      "derivedFrom": "CP.6.3#21"
     },
     {
       "extension": [
@@ -456,7 +463,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture and render patient-specific instructions related to the treatment.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#22"
+      "derivedFrom": "CP.6.3#22"
     },
     {
       "extension": [
@@ -476,7 +483,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage information regarding a second provider witness to co-document treatment.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#23"
+      "derivedFrom": "CP.6.3#23"
     },
     {
       "extension": [
@@ -496,7 +503,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture the documentation of treatment administration using a barcode scanner or imaging scanner (e.g., scanner capable of reading two-dimensional symbologies).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#24"
+      "derivedFrom": "CP.6.3#24"
     },
     {
       "extension": [
@@ -516,7 +523,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render an alert to the administering provider when an electronic identification device (e.g., barcode & scanner or Radio Frequency Identifier (RFID)) is used to document treatment and one of the following is in error: right patient, right treatment, right time and right method or there has not been positive identification of administering provider.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#25"
+      "derivedFrom": "CP.6.3#25"
     },
     {
       "extension": [
@@ -536,7 +543,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage treatment schedules (e.g., adjustments for delay, refused, unavailable).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#26"
+      "derivedFrom": "CP.6.3#26"
     },
     {
       "extension": [
@@ -556,7 +563,7 @@
       ],
       "conditionality": true,
       "requirement": "IF the system provides the ability to manage treatment schedules, THEN the system SHALL provide the ability to render a notification of a change in the treatment schedule.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#27"
+      "derivedFrom": "CP.6.3#27"
     },
     {
       "extension": [
@@ -576,7 +583,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to auto-populate details associated with the treatment administration from the treatment order information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#28"
+      "derivedFrom": "CP.6.3#28"
     },
     {
       "extension": [
@@ -596,7 +603,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD conform to function [CP.1.2](Requirements-DHFPR2-CP.1.2.html) (Manage Allergy, Intolerance and Adverse Reaction List) to capture an reaction to a specific treatment.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#29"
+      "derivedFrom": "CP.6.3#29"
     },
     {
       "extension": [
@@ -616,7 +623,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture that patient educational information was provided at the time of the treatment including to whom the information was provided.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#30"
+      "derivedFrom": "CP.6.3#30"
     },
     {
       "extension": [
@@ -636,7 +643,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CP.3.2](Requirements-DHFPR2-CP.3.2.html) (Manage Patient Clinical Measurements) to capture other clinical data pertinent to the treatment (e.g., vital signs, blood glucose reading).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#31"
+      "derivedFrom": "CP.6.3#31"
     },
     {
       "extension": [
@@ -656,7 +663,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture that a treatment has not been administered including the reason for not administering (e.g., patient refusal).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#32"
+      "derivedFrom": "CP.6.3#32"
     },
     {
       "extension": [
@@ -676,7 +683,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to exchange treatment information with other related systems (e.g., pharmacy, laboratory ).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#33"
+      "derivedFrom": "CP.6.3#33"
     },
     {
       "extension": [
@@ -696,7 +703,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD conform to function [CPS.1.7](Requirements-DHFPR2-CPS.1.7.html) (Preferences, Directives, Consents and Authorizations) in order to capture the patient's preferences regarding receipt of treatment (e.g., refusal of certain materials/supplies) at the time of treatment administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#34"
+      "derivedFrom": "CP.6.3#34"
     },
     {
       "extension": [
@@ -716,7 +723,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD capture and maintain user preferences for how the list of treatments are rendered.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.3#35"
+      "derivedFrom": "CP.6.3#35"
     }
   ]
 }

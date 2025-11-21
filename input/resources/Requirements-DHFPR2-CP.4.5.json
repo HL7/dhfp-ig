@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "C"
     }
   ],
   "name": "CP_4_5_Manage_Orders_for_Blood_Products_and_Other_Biologics",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Communicate with appropriate sources or registries to manage orders for blood products or other biologics.",
   "purpose": "Interact with a blood bank system or other source to support orders for blood products or other biologics including discontinuance orders. Use of such products in the provision of care is captured. Blood bank or other functionality that may come under jurisdictional law or other regulation (e.g., by the FDA in the United States) is not required; functional communication with such a system is required. Dental examples include platelet rich plasma, fresh frozen plasma administered prior to extraction, and bone grafting materials.",
+  "derivedFrom": [
+    "CP.4.5"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage orders for blood products and biological products.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.5#1"
+      "derivedFrom": "CP.4.5#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage the status (e.g., requisitioned, completed, in process) of blood product, and/or biological product orders.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.5#2"
+      "derivedFrom": "CP.4.5#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage storage request orders for blood products, and/or biological products.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.5#3"
+      "derivedFrom": "CP.4.5#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage the status of storage request orders (e.g., requisitioned, completed, in process) for blood products, and/or biological products. Dental Note: This includes any tissue-derived products, including autografts.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.5#4"
+      "derivedFrom": "CP.4.5#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CPS.9.2](Requirements-DHFPR2-CPS.9.2.html) (Support for Inter-Provider Communication) to provide the ability to exchange blood product, and/or biological products between members of the care team.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.5#5"
+      "derivedFrom": "CP.4.5#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage the use of blood products and other biologics in the provision of care. Dental Note: These products include any tissue-derived products, including autografts, as well as the barcode tracking of kits used to obtain autologous graft samples from a patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.5#6"
+      "derivedFrom": "CP.4.5#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage information associated with the collection and administration of non-blood biologics (e.g., breast milk products), including donor and recipient, and/or patient-identifying data, aliquot-identifying data, amount, route (e.g., oral versus tube), expiration date and time of administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.5#7"
+      "derivedFrom": "CP.4.5#7"
     }
   ]
 }

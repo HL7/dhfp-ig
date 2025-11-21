@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_6_1_Support_for_Medication_Administration",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Alert providers to potential administration errors (such as wrong patient, wrong drug, wrong dose, wrong route and wrong time) in support of safe and accurate medication administration and support medication administration workflow.",
   "purpose": "The system promotes the reduction of medication errors at time of administration and at the point of care by positive patient identification, by checks on drug identification including name, dose, route and designated time of administration. Access to drug monograph information may be provided to allow providers to check details about a drug and enhance patient education. Medication administration includes the administration of medication therapies such as chemotherapy. Workflow for medication administration is supported through prompts and reminders regarding the “window” for timely administration of medications.",
+  "derivedFrom": [
+    "CPS.6.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL determine and render notifications regarding potential administration errors such as wrong patient, wrong drug, wrong dose, wrong route and wrong time as it relates to medication administration at the point of medication administration. Dental Note: This is primarily administration of medications or blood products in the surgical outpatient office or in the hospital, not outpatient medications through prescription. This function will usually be present in the institutional record, not in the electronic dental record (EDR). If applied to dentistry, this workflow should usually leverage the electronic medical record, not the EDR. This approach also pertains to medication or immunization orders in the dental office.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.1#1"
+      "derivedFrom": "CPS.6.1#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and render reminders regarding the date/time range for timely administration of medications.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.1#2"
+      "derivedFrom": "CPS.6.1#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY determine and render recommendations for alternative medication administration techniques based on age, developmental stage, weight, physiological status, mental status, educational level, and past physical history of the patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.1#3"
+      "derivedFrom": "CPS.6.1#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY conform to function [CPS.7.1](Requirements-DHFPR2-CPS.7.1.html) (Access Healthcare Guidance) to enable access to external medication guidance (e.g., drug monograph or package insert information).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.1#4"
+      "derivedFrom": "CPS.6.1#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and render physiological parameters or task completion that must be checked and recorded prior to medication administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.1#5"
+      "derivedFrom": "CPS.6.1#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render at the time of medication administration that an alert was triggered during medication ordering.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.1#6"
+      "derivedFrom": "CPS.6.1#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to determine and render medication screening alerts from the electronic record of medication administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.1#7"
+      "derivedFrom": "CPS.6.1#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to link to reference information/knowledge resources at the time of medication administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.1#8"
+      "derivedFrom": "CPS.6.1#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and render relevant laboratory results (e.g., serum creatinine level for medication metabolized by the renal system) during medication ordering or administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.1#9"
+      "derivedFrom": "CPS.6.1#9"
     }
   ]
 }

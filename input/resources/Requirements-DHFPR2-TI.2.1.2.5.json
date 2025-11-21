@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "TI_2_1_2_5_User_Log_Out__End_user_session__Security_Audit_Trigger",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Manage Audit Trigger initiated to track user log out (end user session).",
   "purpose": "Capture user log out (end user session), both routine and exceptional, including key metadata (who, what, when, where, why).",
+  "derivedFrom": [
+    "TI.2.1.2.5"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL audit each occurrence of user logout (end session).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1.2.5#1"
+      "derivedFrom": "TI.2.1.2.5#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture identity of the organization.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1.2.5#2"
+      "derivedFrom": "TI.2.1.2.5#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": true,
       "requirement": "IF known, THEN the system SHALL capture identity of the user.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1.2.5#3"
+      "derivedFrom": "TI.2.1.2.5#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture identity of the system.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1.2.5#4"
+      "derivedFrom": "TI.2.1.2.5#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture the event initiating audit trigger.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1.2.5#5"
+      "derivedFrom": "TI.2.1.2.5#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture the date and time of the event initiating audit trigger.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1.2.5#6"
+      "derivedFrom": "TI.2.1.2.5#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture identity of the location (i.e., network address).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1.2.5#7"
+      "derivedFrom": "TI.2.1.2.5#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD capture how the session ended (e.g., user logout, timeout, loss of connection, administrator logout, system failure).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1.2.5#8"
+      "derivedFrom": "TI.2.1.2.5#8"
     }
   ]
 }

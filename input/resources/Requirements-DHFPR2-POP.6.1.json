@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "POP_6_1_Outcome_Measures_and_Analysis",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support the capture and subsequent export or retrieval of data necessary for the reporting on patient outcome of care by population, facility, provider or community.",
   "purpose": "Many regions require regular reporting on the healthcare provided to individuals and populations. The system needs to provide the report-generating capability to easily create these reports or provide for the export of data to external report-generating software. The system may also provide the functionality to prompt for the collection of necessary information at the appropriate time in a patient encounter if such collection need can be properly defined in a workflow (e.g., requesting specific information for reporting of emergency services such as drug overdose, suspected abuse, communicable diseases, or for the collection of additional research data for a specific diagnosis).",
+  "derivedFrom": [
+    "POP.6.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render data required to evaluate patient outcomes.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.1#1"
+      "derivedFrom": "POP.6.1#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and render data by selection criteria (e.g., physician, facility, facility subsection, clinical research protocol number, or community) to evaluate patient, and/or population outcomes.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.1#2"
+      "derivedFrom": "POP.6.1#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and maintain outcome measures for a specific patient, and/or groups of patients with a specific diagnosis.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.1#3"
+      "derivedFrom": "POP.6.1#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and maintain measures to evaluate patient, and/or population outcomes to meet various regional requirements.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.1#4"
+      "derivedFrom": "POP.6.1#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and render unique patient and/or population outcome data defined to meet regional requirements.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.1#5"
+      "derivedFrom": "POP.6.1#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, maintain and render report formats for the export of patient, and/or population outcome data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.1#6"
+      "derivedFrom": "POP.6.1#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and maintain notification phrases and prompts in the clinical care setting that would request information needed to comply with regional patient, and/or population outcome measurement requirements when specific triggers are met.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.1#7"
+      "derivedFrom": "POP.6.1#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD render patient, and/or population outcome data or query results to appropriate organizations (e.g., Quality Measurement organizations, Accreditation organizations) through a secure data service.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.1#8"
+      "derivedFrom": "POP.6.1#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to tag patients who have been identified as exempt from being included on certain population-based reports (e.g., reports that would exclude the identity of a very important person (e.g., president of a country).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.1#9"
+      "derivedFrom": "POP.6.1#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": true,
       "requirement": "IF the system provides the ability to tag patients who have been identified as exempt from being included on certain population-based reports, THEN the system SHALL provide the ability to manage-data-visibility for those patients.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.6.1#10"
+      "derivedFrom": "POP.6.1#10"
     }
   ]
 }

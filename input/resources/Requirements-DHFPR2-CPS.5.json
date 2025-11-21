@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_5_Support_for_Results",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Evaluate results and notify provider and patient of results within the context of the patient's healthcare data.",
   "purpose": "The system suggests result interpretations and notifications including those for, abnormal results, trending of results (such as discrete laboratory values over time), evaluation of pertinent results at the time of provider order entry (such as evaluation of laboratory results at the time of ordering a radiology exam), evaluation of incoming results against active medication orders.",
+  "derivedFrom": [
+    "CPS.5"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL render alerts for a result that is outside of a normal value range. Current Dental examples include high risk assessments for caries or perio, culture and sensitivity tests, and blood tests. Patient could bring results and dental provider then enters into EDR or the results could come electronically.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.5#1"
+      "derivedFrom": "CPS.5#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render trend results.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.5#2"
+      "derivedFrom": "CPS.5#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render pertinent results for analysis at the time of order entry (e.g., evaluation of laboratory results at the time of ordering a radiology exam).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.5#3"
+      "derivedFrom": "CPS.5#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture and render the abnormal result value that triggered the display of alerts and flags (e.g., a value to trigger an high-high (HH) or low-low (LL) flag).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.5#4"
+      "derivedFrom": "CPS.5#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD present alerts for a result that is outside of age specific normal value ranges.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.5#5"
+      "derivedFrom": "CPS.5#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL tag critical value results that have not been acknowledged. Current Dental examples include high risk assessments for caries or perio, culture and sensitivity tests, and blood tests. Dental patient could bring results and dental provider enters into EDR or the results could come electronically.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.5#6"
+      "derivedFrom": "CPS.5#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render notifications to the providers who participate in the care team when monitored events/parameters indicate irregularities.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.5#7"
+      "derivedFrom": "CPS.5#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render notifications to the patient when monitored events/parameters indicate irregularities.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.5#8"
+      "derivedFrom": "CPS.5#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to determine and render decision support algorithms based upon results.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.5#9"
+      "derivedFrom": "CPS.5#9"
     }
   ]
 }

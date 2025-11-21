@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "RI_1_1_4_Attest_Record_Lifecycle_Event",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Attest Record Entries (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to capture the agent’s digital signature (or equivalent indication) during formal validation of record entry content. \n\nReference: ISO 21089-2018, Section 15.4.",
+  "derivedFrom": [
+    "RI.1.1.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [TI.1.1](Requirements-DHFPR2-TI.1.1.html) (Entity Authentication).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.4#1"
+      "derivedFrom": "RI.1.1.4#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [TI.1.2](Requirements-DHFPR2-TI.1.2.html) (Entity Authorization).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.4#2"
+      "derivedFrom": "RI.1.1.4#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to attest (approve and apply signature to) Record Entry content by the author.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.4#3"
+      "derivedFrom": "RI.1.1.4#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture the signature event (e.g., digital signature) of the Attesting Author, binding signature to Record Entry content.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.4#4"
+      "derivedFrom": "RI.1.1.4#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to maintain any attestable Record Entry content added or changed with the content's author",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.4#5"
+      "derivedFrom": "RI.1.1.4#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL present the status of attestable Record Entry content which has not been attested, conforming to function [RI.1.3.1](Requirements-DHFPR2-RI.1.3.1.html) (Record Pending State).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.4#6"
+      "derivedFrom": "RI.1.1.4#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": true,
       "requirement": "IF the attester is different than the author(s), THEN the system SHALL provide the ability to maintain Record Entry content by properly authenticated and authorized users different from the author (e.g., counter-signature) according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.4#7"
+      "derivedFrom": "RI.1.1.4#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage digital signatures as the means for attestation.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.4#8"
+      "derivedFrom": "RI.1.1.4#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": true,
       "requirement": "IF more than one author contributed to the Record Entry content, THEN the system SHALL provide the ability to maintain all authors/contributors associated with their content.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.4#9"
+      "derivedFrom": "RI.1.1.4#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": true,
       "requirement": "IF Record Entry content is attested by someone other than the author, THEN the system SHALL maintain and display the author(s) and attester.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.4#10"
+      "derivedFrom": "RI.1.1.4#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to present a minimum set of information that identifies the author of Record Entry content according to scope of practice, organizational policy, and/or jurisdictional law (e.g., name, credential, and/or role (such as Karen Smith, RN)).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.4#11"
+      "derivedFrom": "RI.1.1.4#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture the signature type of the entity (individual, EHR or other system, or organization) sending Record Entry content.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.4#12"
+      "derivedFrom": "RI.1.1.4#12"
     },
     {
       "extension": [
@@ -276,7 +283,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture the signature type of the entity (individual, EHR or other system, or organization) receiving Record Entry content.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.4#13"
+      "derivedFrom": "RI.1.1.4#13"
     },
     {
       "extension": [
@@ -296,7 +303,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture all signature types of the entities through which Record Entry content has passed.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.4#14"
+      "derivedFrom": "RI.1.1.4#14"
     }
   ]
 }

@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "POP_8_De_Identified_Data_Request_Management",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Provide patient data in a manner that meets applicable requirements for de-identification.",
   "purpose": "When an internal or external party requests patient data and that party requests de-identified data (or is not entitled to identified patient information, either by law or custom), the user can export the data in a fashion that meets the requirements for de-identification in that locale or realm.\n\nAn auditable record of these requests and associated exports may be maintained by the system. This record could be implemented in any way that would allow the who, what, why and when of a request and export to be recoverable for review.\n\nA random re-identification key may be added to the data, to support re-identification for the purpose of alerting providers of potential patient safety issues. For example, if it is discovered that a patient is at risk for a major cardiac event, the provider could be notified of this risk, allowing the provider to identify the patient from the random key.",
+  "derivedFrom": [
+    "POP.8"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [TI.1.8](Requirements-DHFPR2-TI.1.8.html) (Patient Privacy and Confidentiality) when managing de-identified views of data according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.8#1"
+      "derivedFrom": "POP.8#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to de-identify extracted information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.8#2"
+      "derivedFrom": "POP.8#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability for authorized users to tag data for de-identification according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.8#3"
+      "derivedFrom": "POP.8#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability for authorized users to transmit de-identified data to authorized recipients according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.8#4"
+      "derivedFrom": "POP.8#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to transmit a re-identification key to recipients of de-identified data according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.8#5"
+      "derivedFrom": "POP.8#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to edit discrete patient identifiers from all reports containing data on multiple patients according to scope of practice, organizational policy, and/or jurisdictional law (e.g., replace \"John Smith\" with \"***\").",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.8#6"
+      "derivedFrom": "POP.8#6"
     }
   ]
 }

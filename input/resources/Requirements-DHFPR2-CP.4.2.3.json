@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CP_4_2_3_Medication_Order_Efficiencies",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Provide the tooling necessary to increase the efficiency of medication ordering.",
   "purpose": "Make medication ordering workflows more efficient by allowing medications to be sorted and reviewed by key attributes (e.g., generic or trade names). Also support editing medication orders across multiple instances of an order and capturing medication orders in order sets.",
+  "derivedFrom": [
+    "CP.4.2.3"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to present a list of medications based on an attribute of the medication (e.g., partial medication name, therapeutic class, or formulary).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.3#1"
+      "derivedFrom": "CP.4.2.3#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to present a list of medications based on an attribute of the patient (e.g., proposed treatment, patient condition, order set, age, gender).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.3#2"
+      "derivedFrom": "CP.4.2.3#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability for the clinician to edit medication administration instructions and link it to the corresponding instances of that medication order.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.3#3"
+      "derivedFrom": "CP.4.2.3#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to extract, update and store a prescription reorder by allowing a prior prescription to be reordered without re-entering previous data (e.g., administration schedule, quantity, SIG).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.3#4"
+      "derivedFrom": "CP.4.2.3#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to extract, update and store a prescription reorder from a prior prescription using the same dosage but allowing for editing of details adequate for correct filling and administration of medication (e.g., dose, frequency, body weight).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.3#5"
+      "derivedFrom": "CP.4.2.3#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to extract, update and store a prescription renewal from a prior prescription using a different dosage but allowing for editing of details adequate for correct filling and administration of medication (e.g., dose, frequency, body weight).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.3#6"
+      "derivedFrom": "CP.4.2.3#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CP.4.1](Requirements-DHFPR2-CP.4.1.html) (Use Order Sets).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.3#7"
+      "derivedFrom": "CP.4.2.3#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to extract and render medications by generic, and/or brand name.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.3#8"
+      "derivedFrom": "CP.4.2.3#8"
     }
   ]
 }

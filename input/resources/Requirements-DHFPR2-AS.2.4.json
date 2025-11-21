@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_2_4_Manage_Patient_Bed_Assignment",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support interactions with other systems, applications, and modules to ensure that the patient's bed assignments within the facility optimize care and minimize risks e.g., of exposure to contagious patients.",
   "purpose": "Access to a list of available beds is important to safely manage the care of patients whose bed requirements may change based on change in condition or risk factors. For example, a patient may need a room with special equipment or to be close to the nursing station or to be in a private room.",
+  "derivedFrom": [
+    "AS.2.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage patient bed assignment interactions that are internal or external to the system (e.g., including temporary bed assignments).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.4#1"
+      "derivedFrom": "AS.2.4#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY transmit patient information to an external system that will facilitate bed assignment, care optimization and risk mitigation.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.4#2"
+      "derivedFrom": "AS.2.4#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render lists of information to help enable effective bed assignment, including at a minimum, list of patients currently within the facility, a list of empty rooms and a list of available patient care spaces.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.4#3"
+      "derivedFrom": "AS.2.4#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render lists of information on patient status to help enable effective bed assignment, including at a minimum, a list of patients waiting to be triaged, a list of patients waiting to be registered, and a list of patients that have been admitted to the facility but are queued up for a transition of care.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.4#4"
+      "derivedFrom": "AS.2.4#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render waiting time for patients not yet brought to a treatment area.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.4#5"
+      "derivedFrom": "AS.2.4#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render the number of patients that have been admitted to the facility but are queued up for a transition of care.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.4#6"
+      "derivedFrom": "AS.2.4#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render information on incoming transported patients (e.g., rescue in-bounds).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.4#7"
+      "derivedFrom": "AS.2.4#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage re-location of patients.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.4#8"
+      "derivedFrom": "AS.2.4#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage separately multiple patients being simultaneously cared for in a single room or in an identified space according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.4#9"
+      "derivedFrom": "AS.2.4#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage temporary beds and the patients in the temporary beds according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.4#10"
+      "derivedFrom": "AS.2.4#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY tag with a status indication that the patient is ready for a transition of care (e.g., transport to an inpatient bed).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.4#11"
+      "derivedFrom": "AS.2.4#11"
     }
   ]
 }

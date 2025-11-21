@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "C"
     }
   ],
   "name": "CP_1_4_Manage_Problem_List",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Create and maintain patient-specific problem lists.",
   "purpose": "A problem list may include, but is not limited to chronic conditions, diagnoses, or symptoms, injury/poisoning (both intentional and unintentional), adverse effects of medical or dental care (e.g., drugs, surgical), functional limitations, visit or stay-specific conditions, diagnoses, or symptoms. When a dentist creates a problem list, that list will focus on conditions clinically relevant to oral health care.  Problem lists are managed over time, whether over the course of a visit or stay or the life of a patient, allowing documentation of historical information and tracking the changing character of problem(s) and their priority. The source (e.g., the provider, the system id, or the patient) of the updates should be documented. All pertinent dates are stored, including date noted or diagnosed, dates of any changes in problem specification or prioritization, and date of resolution. This might include time stamps, where useful and appropriate. The entire problem history for any problem in the list is viewable.  For dentistry, only a limited medical history is often recorded; however, this limited medical history must not be represented as a comprehensive medical history.",
+  "derivedFrom": [
+    "CP.1.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage, as discrete data, all active problems associated with a patient, including all active problems associated with the oral health of a patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#1"
+      "derivedFrom": "CP.1.4#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture, maintain and render a history of all problems associated with a patient.   For dental care, the entire problem history may only include problems that are provider-defined as relevant to oral health care.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#2"
+      "derivedFrom": "CP.1.4#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage the status of each problem (e.g., active, inactive, resolved).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#3"
+      "derivedFrom": "CP.1.4#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage relevant dates including the onset date and date(s) of problem status change (e.g., inactivation or resolution date).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#4"
+      "derivedFrom": "CP.1.4#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage information about the chronicity duration (e.g., chronic, acute/self-limiting) of a problem.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#5"
+      "derivedFrom": "CP.1.4#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage information regarding the information source (i.e. informant) of the problem.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#6"
+      "derivedFrom": "CP.1.4#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [RI.1.1.17](Requirements-DHFPR2-RI.1.1.17.html) (Deprecate/Retract Record Entries) to enable the inactivation or deprecation of a problem.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#7"
+      "derivedFrom": "CP.1.4#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to update an inactive problem in order to re-activate it.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#8"
+      "derivedFrom": "CP.1.4#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render the list in a user-defined sort order.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#9"
+      "derivedFrom": "CP.1.4#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render only active problems.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#10"
+      "derivedFrom": "CP.1.4#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to link one or more problem(s) in the Problem list to encounters.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#11"
+      "derivedFrom": "CP.1.4#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to link one or more problem(s) in the Problem List to medications.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#12"
+      "derivedFrom": "CP.1.4#12"
     },
     {
       "extension": [
@@ -276,7 +283,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to link one or more problem(s) in the Problem list to orders.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#13"
+      "derivedFrom": "CP.1.4#13"
     },
     {
       "extension": [
@@ -296,7 +303,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to link one or more problem(s) in the Problem list to medical equipment.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#14"
+      "derivedFrom": "CP.1.4#14"
     },
     {
       "extension": [
@@ -316,7 +323,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to link one or more problem(s) in the Problem list to prosthetic/orthotic devices.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#15"
+      "derivedFrom": "CP.1.4#15"
     },
     {
       "extension": [
@@ -336,7 +343,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to link one or more problem(s) in the Problem list to notes.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#16"
+      "derivedFrom": "CP.1.4#16"
     },
     {
       "extension": [
@@ -356,7 +363,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to link orders, medical equipment, prosthetic/orthotic devices, and medications to one or more codified problems.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#17"
+      "derivedFrom": "CP.1.4#17"
     },
     {
       "extension": [
@@ -376,7 +383,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture free text problems and render them in a manner that distinguishes them from coded problem entries.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#18"
+      "derivedFrom": "CP.1.4#18"
     },
     {
       "extension": [
@@ -396,7 +403,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL tag and render an indicator that interaction checking will not occur against free text problems.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#19"
+      "derivedFrom": "CP.1.4#19"
     },
     {
       "extension": [
@@ -416,7 +423,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture a problem into the problem list using standardized coding schemas (e.g., ICD or SNOMED).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#20"
+      "derivedFrom": "CP.1.4#20"
     },
     {
       "extension": [
@@ -436,7 +443,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage free text comments associated with the problem.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#21"
+      "derivedFrom": "CP.1.4#21"
     },
     {
       "extension": [
@@ -456,7 +463,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage the severity of a problem using a standards based classification scheme.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#22"
+      "derivedFrom": "CP.1.4#22"
     },
     {
       "extension": [
@@ -476,7 +483,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to link actions taken and outcomes with a problem.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#23"
+      "derivedFrom": "CP.1.4#23"
     },
     {
       "extension": [
@@ -496,7 +503,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage problems for known genetically based illnesses (e.g., single allele carrier status of a genetic trait or disease) according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#24"
+      "derivedFrom": "CP.1.4#24"
     },
     {
       "extension": [
@@ -516,7 +523,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage a known single allele carrier status of a genetic trait or disease according to scope of practice, organizational policy, and/or jurisdictional law, and subject to patient's preferences and consent.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#25"
+      "derivedFrom": "CP.1.4#25"
     },
     {
       "extension": [
@@ -536,7 +543,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage the linking of problems on the problem list, i.e., creating hierarchies or nestings within the problem list.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.1.4#26"
+      "derivedFrom": "CP.1.4#26"
     }
   ]
 }

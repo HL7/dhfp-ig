@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "TI_2_1_Audit_Triggers",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Manage Audit Triggers",
   "purpose": "EHR Systems have built in audit triggers to capture key events in real-time. Audit triggers signal key:\n- Record management and lifecycle events;\n- Security events related to system and data safeguards, both routine and exceptional;\n- System events related to performance and operations, both routine and exceptional.\n- Clinical events with special log requirements.",
+  "derivedFrom": [
+    "TI.2.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL audit key events, as specified in function [TI.2.1](Requirements-DHFPR2-TI.2.1.html) (Audit Triggers) and child functions, according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1#1"
+      "derivedFrom": "TI.2.1#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture key Audit Metadata at each Audit Trigger, as specified in [TI.2.1](Requirements-DHFPR2-TI.2.1.html) (Audit Triggers) and child functions, according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1#2"
+      "derivedFrom": "TI.2.1#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture an Audit Log Entry at each Audit Trigger as specified in [TI.2.1](Requirements-DHFPR2-TI.2.1.html) (Audit Triggers) according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1#3"
+      "derivedFrom": "TI.2.1#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture the current master clock time to establish valid record date and time metadata.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1#4"
+      "derivedFrom": "TI.2.1#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY manage Audit Trigger logging using a common audit engine (e.g., using schema and transports such as specified in the Audit Log specification of IHE Audit Trails and Node Authentication (ATNA) Profile).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.2.1#5"
+      "derivedFrom": "TI.2.1#5"
     }
   ]
 }

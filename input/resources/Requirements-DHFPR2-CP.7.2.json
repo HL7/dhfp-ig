@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CP_7_2_Manage_Recommendations_for_Future_Care",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Document and support the management of the disposition process for a patient by managing recommendations for future care.",
   "purpose": "Patient encounters or treatments can end in many different states and support for these requires that the EHR support the ability to capture and maintain recommendations for the further future care of the patient. The EHR should accommodate, at a minimum, the following possible recommendations for future care (or dispositions) along with other supporting information for the recommendations:\n- discharge,\n- admission,\n- transfer,\n- death,\n- left without being seen (LWBS),\n- left without treatment (LWOT),\n- elopements (i.e. leaving without notifying the facility or wandering),\n- left against medical advice (AMA),\n- patients triaged to other clinics, and \n- administrative errors.",
+  "derivedFrom": [
+    "CP.7.2"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture recommendations for future care as discrete data elements including the recommending provider and an alert date for the recommendation to take effect.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.7.2#1"
+      "derivedFrom": "CP.7.2#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to maintain recommendations and associated recommendation meta-data (e.g., date of alert).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.7.2#2"
+      "derivedFrom": "CP.7.2#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render an alert of the recommendation based on the date associated with the recommendation (e.g., if recommendation is to 'book appointment for physical therapy in 2 weeks' - alert will be triggered in 1.5 weeks for follow-up). Dental Note: Some dental electronic records currently support this function.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.7.2#3"
+      "derivedFrom": "CP.7.2#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture recommendations for future care or post-encounter disposition from encounter and diagnostic studies imported in structured documents.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.7.2#4"
+      "derivedFrom": "CP.7.2#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture recommended actions for future care along with the recommending provider, the date recommended and the date suggested to carry out the recommendation.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.7.2#5"
+      "derivedFrom": "CP.7.2#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to link the recommendation for future care with the original documentation of that recommendation.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.7.2#6"
+      "derivedFrom": "CP.7.2#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to link the recommendation with condition(s) on the Problem List.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.7.2#7"
+      "derivedFrom": "CP.7.2#7"
     }
   ]
 }

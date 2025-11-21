@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_4_2_4_Support_for_Medication_Recommendations",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Offer recommendations and options in medication treatment protocols as well as supporting medication monitoring on the basis of patient diagnosis, patient characteristics, or therapeutic guidelines and protocols.",
   "purpose": "The system should list medication treatment options on the basis of practice standards and the patient's conditions, diagnoses and characteristics (e.g., obesity, occupation). The system may also provide prompts and notifications to support medication monitoring.",
+  "derivedFrom": [
+    "CPS.4.2.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CPS.4.2.2](Requirements-DHFPR2-CPS.4.2.2.html) (Support for Patient-Specific Dosing and Warnings).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2.4#1"
+      "derivedFrom": "CPS.4.2.4#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and present recommendations for medication regimens based on findings related to the patient diagnosis.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2.4#2"
+      "derivedFrom": "CPS.4.2.4#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL determine and present recommendations for alternative medication treatments on the basis of practice standards, patient conditions and characteristics.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2.4#3"
+      "derivedFrom": "CPS.4.2.4#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and render recommendations for monitoring (e.g., laboratory, behaviors, adverse reactions, side effects) as appropriate to a particular medication.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.2.4#4"
+      "derivedFrom": "CPS.4.2.4#4"
     }
   ]
 }

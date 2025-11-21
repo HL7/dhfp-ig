@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "TI_1_8_Patient_Privacy_and_Confidentiality",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Enable the enforcement of the applicable jurisdictional and organizational patient privacy rules as they apply to various parts of an EHR-S through the implementation of security mechanisms.",
   "purpose": "Patients' privacy and the confidentiality of EHRs are violated if access to EHRs occurs without authorization. Violations or potential violations can impose tangible economic or social losses on affected patients, as well as less tangible feelings of vulnerability and pain. Fear of potential violations discourages patients from revealing sensitive personal information that may be relevant to diagnostic and treatment services. Rules for the protection of privacy and confidentiality may vary depending upon the vulnerability of patients and the sensitivity of records. Strongest protections should apply to the records of minors and the records of patients with stigmatized conditions. Authorization to access the most sensitive parts of an EHR is most definitive if made by the explicit and specific consent of the patient. Please see the definition of masking in the glossary.\n\nOrganizational practices related to privacy and security jurisdictional laws could be called into question during a legal proceeding. Adherence to applicable laws supports the credibility and trustworthiness of the organization.",
+  "derivedFrom": [
+    "TI.1.8"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to maintain compliance with requirements for patient privacy and confidentiality according to scope of practice, organizational policy, and/or jurisdictional law (e.g., US HIPAA Privacy Rules, US Federal Conditions of Participation for Medicare/Medicaid Providers).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.8#1"
+      "derivedFrom": "TI.1.8#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [TI.1.1](Requirements-DHFPR2-TI.1.1.html) (Entity Authentication).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.8#2"
+      "derivedFrom": "TI.1.8#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [TI.1.2](Requirements-DHFPR2-TI.1.2.html) (Entity Authorization).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.8#3"
+      "derivedFrom": "TI.1.8#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [TI.1.3](Requirements-DHFPR2-TI.1.3.html) (Entity Access Control).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.8#4"
+      "derivedFrom": "TI.1.8#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [TI.1.5](Requirements-DHFPR2-TI.1.5.html) (Non-Repudiation).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.8#5"
+      "derivedFrom": "TI.1.8#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [TI.1.6](Requirements-DHFPR2-TI.1.6.html) (Secure Data Exchange).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.8#6"
+      "derivedFrom": "TI.1.8#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [TI.2](Requirements-DHFPR2-TI.2.html) (Audit).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.8#7"
+      "derivedFrom": "TI.1.8#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to maintain varying levels of confidentiality according to patient preferences, user role, scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.8#8"
+      "derivedFrom": "TI.1.8#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to mask parts of the electronic health record (e.g., medications, conditions, sensitive documents) from disclosure according to patient preferences, user role, scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.8#9"
+      "derivedFrom": "TI.1.8#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to unmask (override a mask) in emergency or other specific situations in accordance with users' role, and according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.8#10"
+      "derivedFrom": "TI.1.8#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to maintain indicators (flags) to health record users that content has been masked in accordance with users' role, and according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.8#11"
+      "derivedFrom": "TI.1.8#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": true,
       "requirement": "IF the system allows a user to unmask (override a mask) in an emergency or other specific situation, THEN the system SHALL provide the ability to capture the reason for unmasking or overriding the mask.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.8#12"
+      "derivedFrom": "TI.1.8#12"
     },
     {
       "extension": [
@@ -276,7 +283,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage patient consents to, or restrictions against, any access to data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.8#13"
+      "derivedFrom": "TI.1.8#13"
     },
     {
       "extension": [
@@ -296,7 +303,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage a privacy policy according to patient preferences, user role, scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.8#14"
+      "derivedFrom": "TI.1.8#14"
     },
     {
       "extension": [
@@ -316,7 +323,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to control access by specified user(s) to a particular patient health record either by inclusion or exclusion according to patient preferences, user role, scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.8#15"
+      "derivedFrom": "TI.1.8#15"
     }
   ]
 }

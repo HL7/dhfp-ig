@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_8_5_Patient__Family_and_Care_Giver_Education",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Facilitate access to educational or support resources pertinent to, and usable by, the patient or patient representative.",
   "purpose": "The provider or patient is presented with a library of educational materials. Material may be made available in the language or dialect understood by the patient or representative. Material should be at the level of the patient or representative's level of understanding and sensory capability. Special needs are documented. Material may be disseminated via a mode available to and acceptable by the patient e.g., printed, electronically or otherwise. The review of material between the clinician and the patient, and the patient's understanding of the review, is documented when desired by the clinician. The patient or patient's representatives are able to obtain educational information independently without formal review with the clinician, if desired.",
+  "derivedFrom": [
+    "CPS.8.5"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render educational material for medication, health concerns, conditions, and/or diagnoses.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.8.5#1"
+      "derivedFrom": "CPS.8.5#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render applicable educational materials to the patient, and/or patient representative (e.g., the patient receives information about risks associated with immunizations during pregnancy and the possible side effects of the flu vaccine).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.8.5#2"
+      "derivedFrom": "CPS.8.5#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render multilingual educational material.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.8.5#3"
+      "derivedFrom": "CPS.8.5#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render patient educational materials using alternative modes to accommodate patient sensory capabilities.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.8.5#4"
+      "derivedFrom": "CPS.8.5#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to import, and/or receive external educational materials.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.8.5#5"
+      "derivedFrom": "CPS.8.5#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to determine the most pertinent educational material, based on patient-specific criteria (e.g., the patient's health status, condition or diagnosis).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.8.5#6"
+      "derivedFrom": "CPS.8.5#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture the identity of the person who received the educational material provided (e.g., the patient or the patient representative).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.8.5#7"
+      "derivedFrom": "CPS.8.5#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture a note to the effect that the educational material was reviewed with the patient, and/or patient representative and regarding their comprehension of the material.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.8.5#8"
+      "derivedFrom": "CPS.8.5#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render educational materials written for various ages, and/or reading abilities.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.8.5#9"
+      "derivedFrom": "CPS.8.5#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to determine age-appropriate, and/or reading-ability appropriate educational materials for the patient, and/or patient representative.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.8.5#10"
+      "derivedFrom": "CPS.8.5#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render educational material based on the direct choice made by patients, and/or patient representatives.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.8.5#11"
+      "derivedFrom": "CPS.8.5#11"
     }
   ]
 }

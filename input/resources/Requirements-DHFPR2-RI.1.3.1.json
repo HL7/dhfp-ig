@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "RI_1_3_1_Manage_Record_Pending_State",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Manage Record Entries during the various states of completion.",
   "purpose": "Record Entries may reside in various states that must be managed. An important underlying principle for managing record states is the need to retain Record Entries that have been viewed for patient care purposes even if it has not been completed or attested. This principle has important legal impact because it provides a record of what the provider relied on for clinical decision-making. For example, if a Record Entry was available in pending state and a clinician accessed the information to make decisions, it is important to retain the pending version even after the final version was available. Determining if the Record Entry was accessed for patient care may be challenging. Access logs should show if the information was accessed/viewed.",
+  "derivedFrom": [
+    "RI.1.3.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage the length of time a Record Entry can be in a pending or inactive state before being administratively closed.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.3.1#1"
+      "derivedFrom": "RI.1.3.1#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY present a notification to the author or designate that a Record Entry will be administratively closed after a designated period of time.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.3.1#2"
+      "derivedFrom": "RI.1.3.1#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY present pending Record Entries in accordance with the organization's business rules.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.3.1#3"
+      "derivedFrom": "RI.1.3.1#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": true,
       "requirement": "IF the system displays pending Record Entries, THEN the system SHALL tag and present that a Record Entry is pending or incomplete.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.3.1#4"
+      "derivedFrom": "RI.1.3.1#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to update a Record Entry status to one of:\n- complete,\n- complete while retaining incomplete version of the Entry if viewed for patient care or used by the system,\n- mark as erroneous and retain if Entry used for patient care or by the system, or - discard if Entry never viewed for patient care purposes.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.3.1#5"
+      "derivedFrom": "RI.1.3.1#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage administrative closure of a Record Entry after a period of inactivity according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.3.1#6"
+      "derivedFrom": "RI.1.3.1#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture a date/time stamp and identify the author each time a Record Entry is updated including when opened, when updated, with the signature event and when officially closed, conforming to function [TI.2.1.1](Requirements-DHFPR2-TI.2.1.1.html) (Record Entry Audit Triggers).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.3.1#7"
+      "derivedFrom": "RI.1.3.1#7"
     }
   ]
 }

@@ -10,11 +10,18 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_8_Support_Patient_Education___Communication",
   "title": "CPS.8 Support Patient Education & Communication (Header)",
   "status": "active",
   "description": "Support for appropriate communication with the patient or the patient representatives.",
-  "purpose": "Support for patient education and communication is critical to ensure that the patient can appropriately participate in his care. This includes providing access to relevant patient educational materials and reminders from internal, and/or external sources."
+  "purpose": "Support for patient education and communication is critical to ensure that the patient can appropriately participate in his care. This includes providing access to relevant patient educational materials and reminders from internal, and/or external sources.",
+  "derivedFrom": [
+    "CPS.8"
+  ]
 }

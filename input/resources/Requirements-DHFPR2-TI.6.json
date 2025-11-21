@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "TI_6_Business_Rules_Management",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Manage the ability to create, update, delete, view, and version business rules including institutional preferences. Apply business rules from necessary points within an EHR-S to control system behavior. An EHR-S audits changes made to business rules, as well as compliance to and overrides of applied business rules.",
   "purpose": "EHR-S business rule implementation functions include decision support, diagnostic support, workflow control, and access privileges, as well as system and user defaults and preferences. An EHR-S supports the ability of providers and institutions to customize decision support components such as triggers, rules, or algorithms, as well as the wording of alerts and advice to meet realm specific requirements and preferences.\n\nExample(s):\nExamples of applied business rules include:\n- Suggesting diagnosis based on the combination of symptoms (flu-like symptoms combined with widened mediastinum suggesting anthrax);\n- Classifying a pregnant patient as high risk due to factors such as age, health status, and prior pregnancy outcomes;\n- Sending an update to an immunization registry when a vaccination is administered or when immunization information is added to patient record;\n- Limiting access to mental health information to authorized providers;\n- Establishing system level defaults such as for vocabulary data sets to be implemented; and \n- Establishing user level preferences such as allowing the use of health information for research purposes.$EX$",
+  "derivedFrom": [
+    "TI.6"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage business rules.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.6#1"
+      "derivedFrom": "TI.6#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to enter, import, or receive business rules to guide system behavior.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.6#2"
+      "derivedFrom": "TI.6#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to maintain business rules and their components.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.6#3"
+      "derivedFrom": "TI.6#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to tag decision support rules as inactive / obsolete or to remove them according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.6#4"
+      "derivedFrom": "TI.6#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render business rules.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.6#5"
+      "derivedFrom": "TI.6#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage diagnostic decision support rules that guide system behavior according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.6#6"
+      "derivedFrom": "TI.6#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage workflow control rules that guide system behavior according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.6#7"
+      "derivedFrom": "TI.6#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage access privilege rules that guide system behavior according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.6#8"
+      "derivedFrom": "TI.6#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage other rules (for example, monitoring rules, user defaults rules and preferences rule) that guide system behavior according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.6#9"
+      "derivedFrom": "TI.6#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to determine system behavior based upon defined business rules.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.6#10"
+      "derivedFrom": "TI.6#10"
     }
   ]
 }

@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_2_3_Manage_Patient_s_Residence_for_the_Provision_and_Administration_of_Services",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Provide the patient's residence information for the provision and administration of services to the patient, patient transport, and as required for public health reporting.",
   "purpose": "This function is intended to support the provision of services to patients at their place of residence. Examples include but are not limited to the following:\n-Visiting nurse may be providing care to a new mother and baby at their place of residence.\n-A patient with a mobility problem may require transport to and from a clinic appointment.\n-Support identification of multiple residences for a patient like a child with multiple guardians (divorced parents with joint custody) or adults with Winter/Summer residences.",
+  "derivedFrom": [
+    "AS.2.3"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage the patient's primary residence or place of habitation (e.g., home address or homeless shelter).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.3#1"
+      "derivedFrom": "AS.2.3#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage the patient's secondary or alternate residence.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.3#2"
+      "derivedFrom": "AS.2.3#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage patient information related to the provision of service (e.g., ambulance transport or home health care services).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.3#3"
+      "derivedFrom": "AS.2.3#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage patient information related to transport, such as, mobility status and special needs. (e.g., wheelchair, walker)",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.3#4"
+      "derivedFrom": "AS.2.3#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage facility information related to patient mobility status and special needs (e.g., stairs, elevator, wheelchair access).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.3#5"
+      "derivedFrom": "AS.2.3#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage public health reporting related patient residence information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.2.3#6"
+      "derivedFrom": "AS.2.3#6"
     }
   ]
 }

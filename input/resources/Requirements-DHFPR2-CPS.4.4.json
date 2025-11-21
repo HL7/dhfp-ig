@@ -10,11 +10,18 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_4_4_Support_Orders_for_Diagnostic_Screening_Tests",
   "title": "CPS.4.4 Support Orders for Diagnostic/Screening Tests (Function)",
   "status": "active",
   "description": "This function has not been defined and is captured here as a place-holder for potential further development of the Functional Model and to maintain alignment with the corresponding CP section.",
-  "purpose": "None Defined at this time."
+  "purpose": "None Defined at this time.",
+  "derivedFrom": [
+    "CPS.4.4"
+  ]
 }

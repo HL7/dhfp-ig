@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_2_1_Support_externally_sourced_Clinical_Documents",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Incorporate clinical documentation (computable and scanned) from external (to the system) sources.",
   "purpose": "Mechanisms for incorporating external clinical documentation (including identification of source) are available. External is considered anything that is external to the system - i.e. documents from the organization; but created in another system would be considered 'external' for the purposes of this function. Documentation incorporated through these mechanisms is presented alongside locally captured documentation and notes wherever appropriate. This covers all types of documents received by the provider that would typically be incorporated into a medical record, including but not limited to faxes, referral authorizations, consultant reports, and patient/resident correspondence of a clinical nature. Intrinsic to the concept of electronic health records is the ability to exchange health information with other providers of health care services. Health information from these external sources needs to be received, stored in the patient record, and displayed upon request. \n\nExternal data and documents addressed in the function include: \n\n- Laboratory results received through an electronic interface - This information is to be received and stored in the resident record as discrete data, which means that each separate element of the data needs to be stored in its own field. Therefore, if laboratory results are received through an electronic interface, the results are received in the EHR and the laboratory test name, result (value), and unit of measure are correctly displayed as discrete data (vs. report format). \n\n- Scanned documents received and stored as images (e.g., power of attorney forms, Living wills) - These scanned documents are indexed and can be retrieved based on the document type, date of the original document, and the date of scanning. \n\n- Text-based outside reports (e.g., x-ray reports, hospital discharge summaries, history & physicals) - Any mechanism for capturing these reports is addendable: OCR, PDF, image file of report, etc. \n\n- Clinical images from an external source (e.g., radiographic images, digital images from a diagnostic scan or graphical images) – These images may be stored within the system or be provided through direct linkage to an external source such as a hospital PACS system. \n\n- Other forms of clinical results, such as wave files of EKG tracings. \n\n- Medication detail (e.g., a medication history) from an external source such as a pharmacy, the patient, payer, or another provider - While the medication detail includes the medication name, strength, and SIG, this does not imply that the data will populate the medication module. \n\n- Structured, text-based reports (e.g., medical summary text in a structured format). \n\n- Standards-based structured, codified data (e.g., a Continuity of Care Document (CCD) with SNOMED CT). \n\nData incorporated through these mechanisms is presented alongside locally captured documentation and notes wherever appropriate.",
+  "derivedFrom": [
+    "CPS.2.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture, store and render external documents.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.1#1"
+      "derivedFrom": "CPS.2.1#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture, store and render scanned documents.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.1#2"
+      "derivedFrom": "CPS.2.1#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, store and render computable documents (e.g., CDA, ISO 13606, laboratory results or medication lists).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.1#3"
+      "derivedFrom": "CPS.2.1#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to store imaged documents or link to the imaged documents in imaging systems.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.1#4"
+      "derivedFrom": "CPS.2.1#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to receive from an external source unstructured, text-based documents and reports.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.1#5"
+      "derivedFrom": "CPS.2.1#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to receive from an external source structured, text-based documents and reports.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.1#6"
+      "derivedFrom": "CPS.2.1#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to tag and render scanned documents based on the document type, the date of the original document, and the date of scanning according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.1#7"
+      "derivedFrom": "CPS.2.1#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to link documentation and annotations with structured content (e.g., link information gathered during an office visit, phone communication, or e-mail consult with structured content that is stored as a laboratory result, problem, or diagnosis).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.1#8"
+      "derivedFrom": "CPS.2.1#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD conform to function [TI.1.5](Requirements-DHFPR2-TI.1.5.html) (Non-Repudiation) and [TI.1.6](Requirements-DHFPR2-TI.1.6.html) (Secure Data Exchange) when importing/receiving both structured and unstructured data.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.1#9"
+      "derivedFrom": "CPS.2.1#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render a notification or alert based on information received from an external source according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.1#10"
+      "derivedFrom": "CPS.2.1#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": true,
       "requirement": "IF a system receives information from external sources, THEN the system SHALL capture information regarding the identity of the source of that information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.1#11"
+      "derivedFrom": "CPS.2.1#11"
     }
   ]
 }

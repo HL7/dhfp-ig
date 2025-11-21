@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "POP_3_Support_for_Notification_and_Response",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Upon notification by an external, authoritative source of a health risk within the cared-for population, alert relevant providers regarding specific potentially at-risk patients with the appropriate level of notification.",
   "purpose": "After receiving a notice of a health risk within a cared-for population from public health authorities or other external authoritative sources:*Identify and notify individual care providers or care managers that a risk has been identified and requires attention; and *Provide suggestions on the appropriate course of action.\n\nA care provider now has the ability to decide how patients are notified, if necessary. For example, this function may be used after detection of a local outbreak of hepatitis A, advising providers of the at-risk population and potential prophylactic treatment. A second example might be the dissemination of new care guidelines for elderly patients with a specific chronic disease.\n\nNotifications to clinicians or patients may occur by telephone, email, FAX or other methods.",
+  "derivedFrom": [
+    "POP.3"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture, maintain and render the identity of individual care providers or care managers within a cared-for population according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.3#1"
+      "derivedFrom": "POP.3#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render a response notification to the care providers or care managers within a cared-for population that a health risk notification was received.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.3#2"
+      "derivedFrom": "POP.3#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture, maintain and render notification of a health risk within a cared-for population from public health authorities or other external authoritative sources.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.3#3"
+      "derivedFrom": "POP.3#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage, in coordination with local, regional, state and national programs, dissemination of notifications of health risk to individual care providers or care-managers.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.3#4"
+      "derivedFrom": "POP.3#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to transmit notifications to patients, directly or indirectly, who are described by the health risk alert.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.3#5"
+      "derivedFrom": "POP.3#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD determine and present suggestions to the care provider indicating an appropriate course of action regarding a population health risk notification.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.3#6"
+      "derivedFrom": "POP.3#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render notifications/reports to public health authorities or other external authorities regarding health risks within a cared-for population according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.3#7"
+      "derivedFrom": "POP.3#7"
     }
   ]
 }

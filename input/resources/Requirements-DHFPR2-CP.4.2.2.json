@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CP_4_2_2_Patient_Specific_Medication_Dosing_and_Warnings",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Render medication dosing and warnings related to a medication order based on patient-specific parameters.",
   "purpose": "Provide parameter-based (e.g., weight, lean body mass, age, sensitivity, genomics, body surface area) medication dosing recommendations and warnings for simple medications and compounded medications at the time of order entry.",
+  "derivedFrom": [
+    "CP.4.2.2"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CPS.4.2.2](Requirements-DHFPR2-CPS.4.2.2.html) (Support for Patient-Specific Dosing and Warnings) to determine potential adverse reactions and render alerts or notifications when new medications are ordered. Dental Note: According to scope of practice, organizational policy, and/or jurisdictional law, can be, but is not limited to, an API to Rx module. Could also be entered manually and then cross-checked manually.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.2#1"
+      "derivedFrom": "CP.4.2.2#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to determine and render weight-specific dose suggestions and auto-populate (e.g., default) medication orders based on the suggested dosage.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.2#2"
+      "derivedFrom": "CP.4.2.2#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture alternative patient dosing weight(s) (e.g., ideal body weight or dry weight vs. actual patient weight) for the purpose of dose calculation.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.2#3"
+      "derivedFrom": "CP.4.2.2#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": true,
       "requirement": "IF the system provides the ability to capture alternative patient dosing weight(s), THEN the system SHOULD provide the ability to determine and render alternative weight-specific dose recommendations and auto-populate medication orders based on the suggested dosage.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.2#4"
+      "derivedFrom": "CP.4.2.2#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render patient-specific medication dosing recommendations based on the patient's age and weight/body surface area.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.2#5"
+      "derivedFrom": "CP.4.2.2#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render patient-specific medication dosing recommendations based on previous patient experience (e.g., adverse reaction, type, and severity) with the same medication.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.2#6"
+      "derivedFrom": "CP.4.2.2#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to determine weight-based medication dosing when doses are based on the patient's weight (e.g., mg/kg).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.2#7"
+      "derivedFrom": "CP.4.2.2#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to determine and render medication orders in which the weight-specific dose suggested employs a starting range with incremental changes toward a target range (e.g., a target therapeutic index).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.2#8"
+      "derivedFrom": "CP.4.2.2#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY render a notification requesting the parameters (e.g., coefficients, exponents, formulas) required to calculate the body surface area.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.2#9"
+      "derivedFrom": "CP.4.2.2#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to determine and present dose ranges based on patient age.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.2#10"
+      "derivedFrom": "CP.4.2.2#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage complex medication orders that include dosing based on either physical status or laboratory values.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.2#11"
+      "derivedFrom": "CP.4.2.2#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to determine and present drug dosing based on custom compounded medication components.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.2#12"
+      "derivedFrom": "CP.4.2.2#12"
     },
     {
       "extension": [
@@ -276,7 +283,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage medication orders with patient-specific dose calculations (e.g., by weight, body surface area or genotype).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.2.2#13"
+      "derivedFrom": "CP.4.2.2#13"
     }
   ]
 }

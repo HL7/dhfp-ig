@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "TI_1_8_1_Redact_Patient_Identifying_Information",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Maintain patient identities and conditions invisible to the public and other providers who do not have “need to know” on public tracking screens.",
   "purpose": "A number of systems implement large tracking screens, common displays or dashboards to support workflows. In these applications, there is a need to create de-identified views for broadcast in common areas.",
+  "derivedFrom": [
+    "TI.1.8.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage redaction of patient identities on publicly viewable status boards according to organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.1.8.1#1"
+      "derivedFrom": "TI.1.8.1#1"
     }
   ]
 }

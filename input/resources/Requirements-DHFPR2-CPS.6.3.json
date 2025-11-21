@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_6_3_Support_for_Safe_Blood_Administration",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Facilitate real-time checks for potential blood administration errors.",
   "purpose": "To reduce errors at the time of blood product administration, the system assists in positive patient identification, along with checks and alerts regarding the blood product to be administered, including the identification of the blood product, the amount to be delivered, and the route and time of the administration of the blood product.",
+  "derivedFrom": [
+    "CPS.6.3"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL present, at the time of administration, information necessary to correctly identify the patient and accurately administer blood products including patient name, blood product number, amount, route, product expiration date and time of administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.3#1"
+      "derivedFrom": "CPS.6.3#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture validation of the correct matching of the patient to the blood product.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.3#2"
+      "derivedFrom": "CPS.6.3#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture the blood product number, amount, route and time of administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.3#3"
+      "derivedFrom": "CPS.6.3#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CP.3.2](Requirements-DHFPR2-CP.3.2.html) (Manage Patient Clinical Measurements) and capture the blood pressure, temperature, pulse and respiration rate of the patient receiving the product.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.6.3#4"
+      "derivedFrom": "CPS.6.3#4"
     }
   ]
 }

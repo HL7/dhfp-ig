@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_7_5_Manage_Transitions_of_Care_and_Discharged_Patients",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Provide a means to manage outstanding patient issues after the encounter, for transits of care and discharge.",
   "purpose": "After the completion of an encounter, a number of tasks may remain for discharge planning, patient instructions and transitions of care. There may be outstanding laboratory tests (i.e. blood cultures) radiology interpretations, or other tasks such as arrangement of home health aids (VNA), transportation or calls to the patient's primary care provider during office hours to establish follow-up. There must be a way to track and document these tasks after the conclusion of the encounter.",
+  "derivedFrom": [
+    "AS.7.5"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage post-encounter tasks (e.g., discharge planning, patient instructions, transfer activities).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.7.5#1"
+      "derivedFrom": "AS.7.5#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to tag the patient as a transfer patient (e.g., hospital-to-hospital, birthing facility, and long-term-care-facility to hospital).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.7.5#2"
+      "derivedFrom": "AS.7.5#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to link transfer facility demographic information to the transfer patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.7.5#3"
+      "derivedFrom": "AS.7.5#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture the transfer mode of transportation (e.g., ambulance, airplane).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.7.5#4"
+      "derivedFrom": "AS.7.5#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture transportation provider demographics.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.7.5#5"
+      "derivedFrom": "AS.7.5#5"
     }
   ]
 }

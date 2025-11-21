@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_1_4_Manage_Provider_s_Location_s__or_Office_s_",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Provide locations or facility contact information for the provider in order to direct patients or queries.",
   "purpose": "Providers may have multiple locations or offices where they practice. The system should maintain information on the primary location, any secondary locations, as well as the scheduled hours at each location. Information maintained may include web sites, maps, office locations, etc.",
+  "derivedFrom": [
+    "AS.1.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD manage information necessary to identify primary and secondary practice locations or offices of providers.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.1.4#1"
+      "derivedFrom": "AS.1.4#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, maintain, and render information regarding a provider's times of service availability at primary and secondary locations or offices.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.1.4#2"
+      "derivedFrom": "AS.1.4#2"
     }
   ]
 }

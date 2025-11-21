@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_6_4_Support_Triage_Categorization",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Provide support for prioritizing patients based upon acuity, wait time, and practitioner load.",
   "purpose": "An EHR-S should support the management of patients waiting for care by displaying them and supporting decisions by the clinicians who are caring for them. The triage process not only collects data on arriving patients, but the categorization and prioritization of patients who are unable to be seen immediately. It is a dynamic process where patient priorities change over time. Unless a care team has unlimited resources, some patients will invariably need to wait.",
+  "derivedFrom": [
+    "AS.6.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage a triage acuity rating for a patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.6.4#1"
+      "derivedFrom": "AS.6.4#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL capture, maintain and render triage acuity ratings derived from standardized acuity scales. For Dental, this may include dental status for military readiness for deployment.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.6.4#2"
+      "derivedFrom": "AS.6.4#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture and maintain configurable triage acuity ratings according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.6.4#3"
+      "derivedFrom": "AS.6.4#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY present evidence based triage business rules algorithms during the triage process.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.6.4#4"
+      "derivedFrom": "AS.6.4#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY capture and update a triage assignment in response to specific prompts for patient associated data or data already captured in the record (e.g., arrival by ambulance, age, vital signs).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.6.4#5"
+      "derivedFrom": "AS.6.4#5"
     }
   ]
 }

@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "POP_4_Support_for_Monitoring_Response_Notifications_Regarding_a_Specific_Patient_s_Health",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "In the event of a health risk alert, evaluate whether expected actions have been taken, and execute follow-up notification otherwise.",
   "purpose": "The system assists in follow-up for a specific patient event that has failed to occur (e.g., follow-up to a health alert or absence of an expected laboratory result) and communicate the omission to the appropriate care provider(s).",
+  "derivedFrom": [
+    "POP.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL determine and render to the provider specific recommended actions that may be taken at the patient level regarding a health risk alert.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.4#1"
+      "derivedFrom": "POP.4#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL determine and render a notification to appropriate care providers of specific actions to be taken regarding the set of patients who are the target of a health risk alert.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.4#2"
+      "derivedFrom": "POP.4#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL determine and render a list of those patients who have not received appropriate action in response to a health risk alert.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.4#3"
+      "derivedFrom": "POP.4#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to determine and render a status report regarding the compliance of the set of all patients who are the target of a health risk alert.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 POP.4#4"
+      "derivedFrom": "POP.4#4"
     }
   ]
 }

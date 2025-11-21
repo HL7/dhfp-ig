@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_8_5_Support_for_Provider_Training",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Provide the ability to clinician and staff training requirements and document proficiency.",
   "purpose": "In order to deliver quality care, health care systems train their staff in the processes, workflows, and tools required to deliver quality patient care. This training is necessary when staff are initially hired, and also periodically as the evidence-based medical guidance or the tools available to the health care systems change. The system can have a role to track and document the training requirement, progress and proficiency. The system may control user access to system functionality based on training.",
+  "derivedFrom": [
+    "AS.8.5"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture information on clinician training received and clinician proficiency requirements met, as defined by the applicable professional and governing organizations (e.g., Graduate Medical Education [GME] Program Information File [PIF], for a residency review committee [RRC]).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.5#1"
+      "derivedFrom": "AS.8.5#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render reports on clinician training and proficiency, as defined by the applicable professional and governing organizations (e.g., Graduate Medical Education [GME] Program Information File [PIF], for a residency review committee [RRC]).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.5#2"
+      "derivedFrom": "AS.8.5#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture and render reports on role-based clinician training.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.5#3"
+      "derivedFrom": "AS.8.5#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to import and transmit data to external systems for centralized tracking of training.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.5#4"
+      "derivedFrom": "AS.8.5#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render a notification of enhancements, updates or new training requirements based on their individual training records.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.5#5"
+      "derivedFrom": "AS.8.5#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to maintain user authorizations based upon training received, and/or proficiency requirements met according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.5#6"
+      "derivedFrom": "AS.8.5#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render context-sensitive training and education \"help files\".",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.5#7"
+      "derivedFrom": "AS.8.5#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to remove personal patient identifying information on educationally relevant clinical consults for training and archiving.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.5#8"
+      "derivedFrom": "AS.8.5#8"
     }
   ]
 }

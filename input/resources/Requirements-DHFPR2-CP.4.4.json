@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CP_4_4_Manage_Orders_for_Diagnostic_Screening_Tests",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Enable the origination, documentation, transmission, tracking and maintenance of orders for diagnostic tests.",
   "purpose": "Orders for diagnostic tests (e.g., diagnostic radiology, laboratory ) are captured and tracked including new, renewal and discontinue orders. Each order includes appropriate detail, such as order identification, instructions and clinical information necessary to perform the test. Orders and supporting detailed documentation shall be communicated to the service provider for completion of the diagnostic test(s).Some systems may contain instructions, but in some settings, instructions may be provided from external sources (e.g., handouts).",
+  "derivedFrom": [
+    "CP.4.4"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage orders for diagnostic tests.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.4#1"
+      "derivedFrom": "CP.4.4#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture and render standard order detail for diagnostic test order fulfillment.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.4#2"
+      "derivedFrom": "CP.4.4#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and maintain user-created instructions, and/or prompts when ordering diagnostic tests or procedures.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.4#3"
+      "derivedFrom": "CP.4.4#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage the status (e.g., requisitioned, completed, in process) of diagnostic test(s).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.4#4"
+      "derivedFrom": "CP.4.4#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and render patient instructions relevant to the diagnostic test ordered.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.4#5"
+      "derivedFrom": "CP.4.4#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to transmit orders to the recipient (s) for order fulfillment of the diagnostic test.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.4#6"
+      "derivedFrom": "CP.4.4#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to transmit supporting detailed documentation to the recipient (s) for order fulfillment of the diagnostic test.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.4#7"
+      "derivedFrom": "CP.4.4#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CPS.4.3](Requirements-DHFPR2-CPS.4.3.html) (Support for Non-Medication Ordering).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.4#8"
+      "derivedFrom": "CP.4.4#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to transmit order activity to public health authorities according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.4#9"
+      "derivedFrom": "CP.4.4#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": true,
       "requirement": "IF subsequent orders are being captured, THEN the system SHOULD provide the ability to render prior diagnostic results for a given patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.4#10"
+      "derivedFrom": "CP.4.4#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD capture and render complete patient demographic information for diagnostic orders according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.4#11"
+      "derivedFrom": "CP.4.4#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture, maintain, and render justification-related information regarding a test order (e.g., clinical rationale, reason, or a link to the Problem list).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.4.4#12"
+      "derivedFrom": "CP.4.4#12"
     }
   ]
 }

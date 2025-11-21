@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_9_6_Information_View",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support user-defined information views.",
   "purpose": "Views of the information can be tailored for or by the user (or department or \"job classification”) for their presentation preferences, within local or facility established rules. For example, a nursing supervisor may elect or prefer to see summary data on all patients as the default view.",
+  "derivedFrom": [
+    "CPS.9.6"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability for administrators to capture preferences (e.g., by user, role, or context) for rendering information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.6#1"
+      "derivedFrom": "CPS.9.6#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture a user's preference for rendering information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.6#2"
+      "derivedFrom": "CPS.9.6#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY manage role-based data-capture-options.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.6#3"
+      "derivedFrom": "CPS.9.6#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY manage role-based data-rendering-options.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.6#4"
+      "derivedFrom": "CPS.9.6#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability for authorized users to render information according to personal preferences and/or organizational policy (e.g., by tailoring the presentation of certain information).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.9.6#5"
+      "derivedFrom": "CPS.9.6#5"
     }
   ]
 }

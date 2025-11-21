@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_6_1_Manage_Facility_Demographics",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Maintain facility demographic information.",
   "purpose": "Demographic information is necessary to uniquely define a healthcare facility (e.g., hospital, freestanding birthing center, clinic, doctor's office, hospice, or nursing home/long-term care facility, transportation/ambulance provider). Example of demographic information may include the facility name, physical location and unique facility identifier (e.g., U.S. National Provider Identifier).",
+  "derivedFrom": [
+    "AS.6.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage the facility's demographic information (e.g., the facility name, facility address, facility type, and the registration number of the facility in accordance with jurisdictional law).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.6.1#1"
+      "derivedFrom": "AS.6.1#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY capture transfer facility demographic information for a transfer patient.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.6.1#2"
+      "derivedFrom": "AS.6.1#2"
     }
   ]
 }

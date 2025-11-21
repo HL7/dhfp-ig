@@ -10,11 +10,18 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "POP_1_Support_for_Health_Maintenance__Preventative_Care_and_Wellness",
   "title": "POP.1 Support for Health Maintenance, Preventative Care and Wellness (Header)",
   "status": "active",
   "description": "Evaluate patient information to provide alerts, notifications and reminders regarding health, preventative care and wellness.",
-  "purpose": "The system assists in determining ongoing and pertinent communications from the provider to patient to promote health, preventative care and wellness."
+  "purpose": "The system assists in determining ongoing and pertinent communications from the provider to patient to promote health, preventative care and wellness.",
+  "derivedFrom": [
+    "POP.1"
+  ]
 }

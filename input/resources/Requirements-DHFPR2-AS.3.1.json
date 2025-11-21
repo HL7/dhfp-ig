@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_3_1_Manage_Information_Exchange_with_Patient_PHR",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support the ability to capture, and/or have interactions with patient PHR systems to enable the creation and maintenance of demographic, clinical and administrative information.",
   "purpose": "The patient's PHR demographic, clinical and administrative data set is needed to support identification and to enhance the prospect for interoperability. The PHR Account Holder should be able to request or make changes to their demographic data and allow for export of all or parts of the demographic data to other systems.",
+  "derivedFrom": [
+    "AS.3.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage patient information (e.g., demographic, clinical and administrative) through an interaction with an external system (e.g., Personal Health Record).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.3.1#1"
+      "derivedFrom": "AS.3.1#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY transmit an alert or notification to a patient's provider that new information is available as a result of interaction with an external system (e.g., Personal Health Record system).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.3.1#2"
+      "derivedFrom": "AS.3.1#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to receive requests for patient information from external systems (e.g., patient's Personal Health Record).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.3.1#3"
+      "derivedFrom": "AS.3.1#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to transmit patient's information to an external system(e.g., patient's Personal Health Record).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.3.1#4"
+      "derivedFrom": "AS.3.1#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD transmit the status (e.g., acknowledgement, pending, rejected) of an external system's request for information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.3.1#5"
+      "derivedFrom": "AS.3.1#5"
     }
   ]
 }

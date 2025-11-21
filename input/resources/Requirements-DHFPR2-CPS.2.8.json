@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_2_8_Support_Medical_Device_Originated_Data",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support collection and presentation of data captured from medical and medication monitoring devices.",
   "purpose": "Collection of medical device information is supported as appropriate to the care setting. Examples include: vital signs/pulse-oximeter, anesthesia machines, home diagnostic devices for chronic disease management, laboratory machines, bar coded artifacts (e.g., medicine, immunizations, demographics, history, and identification), transcranial magnetic stimulation systems, or medication reminder systems.",
+  "derivedFrom": [
+    "CPS.2.8"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture electronic data from medical devices according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.8#1"
+      "derivedFrom": "CPS.2.8#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render information collected from medical devices as part of the medical record.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.8#2"
+      "derivedFrom": "CPS.2.8#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and maintain the following information of a device when it is suspected as the cause of a Serious Adverse Event: brand name, common device name, manufacturer, model number, catalog number, serial number, lot number, expiration date, other number(s), operator of device, if implanted (date), if explanted (date), single or multiple use device indicator (i.e. if this is a single use device that was reprocessed and reused on a patient).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.8#3"
+      "derivedFrom": "CPS.2.8#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to present data captured from medical devices for verification by a provider according to scope of practice, organizational policy, and/or jurisdictional law, and present the identification of the relevant device.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.8#4"
+      "derivedFrom": "CPS.2.8#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD link data that was captured by a medical device to the originating device ID and device type.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.8#5"
+      "derivedFrom": "CPS.2.8#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture the date/time from medical devices.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.8#6"
+      "derivedFrom": "CPS.2.8#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability for the user to capture data manually from medical devices.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.2.8#7"
+      "derivedFrom": "CPS.2.8#7"
     }
   ]
 }

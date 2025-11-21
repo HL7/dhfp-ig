@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CPS_4_1_Manage_Order_Set_Templates",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Maintain order set templates based on preferred standards, provider preferences, organizational policy or other criteria.",
   "purpose": "Order set templates, which may include medication orders, allow a care provider to choose common orders for a particular circumstance or disease state according to standards (e.g., best practice guidelines) or other criteria. Order Set Templates may be defined to allow or not allow the provider to modify (add/remove/update) specific orders when applying them to a specific patient.",
+  "derivedFrom": [
+    "CPS.4.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage order set templates, including creation from provider input and version control.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#1"
+      "derivedFrom": "CPS.4.1#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY capture an order set template based on a specific patient's orders/data according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#2"
+      "derivedFrom": "CPS.4.1#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage order set templates created for conditions or diseases.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#3"
+      "derivedFrom": "CPS.4.1#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture the practice standards or criteria used to create order set templates (e.g., as a note attached to the template).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#4"
+      "derivedFrom": "CPS.4.1#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY render order set templates to providers based on diagnoses, conditions, or symptoms to aid decision support.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#5"
+      "derivedFrom": "CPS.4.1#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CP.4.1](Requirements-DHFPR2-CP.4.1.html) (Use Order Sets).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#6"
+      "derivedFrom": "CPS.4.1#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and maintain an order set template containing all order types relevant to a particular problem (e.g., laboratory , radiology, medications, nursing tasks, and materials management).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#7"
+      "derivedFrom": "CPS.4.1#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD capture, maintain and render order set templates customized by patient age, sex, or other patient factors.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#8"
+      "derivedFrom": "CPS.4.1#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD capture, maintain and render order set templates customized by provider type.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#9"
+      "derivedFrom": "CPS.4.1#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY capture, maintain and render order set templates customized by provider.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#10"
+      "derivedFrom": "CPS.4.1#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD capture, maintain and render standing order set templates for triage or for specific conditions.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#11"
+      "derivedFrom": "CPS.4.1#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to manage links or access to applicable clinical standards and reference materials within an order set.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#12"
+      "derivedFrom": "CPS.4.1#12"
     },
     {
       "extension": [
@@ -276,7 +283,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, maintain and render the date that an order set was last modified.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#13"
+      "derivedFrom": "CPS.4.1#13"
     },
     {
       "extension": [
@@ -296,7 +303,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, maintain and render order set templates that are pre-configured with order entry information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#14"
+      "derivedFrom": "CPS.4.1#14"
     },
     {
       "extension": [
@@ -316,7 +323,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, maintain and render multiple choices of orders within an order set template for clinician selection.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#15"
+      "derivedFrom": "CPS.4.1#15"
     },
     {
       "extension": [
@@ -336,7 +343,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, maintain and render text instructions or recommendations within order sets.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#16"
+      "derivedFrom": "CPS.4.1#16"
     },
     {
       "extension": [
@@ -356,7 +363,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture a name for an order set.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#17"
+      "derivedFrom": "CPS.4.1#17"
     },
     {
       "extension": [
@@ -376,7 +383,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render order set(s) by name.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#18"
+      "derivedFrom": "CPS.4.1#18"
     },
     {
       "extension": [
@@ -396,7 +403,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render orders in the same manner regardless of the manner in which they were ordered (individually or from within an order set).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#19"
+      "derivedFrom": "CPS.4.1#19"
     },
     {
       "extension": [
@@ -416,7 +423,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to integrate order sets within other order sets.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#20"
+      "derivedFrom": "CPS.4.1#20"
     },
     {
       "extension": [
@@ -436,7 +443,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL determine and render drug-drug interaction and drug-allergy reaction checking to orders placed through an order set in the same way as orders placed individually.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#21"
+      "derivedFrom": "CPS.4.1#21"
     },
     {
       "extension": [
@@ -456,7 +463,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render reports on the use of order sets, including such data as orders, ordering provider, date/time ordered, basic patient data (e.g., demographics), and condition(s) being treated.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#22"
+      "derivedFrom": "CPS.4.1#22"
     },
     {
       "extension": [
@@ -476,7 +483,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture, maintain and render order sets that allow or disallow individual orders to be selected or deselected by the user (e.g., standing orders that can't be modified during care provision).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#23"
+      "derivedFrom": "CPS.4.1#23"
     },
     {
       "extension": [
@@ -496,7 +503,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to capture and maintain order set preferences.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CPS.4.1#24"
+      "derivedFrom": "CPS.4.1#24"
     }
   ]
 }

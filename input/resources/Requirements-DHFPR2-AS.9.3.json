@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_9_3_Support_Service_Authorizations",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support interactions with other systems, applications, and modules to enable the creation of requests, responses and appeals related to service authorization, including prior authorizations, referrals, and pre-certification.",
   "purpose": "Retrieves information needed to support verification of medical necessity and prior authorization of services at the appropriate juncture in the encounter workflow. Improves timeliness of patient care and reduces claim denials.",
+  "derivedFrom": [
+    "AS.9.3"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture service authorizations relevant to the service provided including the source, dates, and service(s) authorized.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.9.3#1"
+      "derivedFrom": "AS.9.3#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture referrals relevant to the service provided including the source, date and service(s) referred.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.9.3#2"
+      "derivedFrom": "AS.9.3#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to exchange computer readable data on service authorizations according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.9.3#3"
+      "derivedFrom": "AS.9.3#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to exchange computer readable data on service referral information according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.9.3#4"
+      "derivedFrom": "AS.9.3#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to export electronic referral(s), including relevant supporting clinical information from care providers internal or external to the organization.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.9.3#5"
+      "derivedFrom": "AS.9.3#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to export electronic referral(s), including relevant supporting administrative information from care providers internal or external to the organization.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.9.3#6"
+      "derivedFrom": "AS.9.3#6"
     }
   ]
 }

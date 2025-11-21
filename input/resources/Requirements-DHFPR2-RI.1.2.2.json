@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "RI_1_2_2_Manage_Record_Entries_for_Legal_Hold",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Manage/Preserve Record Entries for Legal Hold (Multiple instances)",
   "purpose": "Occurs when a set of Record Entries is designated to be held for legal purposes or proceedings.\n- Ensures preservation of a set of Record Entries for a designated time, held without alteration.",
+  "derivedFrom": [
+    "RI.1.2.2"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [RI.1.1.23](Requirements-DHFPR2-RI.1.1.23.html) (Place Record Entries on Legal Hold).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.2.2#1"
+      "derivedFrom": "RI.1.2.2#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [RI.1.1.24](Requirements-DHFPR2-RI.1.1.24.html) (Release Record Entries from Legal Hold).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.2.2#2"
+      "derivedFrom": "RI.1.2.2#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to control access to data/records during legal hold, preventing un-auditable alteration or unauthorized use for preservation purposes.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.2.2#3"
+      "derivedFrom": "RI.1.2.2#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to maintain records beyond normal retention period according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.2.2#4"
+      "derivedFrom": "RI.1.2.2#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture the reason for preserving records beyond the normal retention period.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.2.2#5"
+      "derivedFrom": "RI.1.2.2#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render a legal hold notice identifying who to contact for questions when a user attempts to alter a record on legal hold.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.2.2#6"
+      "derivedFrom": "RI.1.2.2#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render Record Entry content preserved for a legal hold by type, class or encounter (e.g., medical Record Entry or report, e-mail, metadata, etc.), conforming to function [RI.1.1.13](Requirements-DHFPR2-RI.1.1.13.html) (Extract Record Entry Content).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.2.2#7"
+      "derivedFrom": "RI.1.2.2#7"
     }
   ]
 }

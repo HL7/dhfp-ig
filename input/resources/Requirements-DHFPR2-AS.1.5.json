@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_1_5_Team_Group_of_Providers_Registry_or_Directory",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Provide access to a current directory, registry or repository of information on teams or groups of providers according to scope of practice, organizational policy, and/or jurisdictional law.",
   "purpose": "An organization may assign caregivers to teams that need to be registered as such. In another scenario, an organization might contract with a group of providers. The group would be listed by the group name or individually or both. A caregiver might be part of more than one team or group. All of these factors need to be supported. Information includes, but is not limited to: full name, address or physical location, and a 24x7 telecommunications address (e.g., a phone or pager access number).",
+  "derivedFrom": [
+    "AS.1.5"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render a current directory, registry or repository of teams or groups of providers according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.1.5#1"
+      "derivedFrom": "AS.1.5#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability for authorized users to manage the assignment of providers to appropriate teams or groups of providers according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.1.5#2"
+      "derivedFrom": "AS.1.5#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to determine the identity of a provider's employer(s) for administrative or financial purposes through the use of internal, and/or external registry services or directories.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.1.5#3"
+      "derivedFrom": "AS.1.5#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to tag the role of each provider associated with a patient (e.g., encounter provider, primary care provider, attending, resident, or consultant)",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.1.5#4"
+      "derivedFrom": "AS.1.5#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage care team membership.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.1.5#5"
+      "derivedFrom": "AS.1.5#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage demographic and scheduling information on care team members, according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.1.5#6"
+      "derivedFrom": "AS.1.5#6"
     }
   ]
 }

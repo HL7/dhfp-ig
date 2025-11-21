@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "CP_6_1_Manage_Medication_Administration",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Present providers with the list of medications that are to be administered to a patient, necessary administration information, and capture administration details.",
   "purpose": "In a setting in which medication orders are to be administered by a provider rather than the patient, the necessary information is presented including: the list of medication orders that are to be administered; administration instructions, times or other conditions of administration; dose and route, etc. The system shall securely relate medications to be administered to the unique identity of the patient (see [CPS.1.1](Requirements-DHFPR2-CPS.1.1.html)). Additionally, the provider can record what actually was or was not administered, whether or not these facts conform to the order. Appropriate time stamps for all medication related activity are generated.\n\nFor some settings that administer complete sets of medications from a variety of providers' orders, it may be useful to provide an additional check for possible drug-drug or other interactions.\n\nThe EHR system shall support the five “rights” - Right Patient, Right Drug, Right Dose, Right Route, Right Time.\n\nThe system should report medication administration, where appropriate, to public health or disease management authorities (e.g., oncology related medication orders should be communicated or transmitted to a cancer registry).",
+  "derivedFrom": [
+    "CP.6.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render the list of medications that are to be administered.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#1"
+      "derivedFrom": "CP.6.1#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render the list of medications that are to be administered including all administration directions/instructions (SIG).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#2"
+      "derivedFrom": "CP.6.1#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render medications as dispensed (including dose and quantity of dispensed units of medication).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#3"
+      "derivedFrom": "CP.6.1#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to tag the medications that are to be administered by the patient (i.e. self-administered).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#4"
+      "derivedFrom": "CP.6.1#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render the drug, dose, route, time and frequency of desired administration for all scheduled medications.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#5"
+      "derivedFrom": "CP.6.1#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render a notification to the clinician when specific doses are due.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#6"
+      "derivedFrom": "CP.6.1#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render a notification when medication related activities are due (e.g., adjusting medication dosing based on patient condition, checking IV lines for infiltration).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#7"
+      "derivedFrom": "CP.6.1#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CPS.4.2.1](Requirements-DHFPR2-CPS.4.2.1.html) (Support for Medication Interaction and Allergy Checking) in order to determine and render allergies, drug-drug interactions, and other potential adverse reactions, when rendering medication administration information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#8"
+      "derivedFrom": "CP.6.1#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL conform to function [CPS.4.2.2](Requirements-DHFPR2-CPS.4.2.2.html) (Support for Patient-Specific Dosing and Warnings) in order to determine and render other potential adverse reactions, when rendering medication administration information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#9"
+      "derivedFrom": "CP.6.1#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture and maintain the medication identification number of the drug administered to the patient (e.g., NDC number, lot numbers, expiration date).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#10"
+      "derivedFrom": "CP.6.1#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture, maintain, and render medication administration details as discrete data, according to scope of practice, organizational policy, and/or jurisdictional law, including:\n- the medication name, including generic names and associated trade names, such as Arestin, oxycodone, penicillin, etc., from a reference library, i.e., \"mineable data,\" with strength and dose;\n- date and time of administration;\n- route and site;\n- administering provider;\n- observations, reactions and complications;\n- reason medication not given and/or medication related activity not performed.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#11"
+      "derivedFrom": "CP.6.1#11"
     },
     {
       "extension": [
@@ -256,7 +263,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture the effectiveness of PRN or \"as needed\" doses after they have been administered.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#12"
+      "derivedFrom": "CP.6.1#12"
     },
     {
       "extension": [
@@ -276,7 +283,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render any clinical interventions or assessments required prior to medication administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#13"
+      "derivedFrom": "CP.6.1#13"
     },
     {
       "extension": [
@@ -296,7 +303,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render any clinical interventions or assessments required subsequent to medication administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#14"
+      "derivedFrom": "CP.6.1#14"
     },
     {
       "extension": [
@@ -316,7 +323,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to link securely medication-related activities to the unique identity of the patient (e.g., linking the verification of medication administration to the correct patient).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#15"
+      "derivedFrom": "CP.6.1#15"
     },
     {
       "extension": [
@@ -336,7 +343,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture the identification of medication samples dispensed, including lot number and expiration date.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#16"
+      "derivedFrom": "CP.6.1#16"
     },
     {
       "extension": [
@@ -356,7 +363,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, maintain, and render patient identification and medication identification information from integrated point-of-care devices (e.g., barcode recognition devices that help verify patients and their medications).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#17"
+      "derivedFrom": "CP.6.1#17"
     },
     {
       "extension": [
@@ -376,7 +383,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render medication orders for medications that have not yet been dispensed.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#18"
+      "derivedFrom": "CP.6.1#18"
     },
     {
       "extension": [
@@ -396,7 +403,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render medication orders for medications that have not yet been administered.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#19"
+      "derivedFrom": "CP.6.1#19"
     },
     {
       "extension": [
@@ -416,7 +423,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD render an alert, when rendering medication administration information, if a maximum individual or daily dose exists and further administration would cause these doses to be exceeded (e.g., in the case of a PRN order with weight-based or BSA-based dose limits).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#20"
+      "derivedFrom": "CP.6.1#20"
     },
     {
       "extension": [
@@ -436,7 +443,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render medications to be administered over a selectable date/time range.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#21"
+      "derivedFrom": "CP.6.1#21"
     },
     {
       "extension": [
@@ -456,7 +463,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render the medication administration history including administering provider, date, and time.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#22"
+      "derivedFrom": "CP.6.1#22"
     },
     {
       "extension": [
@@ -476,7 +483,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render continuous infusions in a manner that distinguishes them from other discrete-dose medications (e.g., insulin drip versus subcutaneous insulin dose).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#23"
+      "derivedFrom": "CP.6.1#23"
     },
     {
       "extension": [
@@ -496,7 +503,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render PRN (\"as needed\") medications in a manner that distinguishes them from other medications.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#24"
+      "derivedFrom": "CP.6.1#24"
     },
     {
       "extension": [
@@ -516,7 +523,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to annotate a scheduled medication dose and include the annotation as part of the legal medical record (e.g., describing the dose to be administered based upon specific clinical indicators such as a sliding scale insulin order where the dose is based upon the patient's current blood sugar level).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#25"
+      "derivedFrom": "CP.6.1#25"
     },
     {
       "extension": [
@@ -536,7 +543,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render the medication order as written (i.e., exact clinician order language) when rendering administration information.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#26"
+      "derivedFrom": "CP.6.1#26"
     },
     {
       "extension": [
@@ -556,7 +563,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture and render patient-specific instructions or other free text related to the administration of the medication (e.g., use left-arm IV only). For Dental, SHALL also include the ability to capture and render patient-specific documentation and instructions or directions for off-label uses.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#27"
+      "derivedFrom": "CP.6.1#27"
     },
     {
       "extension": [
@@ -576,7 +583,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to manage information regarding a second provider witness to co-document administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#28"
+      "derivedFrom": "CP.6.1#28"
     },
     {
       "extension": [
@@ -596,7 +603,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture the documentation of medication administration using a barcode scanner or imaging scanner (e.g., scanner capable of reading two dimensional symbologies).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#29"
+      "derivedFrom": "CP.6.1#29"
     },
     {
       "extension": [
@@ -616,7 +623,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render an alert to the administering provider when an electronic identification device (e.g., barcode & scanner or RFID) is used to document the administration of the medication and one of the following is in error: right patient, right medication, right dose, right time, or right route or there has not been positive identification of the administering provider.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#30"
+      "derivedFrom": "CP.6.1#30"
     },
     {
       "extension": [
@@ -636,7 +643,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to manage medication administration schedules on the record of medication administration - to allow user to adjust future authorized schedule as needed (e.g., delay, refused, unavailable).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#31"
+      "derivedFrom": "CP.6.1#31"
     },
     {
       "extension": [
@@ -656,7 +663,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render a notification to associated systems (e.g., pharmacy, ordering, food and nutrition services) of changes in schedules on the record of medication administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#32"
+      "derivedFrom": "CP.6.1#32"
     },
     {
       "extension": [
@@ -676,7 +683,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture an acknowledgement from a user that a medication order has been reviewed including capturing the date, time and user credentials.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#33"
+      "derivedFrom": "CP.6.1#33"
     },
     {
       "extension": [
@@ -696,7 +703,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture documentation of medication administration prior to pharmacy review.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#34"
+      "derivedFrom": "CP.6.1#34"
     },
     {
       "extension": [
@@ -716,7 +723,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to capture, maintain and render as part of the medication administration record for infusions the actual date and times of the infusion including the start and stop times and any modifications to the infusion and the assessment status of the infusion.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#35"
+      "derivedFrom": "CP.6.1#35"
     },
     {
       "extension": [
@@ -736,7 +743,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, maintain, and render the patient's consent to have restricted medications administered, (e.g., Risk Evaluation and Mitigation Strategy (REMS)).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#36"
+      "derivedFrom": "CP.6.1#36"
     },
     {
       "extension": [
@@ -756,7 +763,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY auto-populate the medication administration record as a by-product of verification of administering provider, patient, medication, dose, route and time according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#37"
+      "derivedFrom": "CP.6.1#37"
     },
     {
       "extension": [
@@ -776,7 +783,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture, maintain, and present physiological parameters or task completion that must be checked and recorded prior to medication administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#38"
+      "derivedFrom": "CP.6.1#38"
     },
     {
       "extension": [
@@ -796,7 +803,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to capture and maintain documentation that the right patient, right medication, right dose, right time, and right route were verified (e.g., using positive ID technology such as bar code scanning) at the time of administration.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#39"
+      "derivedFrom": "CP.6.1#39"
     },
     {
       "extension": [
@@ -816,7 +823,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to render a medication unique identifier (e.g., NDC, Structured Products Label (SPL) in the U.S. Realm or other standard product identifiers) according to jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 CP.6.1#40"
+      "derivedFrom": "CP.6.1#40"
     }
   ]
 }

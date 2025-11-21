@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "RI_1_1_17_Deprecate_Record_Lifecycle_Event",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Deprecate Record Entries (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to tag record entry(ies) as obsolete, erroneous or untrustworthy, to warn against its future use. \n\nReference: ISO 21089-2018, Section 15.17.",
+  "derivedFrom": [
+    "RI.1.1.17"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to tag Record Entries as deprecated/retracted and indicating that they are invalid according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 RI.1.1.17#1"
+      "derivedFrom": "RI.1.1.17#1"
     }
   ]
 }

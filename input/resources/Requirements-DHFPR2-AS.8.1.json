@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "AS_8_1_Support_Rules_Driven_Clinical_Coding",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Make available all pertinent patient information needed to support coding of diagnoses, procedures and outcomes.",
   "purpose": "The user is assisted in coding information for clinical reporting reasons. For example, a professional coder may have to code the principal diagnosis in the current, applicable ICD as a basis for hospital funding. All diagnoses and procedures during the episode may be presented to the coder, as well as the applicable ICD hierarchy containing these codes.",
+  "derivedFrom": [
+    "AS.8.1"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to render patient information needed to support coding of diagnosis, procedures and outcomes.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.1#1"
+      "derivedFrom": "AS.8.1#1"
     },
     {
       "extension": [
@@ -56,7 +63,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to determine coding of diagnoses, procedures and outcomes based on provider specialty, care setting and other information that may be entered into the system during the encounter.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.1#2"
+      "derivedFrom": "AS.8.1#2"
     },
     {
       "extension": [
@@ -76,7 +83,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to analyze clinical documents for deficiencies (e.g., missing information) using coding based rules.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.1#3"
+      "derivedFrom": "AS.8.1#3"
     },
     {
       "extension": [
@@ -96,7 +103,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD render the results of document coding deficiencies (e.g., missing information) analysis to the coder.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.1#4"
+      "derivedFrom": "AS.8.1#4"
     },
     {
       "extension": [
@@ -116,7 +123,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to render the results of a coding documentation deficiency analysis to the appropriate user(s) (e.g., the deficient document or a link to same).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.1#5"
+      "derivedFrom": "AS.8.1#5"
     },
     {
       "extension": [
@@ -136,7 +143,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to integrate the deficiency remediation into the coding workflow.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.1#6"
+      "derivedFrom": "AS.8.1#6"
     },
     {
       "extension": [
@@ -156,7 +163,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to present configurable (e.g., with respect to content, time of presentation), standard reports that support clinical documentation coding workflow.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.1#7"
+      "derivedFrom": "AS.8.1#7"
     },
     {
       "extension": [
@@ -176,7 +183,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY provide the ability to present configurable (e.g., with respect to content, time of presentation), ad-hoc reports that support clinical documentation coding workflow.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.1#8"
+      "derivedFrom": "AS.8.1#8"
     },
     {
       "extension": [
@@ -196,7 +203,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD capture the time of care provision to facilitate correct coding.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.1#9"
+      "derivedFrom": "AS.8.1#9"
     },
     {
       "extension": [
@@ -216,7 +223,7 @@
       ],
       "conditionality": false,
       "requirement": "The system MAY capture and maintain user preferences for how the list of diagnoses are rendered (e.g., numerical order, alphabetic order).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.1#10"
+      "derivedFrom": "AS.8.1#10"
     },
     {
       "extension": [
@@ -236,7 +243,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHOULD provide the ability to link statements regarding diagnoses with codes when more than one code is required for a condition (e.g., multiple codes for a single condition, late effects and cause, etiology and manifestation).",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 AS.8.1#11"
+      "derivedFrom": "AS.8.1#11"
     }
   ]
 }

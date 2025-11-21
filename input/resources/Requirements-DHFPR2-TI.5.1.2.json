@@ -10,6 +10,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+      "valueCode": "NC"
     }
   ],
   "name": "TI_5_1_2_Structured_Document_Interchange_Standards",
@@ -17,6 +21,9 @@
   "status": "active",
   "description": "Support the management of structured documents.",
   "purpose": "Structured documents are an important method of facilitating the exchange of information to support care. Documents are often considered to be more permanent in nature; messages are often considered to be more transitory in nature. Examples of structured documents include: a referral from a primary care physician to a specialist; a medical summary; a discharge instruction for the patient.",
+  "derivedFrom": [
+    "TI.5.1.2"
+  ],
   "statement": [
     {
       "extension": [
@@ -36,7 +43,7 @@
       ],
       "conditionality": false,
       "requirement": "The system SHALL provide the ability to exchange structured documents according to scope of practice, organizational policy, and/or jurisdictional law.",
-      "derivedFrom": "EHRS_FM_R2.1 April 2020 TI.5.1.2#1"
+      "derivedFrom": "TI.5.1.2#1"
     }
   ]
 }
