@@ -22,7 +22,7 @@
   "description": "Provide support for the management of patients enrolled in research protocols.",
   "purpose": "The clinician is presented with appropriate protocols for patients participating in research studies, and is supported in the management and tracking of study participants.",
   "derivedFrom": [
-    "CPS.3.5"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.3.5"
   ],
   "statement": [
     {

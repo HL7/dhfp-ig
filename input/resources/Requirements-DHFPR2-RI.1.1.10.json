@@ -22,7 +22,7 @@
   "description": "De-Identify (Anononymize) Record Entries (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to scrub record entry content to reduce the association between a set of identifying data and the data subject in a way that may or may not be reversible. \n\nReference: ISO 21089-2018, Section 15.10.",
   "derivedFrom": [
-    "RI.1.1.10"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.10"
   ],
   "statement": [
     {

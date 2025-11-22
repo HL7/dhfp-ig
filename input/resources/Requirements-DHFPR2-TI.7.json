@@ -22,7 +22,7 @@
   "description": "Support workflow management functions including both the management and set up of work queues, personnel lists, and system interfaces as well as the implementation functions that use workflow-related business rules to direct the flow of work assignments.",
   "purpose": "Workflow management functions that an EHR-S supports include:\n-Distribution of information to and from internal and external parties;\n-Support for task-management as well as parallel and serial task distribution;\n-Support for notification and task routing based on system triggers; and-Support for task assignments, escalations and redirection in accordance with business rules.\n\nWorkflow definitions and management may be implemented by a designated application or distributed across an EHR-S.",
   "derivedFrom": [
-    "TI.7"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.7"
   ],
   "statement": [
     {

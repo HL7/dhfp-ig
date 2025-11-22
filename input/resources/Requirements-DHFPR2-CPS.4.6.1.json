@@ -22,7 +22,7 @@
   "description": "Evaluate referrals within the context of a patient's healthcare data.",
   "purpose": "The system assists with patient referrals, including compilation of relevant clinical and behavioral health results, demographic and insurance information (if available). Standardized or evidence based protocols for workup prior to referral may also be presented.",
   "derivedFrom": [
-    "CPS.4.6.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.4.6.1"
   ],
   "statement": [
     {

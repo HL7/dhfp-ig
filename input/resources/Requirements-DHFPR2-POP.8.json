@@ -22,7 +22,7 @@
   "description": "Provide patient data in a manner that meets applicable requirements for de-identification.",
   "purpose": "When an internal or external party requests patient data and that party requests de-identified data (or is not entitled to identified patient information, either by law or custom), the user can export the data in a fashion that meets the requirements for de-identification in that locale or realm.\n\nAn auditable record of these requests and associated exports may be maintained by the system. This record could be implemented in any way that would allow the who, what, why and when of a request and export to be recoverable for review.\n\nA random re-identification key may be added to the data, to support re-identification for the purpose of alerting providers of potential patient safety issues. For example, if it is discovered that a patient is at risk for a major cardiac event, the provider could be notified of this risk, allowing the provider to identify the patient from the random key.",
   "derivedFrom": [
-    "POP.8"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-POP.8"
   ],
   "statement": [
     {

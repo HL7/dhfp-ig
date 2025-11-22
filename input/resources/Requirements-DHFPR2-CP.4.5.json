@@ -22,7 +22,7 @@
   "description": "Communicate with appropriate sources or registries to manage orders for blood products or other biologics.",
   "purpose": "Interact with a blood bank system or other source to support orders for blood products or other biologics including discontinuance orders. Use of such products in the provision of care is captured. Blood bank or other functionality that may come under jurisdictional law or other regulation (e.g., by the FDA in the United States) is not required; functional communication with such a system is required. Dental examples include platelet rich plasma, fresh frozen plasma administered prior to extraction, and bone grafting materials.",
   "derivedFrom": [
-    "CP.4.5"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.4.5"
   ],
   "statement": [
     {

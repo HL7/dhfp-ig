@@ -22,7 +22,7 @@
   "description": "Capture the decision support prompts and manage provider actions to accept or override decision support prompts.",
   "purpose": "Provider actions in response to prompts offered from decision support are captured. Management of these actions be accomplished at the patient level or aggregated for patient population, research protocol, or organizational trending.",
   "derivedFrom": [
-    "CPS.3.8"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.3.8"
   ],
   "statement": [
     {

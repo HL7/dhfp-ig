@@ -29,3 +29,4 @@ The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-norma
 
 # Will be fixed with final publication
 The extension http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info is not allowed to be used at this point (this element is [BackboneElement, Requirements.statement]; allowed for this version = e:Requirements or Requirements.statement)
+The extension http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info is not allowed to be used at this point (this element is [Requirements]; allowed for this version = e:Requirements or Requirements.statement)

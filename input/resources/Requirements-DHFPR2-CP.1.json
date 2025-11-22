@@ -22,6 +22,6 @@
   "description": "Manage the patient's clinical history lists used to present summary or detailed information on patient health history.",
   "purpose": "Patient Clinical History lists are used to present succinct \"snapshots\" of critical health information including patient history; allergy, intolerance and adverse reactions; medications; problems; strengths; immunizations; medical equipment/devices; and patient and family preferences.",
   "derivedFrom": [
-    "CP.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.1"
   ]
 }

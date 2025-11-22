@@ -22,7 +22,7 @@
   "description": "Render clinical documentation that has been captured from multiple external sources.",
   "purpose": "Documentation relevant to the patient record can be captured from many external sources and should be rendered appropriately alongside other information in the patient record.",
   "derivedFrom": [
-    "CP.2.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.2.1"
   ],
   "statement": [
     {

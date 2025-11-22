@@ -22,7 +22,7 @@
   "description": "Re-activate Record Entries (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to recreate or restore full status to record entries previously deleted or deprecated. \n\nReference: ISO 21089-2018, Section 15.18.",
   "derivedFrom": [
-    "RI.1.1.18"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.18"
   ],
   "statement": [
     {

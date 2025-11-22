@@ -22,7 +22,7 @@
   "description": "Deprecate Record Entries (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to tag record entry(ies) as obsolete, erroneous or untrustworthy, to warn against its future use. \n\nReference: ISO 21089-2018, Section 15.17.",
   "derivedFrom": [
-    "RI.1.1.17"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.17"
   ],
   "statement": [
     {

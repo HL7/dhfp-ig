@@ -22,7 +22,7 @@
   "description": "Manage communications to professionals (e.g., coroners, medical examiners, law enforcement) for health care events.",
   "purpose": "Health care providers must be able to provide notifications and associated administrative, and/or clinical information to various professional individuals or organizations of specific health care events (e.g., patient deaths, births, gunshot wounds) in order to promote or trigger a workflow.",
   "derivedFrom": [
-    "CPS.9.2.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.9.2.2"
   ],
   "statement": [
     {

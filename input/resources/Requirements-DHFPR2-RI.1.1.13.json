@@ -22,7 +22,7 @@
   "description": "Extract Record Entry content to produce subsets, derivations or aggregations (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to selectively pull out a subset of record entry content, based on explicit criteria. \n\nReference: ISO 21089-2018, Section 15.13.",
   "derivedFrom": [
-    "RI.1.1.13"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.13"
   ],
   "statement": [
     {

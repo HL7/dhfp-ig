@@ -22,7 +22,7 @@
   "description": "Provide the ability to manage clinical orders and results including medication, non-medication, diagnostic tests, blood products, other biologics and referrals, using order sets as appropriate.",
   "purpose": "The provision of clinical care includes the need to order from a variety of treatments using order sets as appropriate as well as reviewing the results of treatment. Orders for treatments may include medications, non-medication therapies (e.g., physical therapy, special diet, immunizations, non-allopathic regimens); diagnostic care (e.g., laboratory , radiology); blood products and other biologics (e.g., blood transfusions, human growth hormones). Patients are often referred to other health care providers for more specialized diagnostic workup, and/or treatment. An effective EHR-S must include support and management of these processes and associated documentation.",
   "derivedFrom": [
-    "CP.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.4"
   ],
   "statement": [
     {

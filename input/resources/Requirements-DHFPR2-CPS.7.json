@@ -22,6 +22,6 @@
   "description": "Support for Future Care is necessary to enable the planning of future care according to appropriate healthcare guidelines.",
   "purpose": "Support for future care includes the provision of clinical decision support through giving access to healthcare guidelines from external sources.",
   "derivedFrom": [
-    "CPS.7"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.7"
   ]
 }

@@ -22,7 +22,7 @@
   "description": "Manage/Persist Record Entries (Multiple instances)",
   "purpose": "Occurs upon Record Entry origination/retention and thereafter on a continuous and uninterrupted basis for lifespan of each Record Entry.\n- Ensures long-term retention and preservation of EHR Record Entries, without alteration.\n\nReference: ISO 21089, Section 12.2.2",
   "derivedFrom": [
-    "RI.1.2.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.2.1"
   ],
   "statement": [
     {

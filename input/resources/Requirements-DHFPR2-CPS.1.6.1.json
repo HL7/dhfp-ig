@@ -22,7 +22,7 @@
   "description": "Provide information on relationships by genealogy.",
   "purpose": "Relationships by genealogy may include genetic mother, next of kin, or family members. Appropriate consents must be acquired prior to the collection or use of this information.",
   "derivedFrom": [
-    "CPS.1.6.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.1.6.1"
   ],
   "statement": [
     {

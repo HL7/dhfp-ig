@@ -22,7 +22,7 @@
   "description": "Support cohort and aggregate-level population data sharing within an organization, and/or with other organizations.",
   "purpose": "Population health data needs to be shared in a number of formats. The cohort and aggregate data (query results) may need to be shared within a facility or transmitted to other organizations on an ad hoc or periodic (namely, regularly scheduled) basis. For example, public health surveillance, monitoring and research often rely on analysis of data from multiple sources, including EHR systems. The data may need to be prepared in user-defined formats or formats defined by external parties. The care provider, public health expert, or organization may need to transmit individual or aggregate data in multiple formats (e.g., to an external statistical analytic application or to public health agencies to meet reporting requirements). Query results may need to be viewed, saved, and/or printed in pre-defined or ad hoc report formats, ( e.g., for quality reporting within the care organization). Some or all members of a cohort or population may need to be anonymized, depending on the rules governing the data sharing.",
   "derivedFrom": [
-    "POP.2.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-POP.2.3"
   ],
   "statement": [
     {

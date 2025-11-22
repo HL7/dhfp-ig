@@ -22,7 +22,7 @@
   "description": "Receive and validate formatted inbound communications to facilitate, and/or perform updating of patient education material.",
   "purpose": "Materials may include information about a diagnosis, recommended diets, associated patient health organizations, or web links to similar educational information. These materials may be provided electronically and may require validation prior to inclusion in the system.",
   "derivedFrom": [
-    "CPS.8.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.8.2"
   ],
   "statement": [
     {

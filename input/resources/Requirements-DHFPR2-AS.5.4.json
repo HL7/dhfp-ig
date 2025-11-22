@@ -22,7 +22,7 @@
   "description": "Track tasks to facilitate monitoring for timely and appropriate completion of each task.",
   "purpose": "In order to reduce the risk of errors during the care process due to missed tasks, the provider is able to view the status of each task (e.g., unassigned, on hold, started, performed, canceled, denied, and resolved) and current work lists, lists of unassigned tasks or undisposed tasks, or of other tasks where a risk of omission exists. The timeliness of certain tasks can be tracked, or reports generated, in accordance with relevant law and accreditation standards. For example, a provider is able to create a report that shows tests that have not yet been performed such as urine specimen obtained, blood work drawn, etc. Another example is that of an electronic prescribing system that would track when a refill request or prescription change is received, who it has been assigned to, the action performed, and when it was completed.",
   "derivedFrom": [
-    "AS.5.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.5.4"
   ],
   "statement": [
     {

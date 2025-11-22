@@ -22,7 +22,7 @@
   "description": "Support the import or retrieval of data necessary to review available quality, performance, and cost measurements regarding healthcare facilities.",
   "purpose": "The ability to access information to help facilities with the gathering, managing and using data to assist in the assessment of quality, performance and cost measurements.",
   "derivedFrom": [
-    "AS.8.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.8.4"
   ],
   "statement": [
     {

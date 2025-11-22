@@ -22,7 +22,7 @@
   "description": "Manage a single logical record for each patient.",
   "purpose": "A single record is needed for legal purposes, as well as to organize it unambiguously for the provider. Health information is captured and linked to the patient record. Static data elements as well as data elements that will change over time are maintained. The patient is uniquely identified, after which the record is tied to that patient. Combining information on the same patient, or separating information where it was inadvertently captured for the wrong patient, helps maintain health information for a single patient. In the process of creating a patient record, it is at times advantageous to replicate identical information across multiple records, so that such data does not have to be re-entered. For example, when a parent registers children as new patients, the address, guarantor, and insurance data may be propagated in the children's records without having to re-enter them.",
   "derivedFrom": [
-    "CPS.1.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.1.1"
   ],
   "statement": [
     {
@@ -221,7 +221,7 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
+      "conditionality": true,
       "requirement": "IF health information was mistakenly associated with a patient, THEN the system SHALL provide the ability to link the health information with the correct patient and tag that health information as erroneous in the mistakenly associated patient's record.",
       "derivedFrom": "CPS.1.1#10"
     },

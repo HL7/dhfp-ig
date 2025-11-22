@@ -22,7 +22,7 @@
   "description": "Support remote health care services such as tele-health and remote device monitoring by integrating records and data collected by these means into the patient's record for care management, billing and public health reporting purposes.",
   "purpose": "Enables remote treatment of patients using monitoring devices, and two way communications between provider and patient or provider and provider. Promotes patient empowerment, self-determination and ability to maintain health status in the community. Promotes personal health, wellness and preventative care. For example, a diabetic pregnant mother can self-monitor her condition from her home and use web TV to report to her provider. The same TV-internet connectivity allows her to get dietary and other health promoting information to assist her with managing her high-risk pregnancy.",
   "derivedFrom": [
-    "AS.7.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.7.4"
   ],
   "statement": [
     {

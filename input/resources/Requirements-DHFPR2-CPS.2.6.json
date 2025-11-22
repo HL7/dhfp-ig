@@ -22,7 +22,7 @@
   "description": "Capture and explicitly label patient health data derived from administrative or financial data; and link the data source with that data.",
   "purpose": "It is critically important to be able to distinguish patient health data derived from administrative or financial data from clinically authenticated data.",
   "derivedFrom": [
-    "CPS.2.6"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.2.6"
   ],
   "statement": [
     {

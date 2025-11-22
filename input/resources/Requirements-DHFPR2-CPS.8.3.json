@@ -22,7 +22,7 @@
   "description": "Receive and validate formatted inbound communications to facilitate updating of patient reminder information from external sources such as Cancer or Immunization Registries.",
   "purpose": "Information from outside groups, such as immunization groups, public health organizations, etc. may periodically send updates to patient care providers. The system should be capable of generating patient reminders based on the recommendations of these organizations. Patient reminders could be provided to patients by a number of means including phone calls, or mail. A record of such reminders may become part of a patient's record. Examples of reminders could include a recommended immunization, prophylactic guidelines for MVP, patient self-testing for disease, etc.",
   "derivedFrom": [
-    "CPS.8.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.8.3"
   ],
   "statement": [
     {

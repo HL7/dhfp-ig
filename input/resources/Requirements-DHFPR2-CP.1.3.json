@@ -22,7 +22,7 @@
   "description": "Create and maintain patient-specific medication lists.",
   "purpose": "Medication lists are managed over time, whether over the course of a visit or stay, or the lifetime of a patient. The entire medication history for any medication including, over-the-counter products, alternative supplements and herbal medications, is viewable. Medication lists are not limited to provider orders/prescriptions but may also include, for example, pharmacy dispensed medications without prescription, over the counter medications and patient-reported medications, etc. All pertinent dates, including medication start, modification, and end dates are stored. Medication Lists may also include additional information such as age-specific dosage.",
   "derivedFrom": [
-    "CP.1.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.1.3"
   ],
   "statement": [
     {

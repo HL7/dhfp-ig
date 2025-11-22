@@ -7,6 +7,7 @@ const xml = new xml2js.Parser();
 //
 const MAX_FILE = "dhfp.max";
 const BASE_CANONICAL = "http://hl7.org/ehrs/uv/ehrsfmr2";
+const BASE_CANONICAL_PREFIX = BASE_CANONICAL + "/Requirements/EHRSFMR2-"
 const CANONICAL = "http://hl7.org/ehrs/us/dhfpr2";
 const PACKAGE_ID = "hl7.ehrs.us.dhfpr2";
 const STANDARDS_STATUS = "informative";
@@ -225,7 +226,7 @@ function handleHeaderOrFunction(headerOrFunction, parentObject) {
     const refFunctionID = headerOrFunction.tag.find(tag => tag['$'].name === 'Reference.FunctionID');
     const refChangeInd = headerOrFunction.tag.find(tag => tag['$'].name === 'Reference.ChangeIndicator');
 
-    var fhir_headerorfunction = {
+    var fhir_headerOrFunction = {
         "resourceType": "Requirements",
         "id": `${FMID_PREFIX}-${alias}`,
         "meta": {
@@ -247,10 +248,10 @@ function handleHeaderOrFunction(headerOrFunction, parentObject) {
         "purpose": description
     }
     if (refAlias && refAlias['$'].value != "" && refFunctionID && refFunctionID['$'].value != "") {
-        fhir_headerorfunction["derivedFrom"] = [ refFunctionID['$'].value ];
+        fhir_headerOrFunction["derivedFrom"] = [ BASE_CANONICAL_PREFIX + refFunctionID['$'].value ];
     }
     if (refChangeInd) {
-        fhir_headerorfunction["extension"].push({
+        fhir_headerOrFunction["extension"].push({
             "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
             "valueCode": refChangeInd['$'].value });
     }
@@ -261,7 +262,7 @@ function handleHeaderOrFunction(headerOrFunction, parentObject) {
     }
     resources.push(resource);
 
-    return fhir_headerorfunction;
+    return fhir_headerOrFunction;
 }
 
 function handleCriteria(criteria, fhir_parent_req) {

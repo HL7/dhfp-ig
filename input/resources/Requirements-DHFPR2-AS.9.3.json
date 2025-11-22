@@ -22,7 +22,7 @@
   "description": "Support interactions with other systems, applications, and modules to enable the creation of requests, responses and appeals related to service authorization, including prior authorizations, referrals, and pre-certification.",
   "purpose": "Retrieves information needed to support verification of medical necessity and prior authorization of services at the appropriate juncture in the encounter workflow. Improves timeliness of patient care and reduces claim denials.",
   "derivedFrom": [
-    "AS.9.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.9.3"
   ],
   "statement": [
     {

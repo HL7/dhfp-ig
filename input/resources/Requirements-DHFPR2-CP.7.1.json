@@ -22,7 +22,7 @@
   "description": "Present organizational guidelines for patient care as appropriate to support planning of care, including order entry and clinical documentation.",
   "purpose": "Guidelines, and protocols presented for planning care may be site specific, community or industry-wide standards.",
   "derivedFrom": [
-    "CP.7.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.7.1"
   ],
   "statement": [
     {

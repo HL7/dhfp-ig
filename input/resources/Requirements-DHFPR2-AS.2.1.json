@@ -22,7 +22,7 @@
   "description": "Support interactions with other systems, applications, and modules to enable the maintenance of updated demographic information in accordance with realm-specific recordkeeping requirements.",
   "purpose": "The minimum demographic data set must include the data required by realm-specific laws governing health care transactions and reporting. For example, this may include data input of death status information, or may include support to identify multiple names, such as updating from Baby Girl Doe, to neonate's given name.",
   "derivedFrom": [
-    "AS.2.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.2.1"
   ],
   "statement": [
     {

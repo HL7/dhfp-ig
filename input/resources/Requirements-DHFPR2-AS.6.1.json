@@ -22,7 +22,7 @@
   "description": "Maintain facility demographic information.",
   "purpose": "Demographic information is necessary to uniquely define a healthcare facility (e.g., hospital, freestanding birthing center, clinic, doctor's office, hospice, or nursing home/long-term care facility, transportation/ambulance provider). Example of demographic information may include the facility name, physical location and unique facility identifier (e.g., U.S. National Provider Identifier).",
   "derivedFrom": [
-    "AS.6.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.6.1"
   ],
   "statement": [
     {

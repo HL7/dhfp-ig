@@ -22,7 +22,7 @@
   "description": "Manage patient encounter information, including tele-health encounters, and support follow-up encounters.",
   "purpose": "Each encounter of the patient with the healthcare setting needs to be recorded and the information relevant to the distinct encounter managed. This information includes date and time of the encounter, providers involved, location(s), and the reason for the encounter etc. Additionally, follow-up encounters may require prior administrative and clinical information to be determined or captured, maintained and rendered.\n\nTele-health encounters have unique requirements that may also be supported by the system.",
   "derivedFrom": [
-    "CPS.1.5"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.1.5"
   ],
   "statement": [
     {

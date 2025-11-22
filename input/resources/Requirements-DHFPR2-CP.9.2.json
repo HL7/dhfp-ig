@@ -22,7 +22,7 @@
   "description": "Support the creation of health service reports to authorized health entities that a provider may be required to generate (e.g., the creation of an oncologist's report that must be submitted to a national cancer registry).",
   "purpose": "Providers are prompted to collect sufficient information in the course of care to avoid duplicate, retrospective or other additional data entry as part of supporting health management programs and reporting, for example public health, such as notifiable condition reports, immunization, cancer registry and discharge data.",
   "derivedFrom": [
-    "CP.9.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.9.2"
   ],
   "statement": [
     {

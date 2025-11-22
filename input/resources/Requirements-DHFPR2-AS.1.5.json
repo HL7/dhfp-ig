@@ -22,7 +22,7 @@
   "description": "Provide access to a current directory, registry or repository of information on teams or groups of providers according to scope of practice, organizational policy, and/or jurisdictional law.",
   "purpose": "An organization may assign caregivers to teams that need to be registered as such. In another scenario, an organization might contract with a group of providers. The group would be listed by the group name or individually or both. A caregiver might be part of more than one team or group. All of these factors need to be supported. Information includes, but is not limited to: full name, address or physical location, and a 24x7 telecommunications address (e.g., a phone or pager access number).",
   "derivedFrom": [
-    "AS.1.5"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.1.5"
   ],
   "statement": [
     {

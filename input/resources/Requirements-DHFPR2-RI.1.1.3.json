@@ -22,7 +22,7 @@
   "description": "Transform/Translate Record Entries (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to change the form, language or code system used to represent record entry content. \n\nReference: ISO 21089-2018, Section 15.3.",
   "derivedFrom": [
-    "RI.1.1.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.3"
   ],
   "statement": [
     {

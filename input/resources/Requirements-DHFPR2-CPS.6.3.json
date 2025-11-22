@@ -22,7 +22,7 @@
   "description": "Facilitate real-time checks for potential blood administration errors.",
   "purpose": "To reduce errors at the time of blood product administration, the system assists in positive patient identification, along with checks and alerts regarding the blood product to be administered, including the identification of the blood product, the amount to be delivered, and the route and time of the administration of the blood product.",
   "derivedFrom": [
-    "CPS.6.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.6.3"
   ],
   "statement": [
     {

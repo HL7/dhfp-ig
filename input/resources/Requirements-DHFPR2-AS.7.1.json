@@ -22,7 +22,7 @@
   "description": "Present specialized views based on the encounter-specific values, clinical protocols and business rules.",
   "purpose": "The system user is presented with a presentation view and system interaction appropriate to the context with capture of encounter-specific values, clinical protocols and business rules. This \"user view\" may be configurable by the user or system technicians. As an example, a mobile home health care worker using wireless laptop at the patient's home would be presented with a home health care specific workflow synchronized to the current patient's care plan and tailored to support the interventions appropriate for this patient, including chronic disease management protocols.",
   "derivedFrom": [
-    "AS.7.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.7.1"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Create, maintain, and verify patient decisions (such as informed consent for treatment or disclosure).",
   "purpose": "Decisions are documented and include the extent of information, verification levels and exposition of treatment options. This documentation helps ensure that decisions made at the discretion of the patient, family, or other responsible party, govern the actual care that is delivered or withheld. There may be several documents active at any one time that may govern a patient's care. Both clinical and administrative consents and authorizations are considered part of this function. A consent or authorization includes patient authorization for re-disclosure of sensitive information to third parties. Consents/Authorizations for printing should include appropriate standardized forms for patients, guardians, or foster parents. The system must appropriately present forms for adolescents according to privacy rules.\n\nSome jurisdictions may mandate assent. Assent is agreement by the patient to participate in services when they a legally unable to consent (e.g., an adolescent, an adult with early dementia).",
   "derivedFrom": [
-    "CPS.1.7.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.1.7.3"
   ],
   "statement": [
     {

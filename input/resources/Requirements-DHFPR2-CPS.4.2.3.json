@@ -22,7 +22,7 @@
   "description": "Provide the tooling necessary to support efficient medication ordering.",
   "purpose": "Support efficient medication ordering workflows by allowing medications to be sorted and reviewed by key attributes, e.g., generic or trade names. Also support editing medication orders across multiple instances of an order and capturing medication orders in order sets.",
   "derivedFrom": [
-    "CPS.4.2.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.4.2.3"
   ],
   "statement": [
     {

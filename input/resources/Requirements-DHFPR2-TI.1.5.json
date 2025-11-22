@@ -22,7 +22,7 @@
   "description": "Limit an EHR-S user's ability to deny (repudiate) data origination, transmission or receipt by that user.",
   "purpose": "An EHR-S allows data entry to a patient's electronic health record and it can be a sender or receiver of healthcare information. Non-repudiation is a way to guarantee that the source of the data/record cannot later deny that fact; and that the sender of a message cannot later deny having sent the message; and that the recipient cannot deny having received the message. Components of non-repudiation can include:\n- Digital signature, which serves as a unique identifier for an individual (much like a written signature);\n- Confirmation service, which utilizes a message transfer agent to create a digital receipt (providing confirmation that a message was sent, and/or received);\n- Timestamp, which proves that a document existed at a certain date and time;\n- The use of standardized timekeeping protocols (e.g., the Integrating the Healthcare Enterprise (IHE) Consistent Time Profile).",
   "derivedFrom": [
-    "TI.1.5"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.1.5"
   ],
   "statement": [
     {

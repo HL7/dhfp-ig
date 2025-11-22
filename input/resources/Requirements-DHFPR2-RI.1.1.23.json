@@ -22,7 +22,7 @@
   "description": "Add Legal Hold to Record Entries (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to tag or otherwise indicate special access management and suspension of record entry deletion/destruction, if deemed relevant to a lawsuit or which are reasonably anticipated to be relevant or to fulfill organizational policy under the legal doctrine of “duty to preserve”. \n\nReference: ISO 21089-2018, Section 15.23.",
   "derivedFrom": [
-    "RI.1.1.23"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.23"
   ],
   "statement": [
     {

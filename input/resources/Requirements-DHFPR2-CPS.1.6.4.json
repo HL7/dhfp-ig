@@ -22,7 +22,7 @@
   "description": "Provide information on patient relationships that are represented other than by genealogy, insurance or living situation.",
   "purpose": "Patients relationships are not limited to genealogy, insurance or living situations. Other examples of patient relationships that are relevant to the healthcare or administrative process may include surrogate mother, guardian, a person authorized to see health records, health care surrogate, and persons who may be related by epidemiologic exposure.",
   "derivedFrom": [
-    "CPS.1.6.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.1.6.4"
   ],
   "statement": [
     {

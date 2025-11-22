@@ -22,7 +22,7 @@
   "description": "Provide support for prioritizing patients based upon acuity, wait time, and practitioner load.",
   "purpose": "An EHR-S should support the management of patients waiting for care by displaying them and supporting decisions by the clinicians who are caring for them. The triage process not only collects data on arriving patients, but the categorization and prioritization of patients who are unable to be seen immediately. It is a dynamic process where patient priorities change over time. Unless a care team has unlimited resources, some patients will invariably need to wait.",
   "derivedFrom": [
-    "AS.6.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.6.4"
   ],
   "statement": [
     {

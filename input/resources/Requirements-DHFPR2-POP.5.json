@@ -22,7 +22,7 @@
   "description": "Manage population-based information regarding potential human-product donors, and/or recipients.",
   "purpose": "Population-based health risks often require the identification of potential donors and recipients (e.g., during a disaster, blood is often needed). Other population-based donors and recipients may need to be identified for items such as organs, eggs, sperm, or stem cells. The user can make this information available to internal and external donor matching agencies. A consent or authorization includes patient authorization for redisclosure of sensitive information to third parties (such as donor management).",
   "derivedFrom": [
-    "POP.5"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-POP.5"
   ],
   "statement": [
     {

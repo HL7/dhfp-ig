@@ -22,7 +22,7 @@
   "description": "Support the capture and subsequent export or retrieval of patient, and/or population data necessary to provide quality, performance, and accountability measurements for which providers, facilities, delivery systems, and communities are held accountable.",
   "purpose": "Many regions require regular reporting on the healthcare provided to individuals and populations. This reporting may include measures related to or addressing processes, outcomes, costs of care, quality of care, adherence to best practice guidelines, and credentialing and privileging monitoring. The system needs to provide the report-generating capability to easily create these reports or provide for the export of data to external report-generating software.",
   "derivedFrom": [
-    "POP.6.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-POP.6.2"
   ],
   "statement": [
     {

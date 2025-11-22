@@ -22,7 +22,7 @@
   "description": "Evaluate results and notify provider and patient of results within the context of the patient's healthcare data.",
   "purpose": "The system suggests result interpretations and notifications including those for, abnormal results, trending of results (such as discrete laboratory values over time), evaluation of pertinent results at the time of provider order entry (such as evaluation of laboratory results at the time of ordering a radiology exam), evaluation of incoming results against active medication orders.",
   "derivedFrom": [
-    "CPS.5"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.5"
   ],
   "statement": [
     {

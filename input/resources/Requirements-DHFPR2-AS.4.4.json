@@ -22,7 +22,7 @@
   "description": "Provide support for capturing employment information, and/or special work related requirements (e.g., flyers, divers, firemen, transportation workers) to assist in medical disposition choices and notifications, and support communication to employers.",
   "purpose": "The ability to capture and maintain a patient's employment information, to include contact information and job title, which is expected to be helpful to the clinician when a patient's work environment may affect the assessment of alternative diagnoses, applicable to the individual, as well as the potential treatment(s) that have been tailored to the individual based on their occupation.",
   "derivedFrom": [
-    "AS.4.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.4.4"
   ],
   "statement": [
     {

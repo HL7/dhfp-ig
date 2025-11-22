@@ -22,7 +22,7 @@
   "description": "Remove Legal Hold from Record Entries  (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to remove a tag or other cues for special access management had required to fulfill organizational policy under the legal doctrine of “duty to preserve”. \n\nReference: ISO 21089-2018, Section 15.24.",
   "derivedFrom": [
-    "RI.1.1.24"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.24"
   ],
   "statement": [
     {

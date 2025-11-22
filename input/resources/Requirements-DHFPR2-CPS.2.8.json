@@ -22,7 +22,7 @@
   "description": "Support collection and presentation of data captured from medical and medication monitoring devices.",
   "purpose": "Collection of medical device information is supported as appropriate to the care setting. Examples include: vital signs/pulse-oximeter, anesthesia machines, home diagnostic devices for chronic disease management, laboratory machines, bar coded artifacts (e.g., medicine, immunizations, demographics, history, and identification), transcranial magnetic stimulation systems, or medication reminder systems.",
   "derivedFrom": [
-    "CPS.2.8"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.2.8"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Decrypt Records Entries (1 or more instances)",
   "purpose": "Decrypt Record Lifecycle Event - occurs when an agent causes the system to decode record entry content from a cipher. \n\nReference: ISO 21089-2018, Section 15.27.",
   "derivedFrom": [
-    "RI.1.1.27"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.27"
   ],
   "statement": [
     {

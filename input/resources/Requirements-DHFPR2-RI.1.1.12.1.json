@@ -22,7 +22,7 @@
   "description": "Maintain Evidence of Record Entry Re-Identification Event",
   "purpose": "Evidence of Record Entry Re-Identification Event includes key metadata, ensures health record integrity (and trust) and enables record audit.",
   "derivedFrom": [
-    "RI.1.1.12.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.12.1"
   ],
   "statement": [
     {

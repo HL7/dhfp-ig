@@ -22,7 +22,7 @@
   "description": "Provide the ability to clinician and staff training requirements and document proficiency.",
   "purpose": "In order to deliver quality care, health care systems train their staff in the processes, workflows, and tools required to deliver quality patient care. This training is necessary when staff are initially hired, and also periodically as the evidence-based medical guidance or the tools available to the health care systems change. The system can have a role to track and document the training requirement, progress and proficiency. The system may control user access to system functionality based on training.",
   "derivedFrom": [
-    "AS.8.5"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.8.5"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Archive Record Entries (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to create and move archive artifacts containing record entry content, typically to long-term offline storage. \n\nReference: ISO 21089-2018, Section 15.14.",
   "derivedFrom": [
-    "RI.1.1.14"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.14"
   ],
   "statement": [
     {

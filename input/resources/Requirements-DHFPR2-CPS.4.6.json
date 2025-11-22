@@ -22,6 +22,6 @@
   "description": "Evaluate patient information for referral indicators.",
   "purpose": "The system assists with patient referrals, including prompting the provider with referral recommendations based on the patient's medical record. When creating the referral order, support is provided in the compilation of relevant clinical and behavioral health results, demographic and insurance information (if available). Standardized or evidence based protocols for workup prior to referral may also be presented.",
   "derivedFrom": [
-    "CPS.4.6"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.4.6"
   ]
 }

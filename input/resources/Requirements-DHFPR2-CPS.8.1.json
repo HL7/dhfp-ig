@@ -22,7 +22,7 @@
   "description": "Provide the ability to access reliable information about wellness, disease management, treatments, peer support groups, public health education materials, and related information that is relevant for a specific patient.",
   "purpose": "An individual will be able to find reliable information to research a health question, follow up from a clinical visit, identify treatment options, or other health information needs. The information may be linked directly from entries in the health record, or may be accessed through other means such as key word search. The information may be provided as part of the EHR system but may also include patient information from external databases or specific websites.",
   "derivedFrom": [
-    "CPS.8.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.8.1"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Facilitate provider review and validation of order information to make it pertinent, effective and resource-conservative at the point of order entry.",
   "purpose": "The system assists provider during order entry for therapies, treatments, care, diagnostics and medical supplies and equipment. Support includes, for example: alerts to duplicate orders, missing results or other information required to initiate order, suggested corollary orders, order sets, best practice guidelines, institution-specific order guidelines and patient diagnosis specific recommendations. Also alerts for orders that may be inappropriate or contraindicated for specific patients, for example, X-rays on pregnant women.",
   "derivedFrom": [
-    "CPS.4.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.4.3"
   ],
   "statement": [
     {

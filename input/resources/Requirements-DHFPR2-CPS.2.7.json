@@ -22,7 +22,7 @@
   "description": "Capture and explicitly label patient data derived from eligibility, formulary and benefit information; and link the data source with that data.",
   "purpose": "Sources of eligibility, formulary and benefit may provide data for entry into the electronic prescribing or be given a mechanism for entering this data directly. The data must be explicitly labeled as derived from eligibility, formulary and benefit information. Patient data that is derived from eligibility, formulary and benefit data may be provided by: \n- a provider \n- a payer, or \n- entities that transmit or process eligibility, formulary and benefit data",
   "derivedFrom": [
-    "CPS.2.7"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.2.7"
   ],
   "statement": [
     {

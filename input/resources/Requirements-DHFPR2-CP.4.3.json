@@ -22,7 +22,7 @@
   "description": "Enable the origination, documentation, capture, transmission, tracking and maintenance of non-medication patient care orders.",
   "purpose": "Non-medication orders that request actions or items can be captured and tracked including new, renewal and discontinue orders. Examples include orders to transfer a patient between units, to ambulate a patient, for medical supplies, wound care, durable medical equipment, home IV, and diet or therapy orders. Additionally, psychotherapy and other mental health counseling, behavioral counseling (e.g., smoking cessation, alcohol treatment) other surgical and non-surgical procedures, and complementary alternative medicine are included in non-medication treatments. Each item ordered includes the appropriate detail, such as order identification and instructions. Orders should be communicated to the correct service provider for completion.",
   "derivedFrom": [
-    "CP.4.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.4.3"
   ],
   "statement": [
     {

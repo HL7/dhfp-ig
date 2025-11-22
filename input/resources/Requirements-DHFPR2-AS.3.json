@@ -22,6 +22,6 @@
   "description": "Provide the system support in managing the interaction with a patient's PHR.",
   "purpose": "The system can support interaction with the patient's PHR. It can also manage documentation related to the PHR-S consent and access directives.",
   "derivedFrom": [
-    "AS.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.3"
   ]
 }

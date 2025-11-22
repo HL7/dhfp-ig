@@ -22,7 +22,7 @@
   "description": "Evaluate and notify patient, and/or provider of those preventative services, tests, or behavioral actions that are due or overdue.",
   "purpose": "The system generates notifications to patients regarding activities that are due or overdue. Examples include but are not limited to time sensitive patient and provider notification of follow-up appointments, laboratory tests, immunizations or examinations. The notifications can be customized in terms of timing, repetitions and administration reports. For example, a PAP test reminder might be sent to the patient two months prior to the test being due, repeated at three month intervals, and then reported to the administrator or clinician when nine months overdue.",
   "derivedFrom": [
-    "POP.1.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-POP.1.2"
   ],
   "statement": [
     {

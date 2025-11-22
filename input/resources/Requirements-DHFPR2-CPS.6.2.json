@@ -22,7 +22,7 @@
   "description": "Alert providers to potential administration errors (such as wrong patient, wrong drug, wrong dose, wrong route and wrong schedule) in support of safe and accurate immunization administration and support immunization administration workflow.",
   "purpose": "The system assists in reduction of medication errors at time of administration by positive patient identification and by checks on immunization identification. Workflow for immunization administration is supported through prompts and reminders regarding the “window” for timely administration of immunizations.",
   "derivedFrom": [
-    "CPS.6.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.6.2"
   ],
   "statement": [
     {

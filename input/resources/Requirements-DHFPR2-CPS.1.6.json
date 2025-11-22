@@ -22,6 +22,6 @@
   "description": "Information about the relationships between patients and others facilitate healthcare delivery and appropriate access to health information.",
   "purpose": "Information regarding relationships between patients and others serve to provide caregivers with an understanding of the patient's environment and support systems. Examples of relationships between patients and others include parent, relative, legal guardian, health care surrogate or payer.",
   "derivedFrom": [
-    "CPS.1.6"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.1.6"
   ]
 }

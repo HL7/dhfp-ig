@@ -22,6 +22,6 @@
   "description": "Support for appropriate communication with the patient or the patient representatives.",
   "purpose": "Support for patient education and communication is critical to ensure that the patient can appropriately participate in his care. This includes providing access to relevant patient educational materials and reminders from internal, and/or external sources.",
   "derivedFrom": [
-    "CPS.8"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.8"
   ]
 }

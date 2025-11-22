@@ -22,7 +22,7 @@
   "description": "Create and maintain patient-specific problem lists.",
   "purpose": "A problem list may include, but is not limited to chronic conditions, diagnoses, or symptoms, injury/poisoning (both intentional and unintentional), adverse effects of medical or dental care (e.g., drugs, surgical), functional limitations, visit or stay-specific conditions, diagnoses, or symptoms. When a dentist creates a problem list, that list will focus on conditions clinically relevant to oral health care.  Problem lists are managed over time, whether over the course of a visit or stay or the life of a patient, allowing documentation of historical information and tracking the changing character of problem(s) and their priority. The source (e.g., the provider, the system id, or the patient) of the updates should be documented. All pertinent dates are stored, including date noted or diagnosed, dates of any changes in problem specification or prioritization, and date of resolution. This might include time stamps, where useful and appropriate. The entire problem history for any problem in the list is viewable.  For dentistry, only a limited medical history is often recorded; however, this limited medical history must not be represented as a comprehensive medical history.",
   "derivedFrom": [
-    "CP.1.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.1.4"
   ],
   "statement": [
     {

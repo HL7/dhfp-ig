@@ -22,7 +22,7 @@
   "description": "Re-Identify Record Entries that were previously de-identified or pseudonymized (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to restore information to data that allows identification of information source and/or information subject. \n\nReference: ISO 21089-2018, Section 15.12.",
   "derivedFrom": [
-    "RI.1.1.12"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.12"
   ],
   "statement": [
     {

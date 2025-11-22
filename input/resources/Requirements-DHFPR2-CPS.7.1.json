@@ -22,7 +22,7 @@
   "description": "Provide pertinent information from available evidence-based knowledge, at the point of care, for use in healthcare decisions and care planning.",
   "purpose": "The information available regarding disease, disease processes, diagnostic testing, pharmaceuticals, treatment patterns and all aspects of healthcare is constantly changing. The practitioner should be able to access a wide variety of sources that provide relevant, accurate information about any given subject. Examples of resources include, but are not limited to evidence on treatment of specific medical conditions, maintenance of wellness, drug or device trials, context-specific information available through online journals, printed resources such as books and specialty organizations resources. For example, when a condition is diagnosed the provider might be directed to relevant resources that give updated clinical research, useful pharmaceutical combinations, surgical techniques, products or other information useful in the management of the specific condition under consideration.",
   "derivedFrom": [
-    "CPS.7.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.7.1"
   ],
   "statement": [
     {

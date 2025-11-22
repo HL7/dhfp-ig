@@ -22,7 +22,7 @@
   "description": "Support exchange of information between participants in patient-centered care as needed, and the appropriate documentation of such exchanges. Support secure communication to protect the privacy of information as required by jurisdictional law.",
   "purpose": "Healthcare requires secure communications among various participant in the patient's circle of care: patients, doctors, nurses, chronic disease care managers, public health authorities, pharmacies, laboratories, payers, consultants etc. An effective EHRS supports communication across all relevant participants, reduces the overhead and costs of healthcare-related communications, and provides automatic tracking and reporting. The list of communication participants is determined by the care setting and may change over time.\n\nBecause of concerns about scalability of the specification over time, communication participants for all care settings or across care settings are not enumerated here because it would limit the possibilities available to each care setting and implementation. However, communication between providers and between patients and providers will be supported in all appropriate care settings and across care settings. Implementation of the EHRS enables new and more effective channels of communication, significantly improving efficiency and patient care. The communication functions of the EHRS changes the way participants collaborate and distribute the work of patient care.",
   "derivedFrom": [
-    "CPS.9.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.9.1"
   ],
   "statement": [
     {

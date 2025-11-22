@@ -22,7 +22,7 @@
   "description": "Manage Personal Health Record electronic documents that provide the patients direction for end-of-life care and manage other types of Advance Directives.",
   "purpose": "Advanced directives may need to be harmonized with external systems (e.g., Personal Health record system).",
   "derivedFrom": [
-    "AS.3.2.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.3.2.2"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Facilitate access to educational or support resources pertinent to, and usable by, the patient or patient representative.",
   "purpose": "The provider or patient is presented with a library of educational materials. Material may be made available in the language or dialect understood by the patient or representative. Material should be at the level of the patient or representative's level of understanding and sensory capability. Special needs are documented. Material may be disseminated via a mode available to and acceptable by the patient e.g., printed, electronically or otherwise. The review of material between the clinician and the patient, and the patient's understanding of the review, is documented when desired by the clinician. The patient or patient's representatives are able to obtain educational information independently without formal review with the clinician, if desired.",
   "derivedFrom": [
-    "CPS.8.5"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.8.5"
   ],
   "statement": [
     {

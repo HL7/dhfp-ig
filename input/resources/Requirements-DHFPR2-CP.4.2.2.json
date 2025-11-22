@@ -22,7 +22,7 @@
   "description": "Render medication dosing and warnings related to a medication order based on patient-specific parameters.",
   "purpose": "Provide parameter-based (e.g., weight, lean body mass, age, sensitivity, genomics, body surface area) medication dosing recommendations and warnings for simple medications and compounded medications at the time of order entry.",
   "derivedFrom": [
-    "CP.4.2.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.4.2.2"
   ],
   "statement": [
     {

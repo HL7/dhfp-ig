@@ -22,7 +22,7 @@
   "description": "Create, addend, amend, correct, authenticate, maintain, present and close, as needed, transcribed or directly-entered clinical documentation and notes.",
   "purpose": "Clinical documents and notes may be unstructured and created in a narrative form, which may be based on a template, graphic, audio, etc. The documents may also be structured documents that result from the capture of coded data. Each of these forms of clinical documentation is important and appropriate for different users and situations. To facilitate the management and documentation on how providers are responding to incoming data on orders and results, there may also be some free text or formal record on the providers' responsibility, and/or standard choices for disposition, such as Reviewed and Filed, Recall Patient, or Future Follow Up. The system may also provide support for documenting the clinician's differential diagnosis process.",
   "derivedFrom": [
-    "CP.3.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.3.3"
   ],
   "statement": [
     {

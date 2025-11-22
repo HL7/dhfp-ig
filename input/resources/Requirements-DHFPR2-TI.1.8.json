@@ -22,7 +22,7 @@
   "description": "Enable the enforcement of the applicable jurisdictional and organizational patient privacy rules as they apply to various parts of an EHR-S through the implementation of security mechanisms.",
   "purpose": "Patients' privacy and the confidentiality of EHRs are violated if access to EHRs occurs without authorization. Violations or potential violations can impose tangible economic or social losses on affected patients, as well as less tangible feelings of vulnerability and pain. Fear of potential violations discourages patients from revealing sensitive personal information that may be relevant to diagnostic and treatment services. Rules for the protection of privacy and confidentiality may vary depending upon the vulnerability of patients and the sensitivity of records. Strongest protections should apply to the records of minors and the records of patients with stigmatized conditions. Authorization to access the most sensitive parts of an EHR is most definitive if made by the explicit and specific consent of the patient. Please see the definition of masking in the glossary.\n\nOrganizational practices related to privacy and security jurisdictional laws could be called into question during a legal proceeding. Adherence to applicable laws supports the credibility and trustworthiness of the organization.",
   "derivedFrom": [
-    "TI.1.8"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.1.8"
   ],
   "statement": [
     {

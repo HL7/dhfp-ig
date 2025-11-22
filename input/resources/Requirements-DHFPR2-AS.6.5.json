@@ -22,7 +22,7 @@
   "description": "Provide support to waiting room management",
   "purpose": "An EHR-S should support the reporting, tracking and alerts needed to help managethose patients that need to wait and supporting prioritization decisions by the clinicians who are caring for them.",
   "derivedFrom": [
-    "AS.6.5"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.6.5"
   ],
   "statement": [
     {

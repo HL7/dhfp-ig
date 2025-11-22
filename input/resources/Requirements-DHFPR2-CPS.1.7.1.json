@@ -22,7 +22,7 @@
   "description": "Support the integration of patient and family preferences into clinical decision support.",
   "purpose": "Decision support functions should permit consideration of patient/family preferences and concerns, such as with language, religion, culture, medication choice, invasive testing, and advance directives. Such preferences should be captured in a manner that allows for their integration with the health record and easy retrieval from the health record. Preferences may be specified across all treatment plans or specifically to individual or set of treatment plans. Preferences may also be used to adjust patient information including labeling and medication instructions (e.g., for language and print size).",
   "derivedFrom": [
-    "CPS.1.7.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.1.7.1"
   ],
   "statement": [
     {

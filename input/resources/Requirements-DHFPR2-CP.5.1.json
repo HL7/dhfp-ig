@@ -22,7 +22,7 @@
   "description": "Enable the receipt and display of results for diagnostics tests.",
   "purpose": "Diagnostic test results are received and should be stored and displayed while linked to the original order in the system.",
   "derivedFrom": [
-    "CP.5.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.5.1"
   ],
   "statement": [
     {

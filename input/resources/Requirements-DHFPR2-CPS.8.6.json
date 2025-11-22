@@ -22,7 +22,7 @@
   "description": "Statement: Enable and manage communication between EHR Systems and PHR Systems.",
   "purpose": "With the increasing use of Personal Health Record systems, it is necessary for the EHR-S to appropriately communicate with the PHR to both capture patient information from the PHR and transmit relevant portions of the EHR patient record to the PHR to support patient self care.",
   "derivedFrom": [
-    "CPS.8.6"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.8.6"
   ],
   "statement": [
     {

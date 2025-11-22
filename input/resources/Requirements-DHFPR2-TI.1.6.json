@@ -22,7 +22,7 @@
   "description": "Secure all modes of EHR data exchange.",
   "purpose": "Whenever an exchange of EHR information occurs, it requires appropriate security and privacy considerations, including data obfuscation as well as both destination and source authentication when necessary. For example, it may be necessary to encrypt data sent to remote or external destinations.",
   "derivedFrom": [
-    "TI.1.6"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.1.6"
   ],
   "statement": [
     {

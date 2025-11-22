@@ -22,7 +22,7 @@
   "description": "Verify Record Entries (1 or more instances)",
   "purpose": "Verify Record Lifecycle Event - occurs when an agent causes the system to confirm compliance of data or data objects with regulations, requirements, specifications, or other imposed conditions based on organizational policy. \n\nReference: ISO 21089-2018, Section 15.25.",
   "derivedFrom": [
-    "RI.1.1.25"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.25"
   ],
   "statement": [
     {
@@ -141,7 +141,7 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
+      "conditionality": true,
       "requirement": "IF the verifier is different than the author(s), THEN the system SHALL provide the ability to maintain Record Entry content by properly authenticated and authorized users different from the author according to scope of practice, organizational policy, and/or jurisdictional law.",
       "derivedFrom": "RI.1.1.25#6"
     },
@@ -161,7 +161,7 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
+      "conditionality": true,
       "requirement": "IF more than one author contributed to the Record Entry content, THEN the system SHALL provide the ability to maintain all authors/contributors associated with their content.",
       "derivedFrom": "RI.1.1.25#7"
     },
@@ -181,7 +181,7 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
+      "conditionality": true,
       "requirement": "IF Record Entry content is verified by someone other than the author, THEN the system SHALL maintain and display the author(s) and verifier(s).",
       "derivedFrom": "RI.1.1.25#8"
     },

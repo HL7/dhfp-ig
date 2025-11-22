@@ -22,7 +22,7 @@
   "description": "Support the collection and distribution of local healthcare resource information, through interactions with other systems, applications, and modules, to enable planning and response to extraordinary events such as local or national emergencies.",
   "purpose": "In times of identified local or national emergencies and upon request from authorized bodies, provide current status of healthcare resources including, but not limited to, available beds, providers, support personnel, ancillary care areas and devices, operating theaters, medical supplies, vaccines, and pharmaceuticals. The intent is to enable the authorized body to distribute or re-distribute either resources or patient load to maximize efficient healthcare delivery. In addition, these functions may also be used for internal assessment and planning purposes by facility administrators.",
   "derivedFrom": [
-    "AS.6.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.6.2"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Use Order Set templates to facilitate order entry by rendering the appropriate orders based on provider request, input or system configuration.",
   "purpose": "Predefined order set templates may include medication and non-medication orders (e.g., diet, activities, nursing care, prescriptions and requests for investigations). They allow a care provider to choose common orders for a particular circumstance or disease state according to standards or other criteria such as provider preference. Recommended order set templates may be presented based on patient data or other contexts. Order Set templates may also allow the provider to modify (add/remove/change) orders during order entry for a particular patient.",
   "derivedFrom": [
-    "CP.4.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.4.1"
   ],
   "statement": [
     {

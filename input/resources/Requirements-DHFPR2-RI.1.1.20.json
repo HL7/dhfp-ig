@@ -22,7 +22,7 @@
   "description": "Unmerge Record Entries previously merged (2 or more instances)",
   "purpose": "Occurs when an agent causes the system to reverse a previous record entry merge operation, rendering them separate again. \n\nReference: ISO 21089-2018, Section 15.20.",
   "derivedFrom": [
-    "RI.1.1.20"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.20"
   ],
   "statement": [
     {

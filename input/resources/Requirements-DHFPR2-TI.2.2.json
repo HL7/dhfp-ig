@@ -22,7 +22,7 @@
   "description": "Manage Audit Log",
   "purpose": "Audit Triggers create Audit Log entries. Audit Log entries are typically managed as persistent evidence of events occurring over time, including events pertaining to record management, security, system operations and performance, key clinical situations.\n\nAudit log entries capture event details, including key metadata (who, what, when, where).Audit log functions fulfill log maintenance and persistence requirements according to scope of practice, organizational policy, and jurisdictional law.",
   "derivedFrom": [
-    "TI.2.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.2.2"
   ],
   "statement": [
     {

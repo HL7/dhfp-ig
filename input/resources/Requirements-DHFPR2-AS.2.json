@@ -22,7 +22,7 @@
   "description": "Capture and management of patient administrative information across locations in order to support care, including directories, and/or registries.",
   "purpose": "A patient directory/registry may contain information including, but not limited to: full name, residence or physical location, alternate contact person, primary phone number, and relevant health status information. Various views of Patient Registry or Directory information may constructed to accommodate various user's needs. Examples of specific directory views are presented in the following functions.\n\nThe patient administrative information also includes patient location information (within a facility as well as home care location(s)); as well as the patient's registration in healthcare programs.",
   "derivedFrom": [
-    "AS.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.2"
   ],
   "statement": [
     {

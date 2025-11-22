@@ -22,7 +22,7 @@
   "description": "Authenticate EHR-S users, and/or entities before allowing access.",
   "purpose": "All entities accessing the EHR-S are subject to authentication.\n\nExamples of entity authentication, with varying levels of authentication rigor, include:\n- username/password;\n- digital certificate;\n- secure token;\n- biometrics.",
   "derivedFrom": [
-    "TI.1.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.1.1"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Review and indicate or amend other caregiver notes as permitted.",
   "purpose": "Scan/review notes from physicians, nurses, technicians and other members of the health care team (e.g., Respiratory Therapist, Physical Therapist). Annotate for disparities, make additions/amendments and import when desired and permitted.",
   "derivedFrom": [
-    "CP.3.5"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.3.5"
   ],
   "statement": [
     {

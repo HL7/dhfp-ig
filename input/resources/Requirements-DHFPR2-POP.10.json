@@ -22,7 +22,7 @@
   "description": "Manage information that identifies key elements of a research or population study.",
   "purpose": "Research or population studies can be distinguished from each other through the proper use of identifiers for key elements. Study key elements may include identifying the study, location where the study is being performed, patient subject of study, and investigator. Identifiers are managed through their lifecycle including capture, maintenance and rendering.",
   "derivedFrom": [
-    "POP.10"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-POP.10"
   ],
   "statement": [
     {

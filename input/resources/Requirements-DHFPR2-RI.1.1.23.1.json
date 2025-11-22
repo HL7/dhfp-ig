@@ -22,7 +22,7 @@
   "description": "Maintain Evidence of Record Entry Legal Hold Event",
   "purpose": "Evidence of Record Entry Legal Hold Event includes key metadata, ensures health record integrity (and trust) and enables record audit.",
   "derivedFrom": [
-    "RI.1.1.23.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.23.1"
   ],
   "statement": [
     {

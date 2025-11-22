@@ -22,7 +22,7 @@
   "description": "Offer recommendations and options in medication treatment protocols as well as supporting medication monitoring on the basis of patient diagnosis, patient characteristics, or therapeutic guidelines and protocols.",
   "purpose": "The system should list medication treatment options on the basis of practice standards and the patient's conditions, diagnoses and characteristics (e.g., obesity, occupation). The system may also provide prompts and notifications to support medication monitoring.",
   "derivedFrom": [
-    "CPS.4.2.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.4.2.4"
   ],
   "statement": [
     {

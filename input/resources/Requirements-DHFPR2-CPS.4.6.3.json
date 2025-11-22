@@ -22,7 +22,7 @@
   "description": "Enable the transmission of electronic referral orders from the EHR-S.",
   "purpose": "When a referral order is created in the system, the system should have the ability to compose the referral package, including any supporting clinical and administrative information, and transmit the referral order to the referred-to provider electronically.",
   "derivedFrom": [
-    "CPS.4.6.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.4.6.3"
   ],
   "statement": [
     {

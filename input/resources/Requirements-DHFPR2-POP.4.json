@@ -22,7 +22,7 @@
   "description": "In the event of a health risk alert, evaluate whether expected actions have been taken, and execute follow-up notification otherwise.",
   "purpose": "The system assists in follow-up for a specific patient event that has failed to occur (e.g., follow-up to a health alert or absence of an expected laboratory result) and communicate the omission to the appropriate care provider(s).",
   "derivedFrom": [
-    "POP.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-POP.4"
   ],
   "statement": [
     {

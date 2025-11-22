@@ -22,7 +22,7 @@
   "description": "Notify of Audit Events, Review Audit Log",
   "purpose": "EHR system functions allow various methods of critical event notification (from audit triggers) as well as routine log review.\n\nAudit log notification and review functions implement requirements according to scope of practice, organizational policy, and jurisdictional law.",
   "derivedFrom": [
-    "TI.2.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.2.3"
   ],
   "statement": [
     {

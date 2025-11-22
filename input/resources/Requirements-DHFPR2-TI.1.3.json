@@ -22,7 +22,7 @@
   "description": "Manage access to EHR-S resources.",
   "purpose": "To ensure access is controlled, an EHR-S must authenticate and check authorization of entities for appropriate operations.",
   "derivedFrom": [
-    "TI.1.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.1.3"
   ],
   "statement": [
     {

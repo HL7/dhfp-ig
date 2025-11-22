@@ -22,7 +22,7 @@
   "description": "Restore Record Entries from archive (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to recreate record entries and their content from a previous created archive artefact. \n\nReference: ISO 21089-2018, Section 15.15.",
   "derivedFrom": [
-    "RI.1.1.15"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.15"
   ],
   "statement": [
     {

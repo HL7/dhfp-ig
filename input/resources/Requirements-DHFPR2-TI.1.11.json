@@ -22,7 +22,7 @@
   "description": "Maintain a Trusted Information Exchange environment to enable common security measures among participants in the health information exchange.",
   "purpose": "A Trusted Information Exchange environment facilitates protected health information exchange by employing common user authentication across multiple systems, and/or organizations. A Trusted Information Exchange environment can help decrease risk and liability for participating members of the Trusted Information Exchange environment by ensuring that protected health information is consistently managed by all participants.",
   "derivedFrom": [
-    "TI.1.11"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.1.11"
   ],
   "statement": [
     {

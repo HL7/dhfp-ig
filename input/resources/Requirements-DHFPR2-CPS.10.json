@@ -22,7 +22,7 @@
   "description": "Support the ability to manage the configuration, and/or customization of appropriate user help that is context sensitive and may include the exchange of live online chat.",
   "purpose": "Throughout the system it is necessary to provide configurable, context sensitive, and/or searchable user help to assist in the use of the system. User help levels should be configurable based on user requirements, scope of practice, organizational policy, and/or jurisdictional law. User Help may include the live online chat support.",
   "derivedFrom": [
-    "CPS.10"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.10"
   ],
   "statement": [
     {

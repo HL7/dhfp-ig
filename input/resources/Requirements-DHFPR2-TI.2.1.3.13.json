@@ -22,7 +22,7 @@
   "description": "Manage Audit Trigger initiated to track system maintenance events -remote access.",
   "purpose": "Capture system maintenance events -remote access, both routine and exceptional, including key metadata (who, what, when, where, why).",
   "derivedFrom": [
-    "TI.2.1.3.13"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.2.1.3.13"
   ],
   "statement": [
     {

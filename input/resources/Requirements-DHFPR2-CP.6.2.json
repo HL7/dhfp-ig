@@ -22,7 +22,7 @@
   "description": "Capture and maintain discrete data concerning immunizations given to a patient including date administered, type, manufacturer, lot number, and any allergic or adverse reactions. Facilitate the interaction with an immunization registry to allow maintenance of a patient's immunization history.",
   "purpose": "During an encounter, recommendations based on accepted immunization schedules are presented to the provider. Allergen and adverse reaction histories are checked prior to giving the immunization. If an immunization is administered, discrete data elements associated with the immunization including date, type, immunization expiration date, manufacturer and lot number are recorded. Any new adverse or allergic reactions are noted. If required, a report is made to the public health immunization registry or other organization (e.g., military unit commander, refugee program leadership). This function should include the ability to use GTIN barcode scanners to capture vaccine information (NDC, lot number, expiration date).",
   "derivedFrom": [
-    "CP.6.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.6.2"
   ],
   "statement": [
     {

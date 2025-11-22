@@ -22,7 +22,7 @@
   "description": "Manage/Preserve Record Entries for Legal Hold (Multiple instances)",
   "purpose": "Occurs when a set of Record Entries is designated to be held for legal purposes or proceedings.\n- Ensures preservation of a set of Record Entries for a designated time, held without alteration.",
   "derivedFrom": [
-    "RI.1.2.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.2.2"
   ],
   "statement": [
     {

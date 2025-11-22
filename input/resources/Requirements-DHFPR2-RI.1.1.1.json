@@ -22,7 +22,7 @@
   "description": "Originate and Retain Record Entry (1 instance)",
   "purpose": "Occurs when an agent causes the system to: a) initiate capture of potential record content, and b) incorporate that content into the storage considered a permanent part of the health record. \n\nReference: ISO 21089-2018, Section 15.1.",
   "derivedFrom": [
-    "RI.1.1.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.1"
   ],
   "statement": [
     {

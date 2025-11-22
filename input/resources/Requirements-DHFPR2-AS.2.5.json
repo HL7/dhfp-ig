@@ -22,7 +22,7 @@
   "description": "Capture and manage patient participation in healthcare programs.",
   "purpose": "The system can provide the ability to identify patients participating in health care programs and to also manage information about those programs. The system can also support managing an organization's defined healthcare programs. These directories may include population based programs like an accountable care organization or patient-centered medical homes or patient panels. (NOTE: These program may include a roster-based funding component tied to patients in the programs.)",
   "derivedFrom": [
-    "AS.2.5"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.2.5"
   ],
   "statement": [
     {

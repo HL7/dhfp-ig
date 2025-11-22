@@ -22,7 +22,7 @@
   "description": "Manage Record Synchronization",
   "purpose": "An EHR-S may consist of a set of components or applications; each application manages a subset of the health information. Therefore it is important that, through various interoperability mechanisms, an EHR-S maintains all the relevant information regarding the health record in synchrony. For example, if a physician orders an MRI, a set of diagnostic images and a radiology report will be created. As a result, the patient demographic information, the order for MRI, the diagnostic images associated with the order, and the report associated with the study must all be synchronized in order for the clinicians to receive a synchronized view the complete record (with respect to time and geographic location).Date and time need to be consistent across the applications that are part of the EHR system.\n\nSynchronization demonstrates a sequence and chain of events for reconstruction and is relevant during a legal proceeding. Maintenance of synchronization activities could be relevant during a legal proceeding.\n\nNote: Standards exist for Consistent Date and Time.",
   "derivedFrom": [
-    "RI.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.2"
   ],
   "statement": [
     {

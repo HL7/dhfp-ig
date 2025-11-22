@@ -22,7 +22,7 @@
   "description": "Manage set(s) of EHR-S access control permissions.",
   "purpose": "Entities are authorized to use components of an EHR-S in accordance with their scope of practice within local policy or legal jurisdiction. Authorization rules provide a proper framework for establishing access permissions and privileges for the use of an EHR system, based on user, role or context. A combination of these authorization categories may be applied to control access to EHR-S resources (i.e., functions or data), including at the operating system level.\n- User based authorization refers to the permissions granted to access EHR-S resources based on the identity of an entity (e.g., user or software component).\n- Role based authorization refers to the permissions granted to access EHR-S resources based on the role of an entity. Examples of roles include: an application or device (tele-monitor or robotic); or a nurse, dietician, administrator, legal guardian, and auditor.\n- Context-based Authorization refers to the permissions granted to access EHR-S resources within a context, such as when a request occurs, explicit time, location, route of access, quality of authentication, work assignment, patient consents and authorization. See ISO 10181-3 Technical Framework for Access Control Standard. For example, an EHR-S might only allow supervising providers' context authorization to attest to entries proposed by residents under their supervision.",
   "derivedFrom": [
-    "TI.1.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.1.2"
   ],
   "statement": [
     {

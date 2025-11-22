@@ -22,7 +22,7 @@
   "description": "Manage Audit Trigger initiated to track extraordinary user access (break the glass).",
   "purpose": "Capture extraordinary user access (break the glass), both routine and exceptional, including key metadata (who, what, when, where, why).",
   "derivedFrom": [
-    "TI.2.1.2.8"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.2.1.2.8"
   ],
   "statement": [
     {

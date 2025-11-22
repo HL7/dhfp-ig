@@ -22,7 +22,7 @@
   "description": "Capture and maintain adverse events.",
   "purpose": "This function is focused on the capture and maintenance of adverse events that have occurred to the patient. The system should capture discrete information about the adverse event to enable the rendering Serious Adverse Event (SAE) reports according to organizational policy, and or jurisdictional law. Reporting may conform to the HL7 Individual Case Safety Reporting (ICSR). For Dental, the HL7 Individual Case Safety Report (ICSR) captures information needed to support reporting of adverse events, product problems and consumer complaints associated with the use of FDA regulated products. Examples include Biologics and Vaccines Adverse Events, Food Adverse Events, Human Drugs Adverse Events, Medical Device Adverse Events, and Tobacco Adverse Events.",
   "derivedFrom": [
-    "CP.1.9"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.1.9"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Provide locations or facility contact information for the provider in order to direct patients or queries.",
   "purpose": "Providers may have multiple locations or offices where they practice. The system should maintain information on the primary location, any secondary locations, as well as the scheduled hours at each location. Information maintained may include web sites, maps, office locations, etc.",
   "derivedFrom": [
-    "AS.1.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.1.4"
   ],
   "statement": [
     {

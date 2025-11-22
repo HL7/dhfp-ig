@@ -22,7 +22,7 @@
   "description": "Provide report generation features using tools internal or external to the system, for the generation of standard reports.",
   "purpose": "Providers and administrators need access to data in the EHR-S for clinical, administrative, financial decision-making, audit trail and metadata reporting, as well as to create reports for patients. Many systems may use internal or external reporting tools to accomplish this. Reports may be based on structured data, and/or unstructured text from the patient's health record.\n\nUsers need to be able to sort, and/or filter reports. For example:\n-the user may wish to view only the diabetic patients on a report listing patients and diagnoses-the user may wish to view only male patients over 35 with a complaint of chest pain.",
   "derivedFrom": [
-    "CPS.9.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.9.4"
   ],
   "statement": [
     {

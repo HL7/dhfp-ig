@@ -22,7 +22,7 @@
   "description": "Support exchange of information between providers as part of the patient care process, and the appropriate documentation of such exchanges. Support secure communication to protect the privacy of information as required by jurisdictional law.",
   "purpose": "Communication among providers involved in the care process can range from real time communication (for example, communication between a therapist and nurse), to asynchronous communication (e.g., consult reports between physicians). Some forms of inter-practitioner communication will be paper based and the EHR-S must be able to produce appropriate documents.\n\nThe system should provide for both verbal and written communication. These exchanges would include but not be limited to consults, and referrals as well as possible exchanges within the office as part of the provision and administration of patient care (e.g., the communication of new information obtained within the office environment during the process of administration of a tetanus shot while the patient is in the exam room).The system should support the creation and acceptance of paper artifacts where appropriate.",
   "derivedFrom": [
-    "CPS.9.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.9.2"
   ],
   "statement": [
     {

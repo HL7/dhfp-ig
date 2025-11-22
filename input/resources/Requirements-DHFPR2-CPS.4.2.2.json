@@ -22,7 +22,7 @@
   "description": "Identify and present appropriate dose recommendations based on known patient conditions and characteristics at the time of medication ordering and dispensing.",
   "purpose": "The clinician is alerted to patient-specific contraindications and warnings e.g., pregnancy, breast-feeding or occupational risks, hepatic or renal insufficiency. The preferences of the patient may also be presented (e.g., reluctance to use an antibiotic). Additional patient parameters, such as age, gestation, genetic disposition, height, weight, and Body Surface Area (BSA), shall also be incorporated.",
   "derivedFrom": [
-    "CPS.4.2.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.4.2.2"
   ],
   "statement": [
     {

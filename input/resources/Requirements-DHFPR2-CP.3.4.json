@@ -22,7 +22,7 @@
   "description": "Provide templates and forms for clinicians to use for care plans, guidelines and protocols during provision of care and care planning.",
   "purpose": "During the provision of care, the clinician reviews and uses templates and forms to ensure consistent quality patient care. Care plans, guidelines or protocols may contain goals or targets for the patient, specific guidance to the providers, suggested orders, and nursing interventions, among other items, including alerts. Information such as Order sets for care plans may arrive from an external institution and need to be approved locally before being inserted into the care plan. Tracking of implementation or approval dates, modifications and relevancy to specific domains or context is provided. Transfer of treatment and care plans may be implemented electronically using, for example, templates, or by printing plans to paper.",
   "derivedFrom": [
-    "CP.3.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.3.4"
   ],
   "statement": [
     {

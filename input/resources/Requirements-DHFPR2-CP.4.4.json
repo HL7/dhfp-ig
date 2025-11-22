@@ -22,7 +22,7 @@
   "description": "Enable the origination, documentation, transmission, tracking and maintenance of orders for diagnostic tests.",
   "purpose": "Orders for diagnostic tests (e.g., diagnostic radiology, laboratory ) are captured and tracked including new, renewal and discontinue orders. Each order includes appropriate detail, such as order identification, instructions and clinical information necessary to perform the test. Orders and supporting detailed documentation shall be communicated to the service provider for completion of the diagnostic test(s).Some systems may contain instructions, but in some settings, instructions may be provided from external sources (e.g., handouts).",
   "derivedFrom": [
-    "CP.4.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.4.4"
   ],
   "statement": [
     {

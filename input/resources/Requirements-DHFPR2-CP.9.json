@@ -22,6 +22,6 @@
   "description": "Provide the functionality required to coordinate care with other providers and report care provided.",
   "purpose": "During care provision it is necessary to coordinate care with other providers, internal or external to the organization, as well as to communicate the care provided.",
   "derivedFrom": [
-    "CP.9"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.9"
   ]
 }

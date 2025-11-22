@@ -22,7 +22,7 @@
   "description": "Manage System Audit Triggers",
   "purpose": "System Audit Triggers are designed to capture system related events, both routine and exceptional, including key metadata (who, what, when, where, why).",
   "derivedFrom": [
-    "TI.2.1.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.2.1.3"
   ],
   "statement": [
     {

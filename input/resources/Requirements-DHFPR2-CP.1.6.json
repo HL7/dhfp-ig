@@ -22,7 +22,7 @@
   "description": "Create and maintain patient-specific immunization lists.",
   "purpose": "Immunization lists are managed over time, whether over the course of a visit or stay, or the lifetime of a patient. Details of immunizations administered are captured as discrete data elements including date, type, manufacturer and lot number. The entire immunization history is viewable. Dental Note: Immunizations by dental providers may become more important as states are starting to compel them by law. There are still questions as to whether or not dental practices will need to be able to track immunizations.",
   "derivedFrom": [
-    "CP.1.6"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.1.6"
   ],
   "statement": [
     {

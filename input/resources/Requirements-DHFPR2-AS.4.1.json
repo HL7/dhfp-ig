@@ -22,7 +22,7 @@
   "description": "Enable the exchange of structured demographic and clinical information with registries (e.g., local disease-specific, notifiable, patient, provider, organization, and health services registries) for patient monitoring and subsequent epidemiological analysis.",
   "purpose": "The system can provide for automated or user-initiated exchange of individuals' health information to disease-specific registries or other notifiable registries (such as immunization registries). These exchanges should use standard data transfer protocols or messages. The systems should allow for updating and configuration of communication with new registries.",
   "derivedFrom": [
-    "AS.4.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.4.1"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Support interactions with other systems, applications, and modules to enable the use of cost management information required to guide users and workflows.",
   "purpose": "The provider is alerted or presented with the most cost-effective services, referrals, devices, etc., to recommend to the patient. This may be tailored to the patient's health insurance/plan coverage rules. Medications may be presented in order of cost, or the cost of specific interventions may be presented at the time of ordering.",
   "derivedFrom": [
-    "AS.8.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.8.3"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Identify patient-specific suggestions/reminders, screening tests/exams, and other preventative services in support of routine preventative and wellness care.",
   "purpose": "At the time of an encounter, the provider or patient is presented with due or overdue activities based on protocols for preventative care and wellness. Examples include routine immunizations, adult and well child care, age and gender appropriate screening exams, such as PAP smears.",
   "derivedFrom": [
-    "POP.1.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-POP.1.1"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Identify and present the appropriate care plans, guidelines, protocols, and/or clinical pathways for the management of patient-specific conditions that are identified in a patient clinical encounter.",
   "purpose": "At the time of the clinical encounter (problem identification), recommendations for tests, treatments, medications, immunizations, referrals and evaluations are presented based on evaluation of patient-specific data such as age, gender, developmental stage, their health profile, and any site-specific considerations. These may be modified on the basis of new clinical data at subsequent encounters.",
   "derivedFrom": [
-    "CPS.3.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.3.4"
   ],
   "statement": [
     {

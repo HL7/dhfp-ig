@@ -22,7 +22,7 @@
   "description": "Maintain Evidence of Record Entry Decryption Event",
   "purpose": "Evidence of Record Entry Decryption Event includes key metadata, ensures health record integrity (and trust) and enables record audit.",
   "derivedFrom": [
-    "RI.1.1.27.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.27.1"
   ],
   "statement": [
     {
@@ -101,7 +101,7 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
+      "conditionality": true,
       "requirement": "IF a user initiated a Record Entry content decryption, THEN the system SHALL capture identity of the user initiating Record Entry content decryption.",
       "derivedFrom": "RI.1.1.27.1#4"
     },
@@ -201,7 +201,7 @@
       "conformance": [
         "MAY"
       ],
-      "conditionality": false,
+      "conditionality": true,
       "requirement": "IF a user initiated a Record Entry decryption, THEN the system MAY capture the rationale for decrypting Record Entry content.",
       "derivedFrom": "RI.1.1.27.1#9"
     },

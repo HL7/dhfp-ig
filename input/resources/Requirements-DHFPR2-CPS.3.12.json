@@ -22,7 +22,7 @@
   "description": "Support grammatical and lexical integrity of the health record by providing medical spelling, thesaurus and grammar ready assistance during clinical documentation as well as enabling shortcuts for pre-defined text.",
   "purpose": "Users and patients will benefit from features that enable rapid checking of spelling and grammar, a medical thesaurus function as well as text shortcuts to expand pre-defined text during clinical documentation. A shortcut may also be defined to trigger a specific system function such as the opening of a pre-defined template. These functions may be defined at an enterprise level based on scope of practice, organizational policy, and/or jurisdictional law. However, pre-defined text may also be configured by provider or provider type.",
   "derivedFrom": [
-    "CPS.3.12"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.3.12"
   ],
   "statement": [
     {

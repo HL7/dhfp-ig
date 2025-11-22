@@ -22,7 +22,7 @@
   "description": "Facilitate real-time checks to ensure accurate specimen collection.",
   "purpose": "To ensure specimen collection accuracy, the patient and specimen are positively identified. The provider is notified in real-time of potential collection errors such as wrong patient, wrong specimen type, wrong means of collection, wrong site, and wrong date and time.",
   "derivedFrom": [
-    "CPS.6.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.6.4"
   ],
   "statement": [
     {

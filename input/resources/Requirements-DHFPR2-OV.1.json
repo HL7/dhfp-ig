@@ -22,7 +22,7 @@
   "description": "Overarching criteria are those that apply to all EHR Systems.",
   "purpose": "The Overarching Section contains Conformance Criteria that apply to all EHR Systems and consequently must be included in all EHR-S FM compliant profiles. These criteria are grouped under a single Function.",
   "derivedFrom": [
-    "OV.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-OV.1"
   ],
   "statement": [
     {

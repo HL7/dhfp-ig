@@ -22,7 +22,7 @@
   "description": "Support the use of appropriate standard care plans, guidelines, protocols, and/or clinical pathways for the management of specific conditions.",
   "purpose": "A core capability of Clinical Decision Support is that of providing guidelines, plans and protocols to clinicians. These templates or forms can be specific for populations, medical conditions or individual patients. Before they can be used in care provision standard care plans, guidelines, protocols, and clinical pathways must be created. These templates or forms may reside within the system or be provided through links to external sources, and can be modified and used on a site specific basis. To facilitate retrospective decision support, variances from standard care plans, guidelines, protocols and clinical pathways can be identified and reported.",
   "derivedFrom": [
-    "CPS.3.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.3.3"
   ],
   "statement": [
     {

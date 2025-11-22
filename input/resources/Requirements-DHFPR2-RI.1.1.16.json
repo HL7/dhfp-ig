@@ -22,7 +22,7 @@
   "description": "Destroy/Delete Record Entries (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to permanently erase record entry content from the system. \n\nReference: ISO 21089-2018, Section 15.16.",
   "derivedFrom": [
-    "RI.1.1.16"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.16"
   ],
   "statement": [
     {

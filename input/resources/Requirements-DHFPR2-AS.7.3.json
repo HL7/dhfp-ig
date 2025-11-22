@@ -22,7 +22,7 @@
   "description": "Provide clinical data to support administrative and financial reporting.",
   "purpose": "The system may be able to generate or support the creation of a bill based on health record data. Maximizing the extent to which administrative and financial data can be derived or developed from clinical data by the system, will lessen provider reporting burdens and the time it takes to complete administrative and financial processes such as claim reimbursement. This may be implemented by mapping of clinical terminologies in use to administrative and financial terminologies. Administrative and financial systems may be integrated or non-integrated.",
   "derivedFrom": [
-    "AS.7.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.7.3"
   ],
   "statement": [
     {

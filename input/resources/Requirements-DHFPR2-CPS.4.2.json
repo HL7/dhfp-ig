@@ -22,7 +22,7 @@
   "description": "Provide functionality to alert providers to potential medication and immunization ordering errors (such as wrong patient, wrong drug, wrong dose, wrong route and wrong time).",
   "purpose": "During medication or immunization ordering it is critical to minimize potential errors that can cause adverse events. This is accomplished by the EHR system through the use of clinical decision support and prompting to validate the order at time of ordering. Whist many of these functions are more commonly associated with medication ordering; they also apply to ordering of immunizations when such ordering occurs. The support includes the checking for drug/drug interactions, checking against documented allergies or previous adverse events, as well as validating patient-specific dosing and providing appropriate warnings. Support for medical ordering efficiencies also ensures that orders are appropriate and contain all required supporting information.",
   "derivedFrom": [
-    "CPS.4.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.4.2"
   ],
   "statement": [
     {

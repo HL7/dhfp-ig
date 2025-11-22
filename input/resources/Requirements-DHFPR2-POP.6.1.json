@@ -22,7 +22,7 @@
   "description": "Support the capture and subsequent export or retrieval of data necessary for the reporting on patient outcome of care by population, facility, provider or community.",
   "purpose": "Many regions require regular reporting on the healthcare provided to individuals and populations. The system needs to provide the report-generating capability to easily create these reports or provide for the export of data to external report-generating software. The system may also provide the functionality to prompt for the collection of necessary information at the appropriate time in a patient encounter if such collection need can be properly defined in a workflow (e.g., requesting specific information for reporting of emergency services such as drug overdose, suspected abuse, communicable diseases, or for the collection of additional research data for a specific diagnosis).",
   "derivedFrom": [
-    "POP.6.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-POP.6.1"
   ],
   "statement": [
     {

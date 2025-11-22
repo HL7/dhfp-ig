@@ -22,6 +22,6 @@
   "description": "Evaluate patient information to provide alerts, notifications and reminders regarding health, preventative care and wellness.",
   "purpose": "The system assists in determining ongoing and pertinent communications from the provider to patient to promote health, preventative care and wellness.",
   "derivedFrom": [
-    "POP.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-POP.1"
   ]
 }

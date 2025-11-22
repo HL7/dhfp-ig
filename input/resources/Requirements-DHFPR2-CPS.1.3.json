@@ -22,7 +22,7 @@
   "description": "Capture a registration, either directly entered or received from an external system, without complete supporting demographics, in order to facilitate patient care before the full registration is complete.",
   "purpose": "The registration process, including the verification of full demographics data, insurance, contact information, etc. is frequently time consuming. To facilitate patient care in emergency situations, the system must be able to register a patient with minimal information in a time critical manner. Examples of situations when this might be necessary include when a patient presents with acute myocardial infarction, a disaster response, or a mass casualty event.\n\nAfter care is given during an emergent situation, records are often incomplete or invalid. Such records may need to be completed and validated. Afterwards, those records may need to be harmonized. For example, the records of \"John Doe1; approximate age is 30\" may need to be matched with existing records for \"Henry Smith; age 28\".",
   "derivedFrom": [
-    "CPS.1.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.1.3"
   ],
   "statement": [
     {

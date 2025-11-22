@@ -22,7 +22,7 @@
   "description": "Support interactions with other systems, applications, and modules to provide information on an insured person's relationships. Examples of relationships include domestic partner, spouse, and guarantor of payment. Dental examples include parent, children, caregiver, and legal guardian.",
   "purpose": "Identifying relationship of persons insured under the same insurance plan is important for administrative transactions.",
   "derivedFrom": [
-    "CPS.1.6.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.1.6.2"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Audit Key Record, Security, System and Clinical Events",
   "purpose": "EHR Systems have built in audit triggers to capture key events in real-time, including events related to record management, security, system operations or performance or clinical situations.\n\nEvent details, including key metadata (who, what, when, where), are captured in an Audit Log.\n\nAudit Review functions allow various methods of critical event notification as well as routine log review.\n\nAudit functions implement requirements according to scope of practice, organizational policy, and jurisdictional law.",
   "derivedFrom": [
-    "TI.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.2"
   ],
   "statement": [
     {

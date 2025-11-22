@@ -22,7 +22,7 @@
   "description": "Support the definition of the formal health record, a partial record for referral purposes, or sets of records for other necessary disclosure purposes.",
   "purpose": "Provide hardcopy and electronic output that fully chronicles the healthcare process, supports selection of specific sections of the health record, and allows healthcare organizations to define the report, and/or documents that will comprise the formal health record for disclosure purposes. A mechanism should be provided for both chronological and specified record element output. This may include defined reporting groups (i.e. print sets). For example Print Set A = Patient Demographics, History & Physical, Consultation Reports, and Discharge Summaries. Print Set B = all information created by one caregiver. Print Set C = all information from a specified encounter. An auditable record of these requests and associated exports may be maintained by the system. This record could be implemented in any way that would allow the who, what, why and when of a request and export to be recoverable for review. The system has the capability of providing a report or accounting of disclosures by patient that meets in accordance with scope of practice, organizational policy, and jurisdictional law.",
   "derivedFrom": [
-    "CPS.9.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.9.3"
   ],
   "statement": [
     {

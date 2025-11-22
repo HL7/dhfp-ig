@@ -22,7 +22,7 @@
   "description": "Support the ability to capture, and/or have interactions with patient PHR systems to enable the creation and maintenance of demographic, clinical and administrative information.",
   "purpose": "The patient's PHR demographic, clinical and administrative data set is needed to support identification and to enhance the prospect for interoperability. The PHR Account Holder should be able to request or make changes to their demographic data and allow for export of all or parts of the demographic data to other systems.",
   "derivedFrom": [
-    "AS.3.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.3.1"
   ],
   "statement": [
     {

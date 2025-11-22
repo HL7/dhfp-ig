@@ -22,7 +22,7 @@
   "description": "Manage emergency access to EHR-S resources.",
   "purpose": "The intent of Emergency Access Control is to mitigate the potential for impeding the provision of care in an emergency situation in accordance with organizational policy.\n\nFor example, emergency access may include:\n- Single record entry (e.g., single laboratory results, single document, single view);\n- Single patient;\n- Single login session, multiple patients;\n- Site mode allowing simultaneous emergency access to all users.\n\nLogging of a user's activities should occur in the audit record/metadata. Reports of emergency access use for follow up are critical for compliance and monitoring.",
   "derivedFrom": [
-    "TI.1.3.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.1.3.1"
   ],
   "statement": [
     {

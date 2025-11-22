@@ -22,7 +22,7 @@
   "description": "Support the management of structured documents.",
   "purpose": "Structured documents are an important method of facilitating the exchange of information to support care. Documents are often considered to be more permanent in nature; messages are often considered to be more transitory in nature. Examples of structured documents include: a referral from a primary care physician to a specialist; a medical summary; a discharge instruction for the patient.",
   "derivedFrom": [
-    "TI.5.1.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.5.1.2"
   ],
   "statement": [
     {

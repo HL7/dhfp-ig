@@ -22,7 +22,7 @@
   "description": "Capture and maintain updates of clinical decision support system guidelines and associated reference material.",
   "purpose": "System content such as discharge instructions, clinical guidelines, formularies, and other knowledge bases should be capable of being maintained and updated, independent of a particular encounter. Clinical decision support rules may be applied to the system using a manual process. As standards are developed to represent these rules, an automated update will be recommended. Any process to update decision support rules should include the verification of the appropriateness of the rules to the system. This may include but not be limited to authenticity of the source, the currency of the version, and any necessary approvals before updates can take place.",
   "derivedFrom": [
-    "CPS.3.9"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.3.9"
   ],
   "statement": [
     {

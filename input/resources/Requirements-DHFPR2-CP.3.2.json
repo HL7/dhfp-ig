@@ -22,7 +22,7 @@
   "description": "Capture and manage patient clinical measures, such as vital signs, as discrete patient data.",
   "purpose": "Within the context of an episode of care, patient measures such as vital signs are captured and managed as discrete data to facilitate reporting and provision of care. Other clinical measures (such as expiratory flow rate, size of lesion, etc.) are captured and managed, and may be discrete data.",
   "derivedFrom": [
-    "CP.3.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.3.2"
   ],
   "statement": [
     {

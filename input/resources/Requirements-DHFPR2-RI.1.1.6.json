@@ -22,7 +22,7 @@
   "description": "Report (Output) Record Entries (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to produce and deliver record entry content in a particular form and manner. \n\nReference: ISO 21089-2018, Section 15.6.",
   "derivedFrom": [
-    "RI.1.1.6"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.6"
   ],
   "statement": [
     {

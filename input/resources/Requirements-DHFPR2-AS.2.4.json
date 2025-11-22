@@ -22,7 +22,7 @@
   "description": "Support interactions with other systems, applications, and modules to ensure that the patient's bed assignments within the facility optimize care and minimize risks e.g., of exposure to contagious patients.",
   "purpose": "Access to a list of available beds is important to safely manage the care of patients whose bed requirements may change based on change in condition or risk factors. For example, a patient may need a room with special equipment or to be close to the nursing station or to be in a private room.",
   "derivedFrom": [
-    "AS.2.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.2.4"
   ],
   "statement": [
     {

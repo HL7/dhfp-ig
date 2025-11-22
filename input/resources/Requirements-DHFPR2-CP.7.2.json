@@ -22,7 +22,7 @@
   "description": "Document and support the management of the disposition process for a patient by managing recommendations for future care.",
   "purpose": "Patient encounters or treatments can end in many different states and support for these requires that the EHR support the ability to capture and maintain recommendations for the further future care of the patient. The EHR should accommodate, at a minimum, the following possible recommendations for future care (or dispositions) along with other supporting information for the recommendations:\n- discharge,\n- admission,\n- transfer,\n- death,\n- left without being seen (LWBS),\n- left without treatment (LWOT),\n- elopements (i.e. leaving without notifying the facility or wandering),\n- left against medical advice (AMA),\n- patients triaged to other clinics, and \n- administrative errors.",
   "derivedFrom": [
-    "CP.7.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.7.2"
   ],
   "statement": [
     {

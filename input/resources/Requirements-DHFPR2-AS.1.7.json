@@ -22,7 +22,7 @@
   "description": "Identify relationships among providers treating a single patient, and provide the ability to manage patient lists assigned to a particular provider.",
   "purpose": "This function addresses the ability to manage current information about the relationships between providers and the patients. This information should be able to flow seamlessly between the different components of the system, and between the EHR system and other systems. Business rules may be reflected in the presentation of, and the access to this information. The relationship among providers treating a single patient will include any necessary chain of authority/responsibility.\n\nExample:\n-In a care setting with multiple providers, where the patient can only see certain kinds of providers (or an individual provider); allow the selection of only the appropriate providers.\n-The user is presented with a list of people assigned to a given practitioner and may alter the assignment as required to a group, to another individual\n        or by sharing the assignment.",
   "derivedFrom": [
-    "AS.1.7"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.1.7"
   ],
   "statement": [
     {

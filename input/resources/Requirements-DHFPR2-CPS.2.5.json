@@ -22,7 +22,7 @@
   "description": "Capture and explicitly label patient-originated data, link the data source with the data, and support provider authentication for inclusion in patient health record.",
   "purpose": "It is critically important to be able to distinguish clinically authored and authenticated data from patient-originated data that is either provided by the patient for inclusion in the EHR or entered directly into the EHR by the patient from clinically authenticated data. Patients may provide data for entry into the health record or be given a mechanism for entering this data directly. Patient-originated data intended for use by providers will be available for their use.\n\nData about the patient may be appropriately provided by: \n\n- the patient;\n\n- a surrogate (e.g., parent, spouse, guardian); \n\n- an informant (e.g., teacher, lawyer, case worker); or\n\n- devices (e.g., blood pressure/sugar monitors).\n\nAn electronic health record may provide the ability for direct data entry by any of these. Patient-originated data may also be captured by devices and transmitted for inclusion into the electronic health record.\n\nData entered by any of these must be stored with source information. A provider must authenticate patient-originated data included in the patient's legal health record. A provider must be able to indicate they have verified the accuracy of patient-originated data (when appropriate and when a verification source is available) for inclusion in the patient record.\n\nSuch verification does not have to occur at each individual data field and can be at a higher level of the data.",
   "derivedFrom": [
-    "CPS.2.5"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.2.5"
   ],
   "statement": [
     {

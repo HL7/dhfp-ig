@@ -22,7 +22,7 @@
   "description": "Enable the origination, documentation and tracking of referrals between care providers or healthcare organizations, including clinical and administrative details of the referral, and consents and authorizations for disclosures as required.",
   "purpose": "Documentation and tracking of a referral from one care provider to another is supported, whether the referred to or referring providers are internal or external to the healthcare organization. Guidelines for whether a particular referral for a particular patient is appropriate in a clinical context and with regard to administrative factors such as insurance may be provided to the care provider at the time the referral is created. The EHR-S provides the ability to receive and act upon referral responses from providers. The EHR-S may provide the ability to capture completion of the referral appointment. Referrals may be received electronically (i.e. e-Referrals); or may be received non-electronically. If non-electronic, the system needs to allow the user to capture the referral information and manage referral request. If the system supports e-Referrals, then the system will also need to support additional functionality to manage the receipt of the referral request.",
   "derivedFrom": [
-    "CP.4.6"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.4.6"
   ],
   "statement": [
     {

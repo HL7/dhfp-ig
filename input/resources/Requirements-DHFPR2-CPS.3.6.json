@@ -22,7 +22,7 @@
   "description": "Provide the patient with decision support for self-management of a condition between patient/provider encounters.",
   "purpose": "Patients need to follow self-management plans related to their specific conditions. These plans may include schedules for home monitoring, laboratory tests, and clinical checkups; recommendations about nutrition, physical activity, tobacco use, etc.; and guidance or reminders about medications. Information to support self-care may be appropriately provided to: the patient, a surrogate (parent, spouse, guardian), or others involved directly in the patients self care.",
   "derivedFrom": [
-    "CPS.3.6"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.3.6"
   ],
   "statement": [
     {

@@ -22,6 +22,6 @@
   "description": "Support exchange and reporting of information between participants in patient-centered care.",
   "purpose": "Provide the support necessary to ensure that appropriate communication between providers is possible to coordinate the patient's care including, clinical communication between providers, standard and ad-hoc reporting and information views of the patient record.",
   "derivedFrom": [
-    "CPS.9"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.9"
   ]
 }

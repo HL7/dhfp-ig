@@ -22,7 +22,7 @@
   "description": "Offer prompts based on patient-specific data at the point of information capture for assessment purposes.",
   "purpose": "When a clinician fills out an assessment, data entered is matched against data already in the system to identify potential linkages and optimize patient care. For example, the system could scan the medication list and the knowledge base to see if any of the symptoms are side effects of medication already prescribed. Important diagnoses could be brought to the doctor's attention, for instance ectopic pregnancy in a woman of child bearing age, or appendicitis in a geriatric patient who has abdominal pain.",
   "derivedFrom": [
-    "CPS.3.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.3.2"
   ],
   "statement": [
     {

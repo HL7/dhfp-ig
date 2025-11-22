@@ -22,7 +22,7 @@
   "description": "Generate and record patient-specific instructions related to pre- and post-procedural and post-treatment/discharge requirements.",
   "purpose": "When a patient is scheduled for a test, procedure, or discharge, specific instructions about diet, clothing, transportation assistance, convalescence, follow-up with physician, etc., may be generated and recorded, including the timing relative to the scheduled event. In an outpatient scenario, similar instructions for post-diagnosis, and/or post-treatment needs may also be generated and recorded (e.g., exercise instructions for low back pain, wound or burn care).",
   "derivedFrom": [
-    "CP.8.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.8.1"
   ],
   "statement": [
     {

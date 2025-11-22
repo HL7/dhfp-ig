@@ -22,7 +22,7 @@
   "description": "Maintain order set templates based on preferred standards, provider preferences, organizational policy or other criteria.",
   "purpose": "Order set templates, which may include medication orders, allow a care provider to choose common orders for a particular circumstance or disease state according to standards (e.g., best practice guidelines) or other criteria. Order Set Templates may be defined to allow or not allow the provider to modify (add/remove/update) specific orders when applying them to a specific patient.",
   "derivedFrom": [
-    "CPS.4.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.4.1"
   ],
   "statement": [
     {

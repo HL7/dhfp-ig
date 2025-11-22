@@ -22,7 +22,7 @@
   "description": "Amend (Update) Record Entry (1 instance)",
   "purpose": "Occurs when an agent makes any change to record entry content currently residing in storage considered permanent (persistent). \n\nReference: ISO 21089-2018, Section 15.2.",
   "derivedFrom": [
-    "RI.1.1.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.2"
   ],
   "statement": [
     {

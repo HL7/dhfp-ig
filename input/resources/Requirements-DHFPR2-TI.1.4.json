@@ -22,7 +22,7 @@
   "description": "Manage a patient's access to personal health information.",
   "purpose": "A healthcare delivery organization will be able to manage a patient's ability to view his or her EHR based on organization policy or jurisdictional law. Typically, a patient or their legal representative (e.g., guardian, surrogate) has the right to view his or her EHR.",
   "derivedFrom": [
-    "TI.1.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.1.4"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Support interactions with other systems, applications, and modules to enable the creation of claims and encounter reports for reimbursement.",
   "purpose": "Retrieves information needed to support claims and encounter reporting. This reporting occurs at the appropriate juncture in the encounter workflow in a manual or automated fashion. For example this could occur at an initial, interim or final billing. The system may also present the information that is provided for audit and review.",
   "derivedFrom": [
-    "AS.9.5"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.9.5"
   ],
   "statement": [
     {

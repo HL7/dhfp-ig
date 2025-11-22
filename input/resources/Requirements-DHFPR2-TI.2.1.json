@@ -22,7 +22,7 @@
   "description": "Manage Audit Triggers",
   "purpose": "EHR Systems have built in audit triggers to capture key events in real-time. Audit triggers signal key:\n- Record management and lifecycle events;\n- Security events related to system and data safeguards, both routine and exceptional;\n- System events related to performance and operations, both routine and exceptional.\n- Clinical events with special log requirements.",
   "derivedFrom": [
-    "TI.2.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.2.1"
   ],
   "statement": [
     {

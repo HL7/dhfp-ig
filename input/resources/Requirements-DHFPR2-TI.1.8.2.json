@@ -22,7 +22,7 @@
   "description": "Flag patient identity as confidential to others.",
   "purpose": "Create a flag to indicate to all providers caring for the patient, as well as administrative staff who may receive phone calls from family members or others, the need to protect the identity of patients at risk of harm, or requesting similar anonymity. Despite best efforts of confidentiality, display should identify patients at particular risk of harm during stay (e.g., domestic violence).",
   "derivedFrom": [
-    "TI.1.8.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.1.8.2"
   ],
   "statement": [
     {

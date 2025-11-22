@@ -22,7 +22,7 @@
   "description": "Support the ability to operate seamlessly with other systems by using applications, and/or structured messages and documents that adhere to interchange standards.",
   "purpose": "Placeholder - Not Defined at this time",
   "derivedFrom": [
-    "TI.5.1.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.5.1.1"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Support the capture and subsequent export or retrieval of data necessary to support process improvement measures and related initiatives.",
   "purpose": "Many organizations and institutions may require regular reporting of data necessary to support improvement in the effectiveness and efficiency of care. These reports may include, but is not limited to, specific data such as patient outcomes, patient safety, processes of care, workflow and costs of care. The system needs to provide the report generating capability to easily create these reports or provide for the export of data to external report generating software.",
   "derivedFrom": [
-    "POP.6.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-POP.6.3"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Support interactions with other systems, applications, and modules to support the creation of health care attachments for submitting additional clinical information in support of service requests and claims.",
   "purpose": "Retrieves structured and unstructured data, including but not limited to laboratory data, imaging data, device monitoring data, and text based data, based on rules or requests for additional clinical information, in support of service requests or claims, at the appropriate juncture in the encounter workflow.",
   "derivedFrom": [
-    "AS.9.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.9.4"
   ],
   "statement": [
     {

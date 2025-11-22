@@ -22,7 +22,7 @@
   "description": "Manage Audit Trigger initiated to track user attempts to access data (unsuccessful – access denied).",
   "purpose": "Capture user attempts to access data (unsuccessful – access denied), both routine and exceptional, including key metadata (who, what, when, where, why).",
   "derivedFrom": [
-    "TI.2.1.2.7"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.2.1.2.7"
   ],
   "statement": [
     {

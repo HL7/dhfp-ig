@@ -22,7 +22,7 @@
   "description": "Maintain patient identities and conditions invisible to the public and other providers who do not have “need to know” on public tracking screens.",
   "purpose": "A number of systems implement large tracking screens, common displays or dashboards to support workflows. In these applications, there is a need to create de-identified views for broadcast in common areas.",
   "derivedFrom": [
-    "TI.1.8.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.1.8.1"
   ],
   "statement": [
     {

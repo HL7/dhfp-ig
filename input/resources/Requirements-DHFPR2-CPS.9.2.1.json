@@ -22,7 +22,7 @@
   "description": "Provide a means to capture and manage requests for consultation and responses.",
   "purpose": "EHR system should support the ability to document and note calls made to physician/provider consultants, as well as their responses. This includes the time of the initial and any subsequent pages or calls, the time and method whereby the consultant responded, as well as the final disposition of the consultation.",
   "derivedFrom": [
-    "CPS.9.2.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.9.2.1"
   ],
   "statement": [
     {

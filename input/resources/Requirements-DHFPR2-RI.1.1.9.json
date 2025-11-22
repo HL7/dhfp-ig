@@ -22,7 +22,7 @@
   "description": "Receive/Retain Record Entries (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to a) initiate capture of data content from elsewhere, and b) incorporate that content into the storage considered a permanent part of the health record. \n\nReference: ISO 21089-2018, Section 15.9.",
   "derivedFrom": [
-    "RI.1.1.9"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.9"
   ],
   "statement": [
     {

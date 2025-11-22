@@ -22,7 +22,7 @@
   "description": "Capture and maintain patient advance directives.",
   "purpose": "Patient advance directives and provider Do Not Resuscitate (DNR ) orders are captured, as well as the date and circumstances under which the directives were received, and the location of any paper or electronic advance directive documentation.\n\nAdvanced Directives may include for example living will, durable power of attorney, preferred interventions for known conditions, or the existence of a \"Do Not Resuscitate\" order.\n\nCircumstances is used to indicate where, how and when an advanced directive was captured (e.g., provided by the patient's parent during initial consultation visit).",
   "derivedFrom": [
-    "CPS.1.7.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.1.7.2"
   ],
   "statement": [
     {

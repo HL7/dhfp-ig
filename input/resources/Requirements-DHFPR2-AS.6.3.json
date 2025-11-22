@@ -22,7 +22,7 @@
   "description": "Support interactions with other systems, applications, and modules to provide the necessary data to a scheduling system for optimal efficiency in the scheduling of patient care, for either the patient or a resource/device.",
   "purpose": "The system may support user access to scheduling systems as required. Relevant clinical or demographic information required in the scheduling process could be linked to the task.",
   "derivedFrom": [
-    "AS.6.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.6.3"
   ],
   "statement": [
     {

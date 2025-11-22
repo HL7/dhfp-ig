@@ -22,7 +22,7 @@
   "description": "Access/View Record Entries (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to obtain and open a record entry for inspection or review. \n\nReference: ISO 21089-2018, Section 15.5.",
   "derivedFrom": [
-    "RI.1.1.5"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.5"
   ],
   "statement": [
     {

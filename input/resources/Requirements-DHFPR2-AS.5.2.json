@@ -22,7 +22,7 @@
   "description": "Assignment, delegation, and/or transmission of tasks for Medication Orders and Prescription Management.",
   "purpose": "There are tasks that are specific to prescription management. An example of a system-triggered task is when a medication defined as for continuous use runs out, a notification task should be initiated for evaluation of the need to renew or not. Quality care implies consideration of medication continuation or renewal in light of various patient and visit factors . This requires also that the relevant information is presented to the clinician in an effective manner. The decision by the clinician must then be captured in an efficient manner and actioned by the system through task assignment and communication. Presentation of tasks to be carried out needs to be in a manner that facilitates their execution and management and needs to correspond to user preferences. For example, the list could be ordered by priority or by pharmacy phone number for efficiency.",
   "derivedFrom": [
-    "AS.5.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.5.2"
   ],
   "statement": [
     {

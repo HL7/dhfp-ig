@@ -22,7 +22,7 @@
   "description": "Capture the alerts and warnings for medications being overridden and reasons for the override.",
   "purpose": "Alerts are generated for possible contraindications to administration of medications (e.g., the administration of tetracycline to pregnant women) and the prescriber may choose to override the alert.",
   "derivedFrom": [
-    "CP.4.2.4"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.4.2.4"
   ],
   "statement": [
     {

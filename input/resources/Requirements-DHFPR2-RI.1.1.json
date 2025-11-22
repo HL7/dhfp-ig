@@ -22,7 +22,7 @@
   "description": "Manage Record Lifecycle",
   "purpose": "As aboveReferences:\n- ISO 21089: Health Informatics – Trusted End-to-End Information Flows- HL7 EHR Interoperability Model DSTU- HL7 Electronic Health Record Lifecycle Model DSTU",
   "derivedFrom": [
-    "RI.1.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1"
   ],
   "statement": [
     {

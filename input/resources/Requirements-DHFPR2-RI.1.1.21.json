@@ -22,7 +22,7 @@
   "description": "Link Record Entries (2 or more instances)",
   "purpose": "Occurs when an agent causes the system to connect related record entries. \n\nReference: ISO 21089-2018, Section 15.21.",
   "derivedFrom": [
-    "RI.1.1.21"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.21"
   ],
   "statement": [
     {

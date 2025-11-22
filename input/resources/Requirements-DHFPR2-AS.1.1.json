@@ -22,7 +22,7 @@
   "description": "Provide a current registry or directory of practitioners that contains data needed to determine levels of access required by the system.",
   "purpose": "Provider information may include any credentials, certifications, or any other information that may be used to verify that a practitioner is permitted to use or access authorized data.",
   "derivedFrom": [
-    "AS.1.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.1.1"
   ],
   "statement": [
     {

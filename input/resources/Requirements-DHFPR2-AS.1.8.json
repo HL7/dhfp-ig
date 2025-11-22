@@ -22,7 +22,7 @@
   "description": "Manage Provider Credentialing Information",
   "purpose": "Maintaining credentials, certifications, and other information is relevant for records management and evidentiary support because it establishes users and clinical personnel who are involved in patient care/encounter and supports the access control process.",
   "derivedFrom": [
-    "AS.1.8"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.1.8"
   ],
   "statement": [
     {

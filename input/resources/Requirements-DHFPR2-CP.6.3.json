@@ -22,7 +22,7 @@
   "description": "Provide the functionality required to support the management of treatment administration and documentation. (Treatment defined as the administration or application of remedies to a patient for a disease or injury; medicinal or surgical management; therapy.)",
   "purpose": "Provide the functionality required to support the documentation of non-medication treatments (e.g., wound dressing change that includes use of a topical cream or sterile wash during that process) to a patient based on clinical needs and requirements and provider orders within the system. This includes presenting end users with the list of clinical treatments that are to be administered to a patient, necessary administration information, and capture all required and relevant documentation details.",
   "derivedFrom": [
-    "CP.6.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.6.3"
   ],
   "statement": [
     {

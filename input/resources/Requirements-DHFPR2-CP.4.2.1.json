@@ -22,7 +22,7 @@
   "description": "Provide alerts for potential medication interactions and medication allergy reactions.",
   "purpose": "Check and provide alerts at the time of medication order based upon coded, active and non-active medications for possible interactions, allergies, sensitivities, intolerances, and other adverse reactions.",
   "derivedFrom": [
-    "CP.4.2.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.4.2.1"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Evaluate patient data and recommend patient referral based on specific criteria.",
   "purpose": "The system assists evaluation of certain patient conditions which may lead to a recommendation for referral, for example, for smoking cessation counseling if the patient is prescribed a medication to support cessation screening or assessment for behavioral health conditions. Additionally the system may present recommendations based on other orders – for example, an order for Adriamycin, where additional testing such as a MUGA (heart) scan or an Echocardiogram should be completed prior to administration, could result in a recommended referral to radiology, and/or cardiology.",
   "derivedFrom": [
-    "CPS.4.6.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.4.6.2"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Make available all pertinent patient information needed to support coding of diagnoses, procedures and outcomes.",
   "purpose": "The user is assisted in coding information for clinical reporting reasons. For example, a professional coder may have to code the principal diagnosis in the current, applicable ICD as a basis for hospital funding. All diagnoses and procedures during the episode may be presented to the coder, as well as the applicable ICD hierarchy containing these codes.",
   "derivedFrom": [
-    "AS.8.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.8.1"
   ],
   "statement": [
     {

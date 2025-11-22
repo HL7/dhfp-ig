@@ -22,7 +22,7 @@
   "description": "Transmit Record Entries (1 or more instances)",
   "purpose": "Occurs when an agent causes the system to send record entry content from one (EHR/PHR/other) system to another.  \n\nReference: ISO 21089-2018, Section 15.8.",
   "derivedFrom": [
-    "RI.1.1.8"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.8"
   ],
   "statement": [
     {

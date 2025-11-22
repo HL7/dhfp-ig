@@ -22,7 +22,7 @@
   "description": "Facilitate communications regarding patient orders, data and status between organizations.",
   "purpose": "There needs to be an ability to communicate patient data and status (e.g., patient history, patient physical examination), discrete clinical data (e.g., blood pressure, pulse, temperature, pulse oximetry, laboratory data, microbiology data, radiology data), and orders(e.g., medications, tests) between health care organizations, particularly during patient transfers.\n\nThis information may include items such as outstanding patient requests, clinician care recommendations, and outstanding treatment and workflow tasks for the patient. Organizations can include both health care providing organizations (e.g., hospitals, nursing homes) and non-health care providing organizations (e.g., funeral homes, disaster operations, employers).",
   "derivedFrom": [
-    "AS.4.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.4.3"
   ],
   "statement": [
     {

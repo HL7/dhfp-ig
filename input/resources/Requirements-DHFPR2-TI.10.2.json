@@ -22,7 +22,7 @@
   "description": "Enable version control according to scope of practice, organizational policy, and/or jurisdictional law to ensure maintenance of utilized standard or preferred clinical models.\n\nThis includes the ability to accommodate changes to clinical models as the source clinical model undergoes its update process. Such changes need to be cascaded to clinical content embedded in templates, custom formularies, etc., as determined by existing policy.",
   "purpose": "Version control allows for multiple sets or versions of the same clinical model to exist and be distinctly recognized over time. Standard clinical models can be updated, and concurrent use of different versions may be required. Ideally, the meaning of a clinical model never changes over time, but a clinical model can be deprecated, and replaced with a new clinical model in a new version. \n\nIt is important that retrospective analysis and research maintains the ability to relate to the appropriate clinical model. If the meaning of a clinical model changes over time, it is also important that for legal health records, as well as for retrospective analysis and research, the different meaning can be correlated to ensure the permanence of the information as originally captured. This does not necessarily imply that complete older versions of the clinical model be kept in the EHR-S, only access to the changes needs to be maintained.",
   "derivedFrom": [
-    "TI.10.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.10.2"
   ],
   "statement": [
     {

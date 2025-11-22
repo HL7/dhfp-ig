@@ -22,7 +22,7 @@
   "description": "Maintain Evidence of Record Entry Originate/Retain Event",
   "purpose": "Evidence of Record Entry Originate/Retain Event includes key metadata, ensures health record integrity (and trust) and enables record audit.",
   "derivedFrom": [
-    "RI.1.1.1.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.1.1"
   ],
   "statement": [
     {

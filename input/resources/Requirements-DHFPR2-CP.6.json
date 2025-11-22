@@ -22,6 +22,6 @@
   "description": "Provide the functionality required to support the management of medication and immunization administration.",
   "purpose": "Provide the functionality required to support the safe administration of medications or immunizations to a patient based on medical requirement and orders within the system. This includes presenting providers with the list of medications or immunizations that are to be administered to a patient, necessary administration information, and capture all required and relevant administration details.",
   "derivedFrom": [
-    "CP.6"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.6"
   ]
 }

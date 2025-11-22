@@ -22,7 +22,7 @@
   "description": "Encrypt Record Entries (1 or more instances)",
   "purpose": "Encrypt Record Lifecycle Event - occurs when an agent causes the system to encode record entry content in a cipher. \n\nReference: ISO 21089-2018, Section 15.26.",
   "derivedFrom": [
-    "RI.1.1.26"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-RI.1.1.26"
   ],
   "statement": [
     {

@@ -22,6 +22,6 @@
   "description": "Support the capture and subsequent export or retrieval of data necessary for the measurement, analysis, research and reporting.",
   "purpose": "Information from the EHR-S may be used to support measurement, analysis, research and reporting to improve the provision of care. Reporting may include:\n- reporting on patient outcome of care by population, facility, provider or community;\n- providing quality, performance, and accountability measurements for which providers, facilities, delivery systems, and communities are held accountable;\n- support process improvement measures and related initiatives; and- support health care organizational performance monitoring and improvement.",
   "derivedFrom": [
-    "POP.6"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-POP.6"
   ]
 }

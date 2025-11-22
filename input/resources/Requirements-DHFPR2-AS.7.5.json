@@ -22,7 +22,7 @@
   "description": "Provide a means to manage outstanding patient issues after the encounter, for transits of care and discharge.",
   "purpose": "After the completion of an encounter, a number of tasks may remain for discharge planning, patient instructions and transitions of care. There may be outstanding laboratory tests (i.e. blood cultures) radiology interpretations, or other tasks such as arrangement of home health aids (VNA), transportation or calls to the patient's primary care provider during office hours to establish follow-up. There must be a way to track and document these tasks after the conclusion of the encounter.",
   "derivedFrom": [
-    "AS.7.5"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.7.5"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Enable version control according to scope of practice, organizational policy, and/or jurisdictional law to ensure maintenance of utilized standard terminologies.\n\nThis includes the ability to accommodate changes to terminology sets as the source terminology undergoes its natural update process (new codes, retired codes, redirected codes). Such changes need to be cascaded to clinical content embedded in templates, custom formularies, etc., as determined by existing policy.",
   "purpose": "Version control allows for multiple sets or versions of the same terminology to exist and be distinctly recognized over time. Standard terminologies are usually periodically updated, and concurrent use of different versions may be required. Ideally, the meaning of a concept never changes over time, but a concept can be deprecated, and replaced with a new concept in a new version. However, in some terminologies, the meaning of a concept can change over time. In any case, it is important that retrospective analysis and research maintains the ability to relate to the appropriate conceptual meaning. If the terminology encoding for a concept changes over time, it is also important that for legal health records, as well as for retrospective analysis and research, the different encodings can be correlated to ensure the permanence of the concept as originally captured. This does not necessarily imply that complete older versions of the terminology be kept in the EHR-S, only access to the changes needs to be maintained.",
   "derivedFrom": [
-    "TI.4.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.4.2"
   ],
   "statement": [
     {

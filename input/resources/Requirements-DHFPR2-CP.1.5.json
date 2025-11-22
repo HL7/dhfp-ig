@@ -22,7 +22,7 @@
   "description": "Manage patient-specific health-related factors.",
   "purpose": "A patient's strengths (positive factors) or weaknesses (negative factors) may impact a patient's care or recovery and may be recorded as part of the EHR to support the development of care plans and treatment options. Examples of health factors include family support, financial support, health insurance levels, overall health, personal health behaviors (e.g., tobacco, physical activity, sleep), body mass index, employment status/type, access to care, or education level. Note that heath factors may be included in the Problem list (CP.1.4) which may include problems or strengths (e.g., ambulatory status or addictions). An example of an active patient-specific strength is an elderly parent receiving care from an adult child during the adult child's summer break from college. A patient's care may be affected by certain positive or negative factors. For example, coverage by insurance (a positive health factor) versus unemployment (a negative health factor).",
   "derivedFrom": [
-    "CP.1.5"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CP.1.5"
   ],
   "statement": [
     {

@@ -22,7 +22,7 @@
   "description": "Manage Audit Trigger initiated to track acknowledgement of clinically significant report changes.",
   "purpose": "Capture acknowledgement of clinically significant report changes, both routine and exceptional, including key metadata (who, what, when, where, why).",
   "derivedFrom": [
-    "TI.2.1.4.2"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.2.1.4.2"
   ],
   "statement": [
     {

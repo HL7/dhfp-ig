@@ -22,7 +22,7 @@
   "description": "Manage Audit Trigger initiated to track disabling of decision support alerts.",
   "purpose": "Capture disabling of decision support alerts, both routine and exceptional, including key metadata (who, what, when, where, why).",
   "derivedFrom": [
-    "TI.2.1.4.3"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-TI.2.1.4.3"
   ],
   "statement": [
     {

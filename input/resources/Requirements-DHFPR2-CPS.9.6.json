@@ -22,7 +22,7 @@
   "description": "Support user-defined information views.",
   "purpose": "Views of the information can be tailored for or by the user (or department or \"job classification”) for their presentation preferences, within local or facility established rules. For example, a nursing supervisor may elect or prefer to see summary data on all patients as the default view.",
   "derivedFrom": [
-    "CPS.9.6"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-CPS.9.6"
   ],
   "statement": [
     {

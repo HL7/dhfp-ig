@@ -22,7 +22,7 @@
   "description": "Maintain the Consents and Authorization directives/statements from the patient's PHR.",
   "purpose": "Provide the ability to manage Consents and Authorizations from a Personal Health Record including manage access control for individual elements of records to which the Consent or Authorization applies",
   "derivedFrom": [
-    "AS.3.2.1"
+    "http://hl7.org/ehrs/uv/ehrsfmr2/Requirements/EHRSFMR2-AS.3.2.1"
   ],
   "statement": [
     {
