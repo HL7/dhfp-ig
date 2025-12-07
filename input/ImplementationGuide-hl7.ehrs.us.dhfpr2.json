@@ -2577,7 +2577,7 @@
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
           "code": "releaselabel"
         },
-        "value": "Normative"
+        "value": "Informative"
       },
       {
         "code": {
