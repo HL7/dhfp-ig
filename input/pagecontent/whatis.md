@@ -1,5 +1,3 @@
-### What is a Functional Profile?
-
 The EHR-S FM is a list of all functions that COULD be present in EHR systems and criteria for achieving that function. Any given EHR-S will perform one or more functions (i.e., a subset) from the FM list (i.e., the superset), depending on the purpose of the system. The select subset of functions and the criteria for conforming to these functions characterize the EHR-S capabilities and are referred to as a “functional profile.” The functions and conformance criteria will vary across functional profiles, depending on the operational needs of the system, i.e., what the system is in place to accomplish. 
 
 This Electronic Health Records DHFP R2 is based on the HL7® Electronic Health Record System Functional Model and Standard (EHR-S FM) Release 2.1.1, 2025. The DHFP is intended to inform software developers, users, purchasers, and other interested parties, such as payers and data aggregators, regarding the desired performance of a dental electronic health record software system, whether operating stand-alone or integrated with a medical electronic health record system. 

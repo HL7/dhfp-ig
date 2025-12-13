@@ -1,0 +1,15 @@
+{
+    "package-id": "hl7.ehrs.us.dhfpr2",
+    "version": "2.0-ballot",
+    "path": "http://hl7.org/ehrs/uv/dhfpr2/2026Jan",
+    "mode": "working",
+    "status": "ballot",
+    "sequence": "Informative",
+    "title": "HL7 EHR-S FM R2.1.1 - Dental Health Functional Profile, Release 2",
+    "ci-build": "https://build.fhir.org/ig/HL7/dhfp-ig",
+    "category": "EHR-S Family",
+    "introduction": "This is the Dental Health Functional Profile.",
+    "desc": "This is the initial release of the migrated content",
+    "descmd": "This is the initial release of the migrated content",
+    "first": "true"
+}
