@@ -20,7 +20,7 @@
     }
   ],
   "url": "http://hl7.org/ehrs/us/dhfpr2/ImplementationGuide/hl7.ehrs.us.dhfpr2",
-  "version": "2.0",
+  "version": "2.0-ballot",
   "name": "DHFPR2",
   "title": "HL7 EHR-S FM R2.1.1 - Dental Health Functional Profile, Release 2",
   "status": "active",
