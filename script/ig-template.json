@@ -20,7 +20,7 @@
     }
   ],
   "url": "$CANONICAL$/ImplementationGuide/$PACKAGE_ID$",
-  "version": "2.0-ballot",
+  "version": "2.0.0-ballot",
   "name": "$FMID_PREFIX$",
   "title": "HL7 EHR-S FM R2.1.1 - Dental Health Functional Profile, Release 2",
   "status": "active",

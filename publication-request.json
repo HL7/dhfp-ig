@@ -1,6 +1,6 @@
 {
     "package-id": "hl7.ehrs.us.dhfpr2",
-    "version": "2.0-ballot",
+    "version": "2.0.0-ballot",
     "path": "http://hl7.org/ehrs/us/dhfpr2/2026Jan",
     "mode": "working",
     "status": "ballot",
