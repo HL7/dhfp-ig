@@ -141,7 +141,7 @@
       "conformance": [
         "MAY"
       ],
-      "conditionality": false,
+      "conditionality": true,
       "requirement": "IF there is no recognized-standard or preferred clinical model available, THEN the system MAY provide the ability to manage data using a locally-defined clinical model.",
       "derivedFrom": "TI.10.1#6"
     },

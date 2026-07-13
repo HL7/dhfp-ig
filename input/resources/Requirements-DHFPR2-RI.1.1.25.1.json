@@ -202,7 +202,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The system SHALL capture the data, document or other identifier for verified  Record Entry content.",
+      "requirement": "The system SHALL capture the data, document or other identifier for verified Record Entry content.",
       "derivedFrom": "RI.1.1.25.1#9"
     }
   ]

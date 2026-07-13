@@ -56,7 +56,7 @@
       "id": "ehrsfmr2",
       "uri": "http://hl7.org/ehrs/uv/ehrsfmr2/ImplementationGuide/hl7.ehrs.uv.ehrsfmr2",
       "packageId": "hl7.ehrs.uv.ehrsfmr2",
-      "version": "2.1.1-ballot"
+      "version": "2.1.1"
     }
   ],
   "definition": {
