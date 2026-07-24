@@ -3,7 +3,6 @@
 % could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 
 # Inserted by the publisher
-
 Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
 
 # Used in extension inserted by the publisher
