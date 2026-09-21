@@ -2565,9 +2565,9 @@
           "title": "What is a Functional Profile?"
         },
         {
-          "name": "hidden.html",
+          "name": "technical_artifacts.html",
           "generation": "markdown",
-          "title": "Only here because IG QA requires"
+          "title": "Technical Artifacts"
         }
       ]
     },
