@@ -1,6 +1,7 @@
 == Suppressed Messages ==
 # There is no reason for OIDs in this IG
 % could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+% could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 
 # Inserted by the publisher
 Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
